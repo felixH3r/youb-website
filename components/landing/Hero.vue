@@ -14,12 +14,10 @@
 
     <div>
       <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
-        Marketing website done with Nuxt
+        Make your health data finally worth tracking.
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        Nuxtship is a starter template for startups, marketing websites &
-        landing pages.<wbr /> Built with Nuxt & TailwindCSS. You can quickly
-        create any website with this starter.
+        Understand your body like never before — through AI-powered interpretation of your wearable data.
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink
