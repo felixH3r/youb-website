@@ -11,7 +11,7 @@
       </div>
   
       <div class=" flex justify-center max-w-6xl mx-auto">
-        <img src="../../public/ProblemSolve.png" alt="Confusing wearable chart" class="w-full h-auto rounded-md">
+        <img src="/ProblemSolve.png" alt="Confusing wearable chart" class="w-full h-auto rounded-md">
       </div>
     </section>
   </template>

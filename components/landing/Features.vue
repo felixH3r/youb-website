@@ -1,39 +1,39 @@
 <script setup>
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Bring Your Own Wearable",
     description:
-      "Build your site using Vue, web components, or just plain ol' HTML + JavaScript.",
+      "Connect Garmin, Suunto, Whoop and more. Your data, your choice.",
     icon: "bx:bxs-briefcase",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Clear, Interpretable Insights",
     description:
-      "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+      "We turn raw data into meaningful stories — no guessing, just clarity.",
     icon: "bx:bxs-window-alt",
   },
   {
-    title: "On-Demand Components",
+    title: "Real-Time Feedback",
     description:
-      "Need some JS? Nuxt can automatically hydrate interactive components when they become visible on the page.  ",
+      "Understand what your body is telling you. Instantly. Day by day.",
     icon: "bx:bxs-data",
   },
   {
-    title: "Broad Integration",
+    title: "Built for Understanding",
     description:
-      "Nuxt supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
+      "Get easy-to-grasp trends without medical jargon or data overload.",
     icon: "bx:bxs-bot",
   },
   {
-    title: "SEO Enabled",
+    title: "Private by Design",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
+      "All data is encrypted and stored in the EU. GDPR compliant by default.",
     icon: "bx:bxs-file-find",
   },
   {
-    title: "Community",
+    title: "Community-Led Development",
     description:
-      "Nuxt is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+      "Built together with real users. Transparent, open-minded and evolving.",
     icon: "bx:bxs-user",
   },
 ];
@@ -41,13 +41,14 @@ const features = [
 
 <template>
   <div class="mt-16 md:mt-0">
-    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      Everything you need to start a website
-    </h2>
-    <p class="text-lg mt-4 text-slate-600">
-      Nuxt comes batteries included. It takes the best parts of state-of-the-art
-      tools and adds its own innovations.
-    </p>
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold ">
+        Everything you need to understand your health.
+      </h2>
+      <p class="mt-4 text-lg font-light text-gray-600">
+        We simplify your wearable data and give it meaning — safely and clearly.
+      </p>
+    </div>
   </div>
 
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
@@ -57,7 +58,7 @@ const features = [
       </div>
       <div>
         <h3 class="font-semibold text-lg">{{ item.title }}</h3>
-        <p class="text-slate-500 mt-2 leading-relaxed">
+        <p class="text-slate-800 mt-2 font-thin leading-relaxed">
           {{ item.description }}
         </p>
       </div>

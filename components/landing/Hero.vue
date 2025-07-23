@@ -26,14 +26,6 @@
           rel="noopener"
           >Get Started</LandingLink
         >
-        <LandingLink
-          size="lg"
-          styleName="outline"
-          rel="noopener"
-          href="https://github.com/Gr33nW33n/nuxtship-template"
-          target="_blank"
-          >View Repo</LandingLink
-        >
       </div>
     </div>
   </main>
