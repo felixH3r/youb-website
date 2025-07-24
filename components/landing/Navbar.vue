@@ -25,7 +25,7 @@ const open = ref(false);
   <LandingContainer>
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full items-center justify-between">
-        <NuxtLink to="/" class="text-xl font-semibold tracking-tight">youb</NuxtLink>
+        <NuxtLink to="/" class="text-xl font-semibold tracking-tight">YOU<a class="font-thin">B</a></NuxtLink>
         <div class="flex items-center gap-4">
           <a href="/launching-soon">Log in</a>
           <LandingLink href="/launching-soon" size="md">Sign up</LandingLink>

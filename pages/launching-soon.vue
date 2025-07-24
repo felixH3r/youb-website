@@ -11,7 +11,7 @@
     <!-- Hero Section -->
     <main class="flex-1 flex flex-col items-center justify-center text-center px-4">
       <h2 class="text-4xl sm:text-6xl font-bold mb-6 tracking-tight">
-        Understand your health.
+        Understand your health - Coming Soon.
       </h2>
       <p class="text-lg text-gray-600 max-w-md mb-8">
         Raw data confuses. We turn wearable signals into clarity – so you get to know your body better.
@@ -19,7 +19,7 @@
 
       <!-- Back to site button -->
       <NuxtLink to="/" class="bg-black text-white hover:bg-gray-900 px-6 py-3 rounded-full text-sm font-medium transition">
-        Zurück zur Website
+        Back to home
       </NuxtLink>
     </main>
 

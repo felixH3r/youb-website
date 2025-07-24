@@ -1,31 +1,24 @@
 <template>
-  <footer class="my-20">
-    <p class="text-center text-sm text-slate-500">
-      Copyright © {{ new Date().getFullYear() }} YOUB. All rights reserved.
-    </p>
-    <!--
-      Can we ask you a favor 🙏
-      Please keep this backlink on your website if possible.
-    -->
-<!--    <p class="text-center text-xs text-slate-500 mt-1">-->
-<!--      Made by-->
-<!--      <a-->
-<!--        href="https://github.com/Gr33nW33n"-->
-<!--        target="_blank"-->
-<!--        rel="noopener"-->
-<!--        class="hover:underline"-->
-<!--      >-->
-<!--        Gr33nW33n-->
-<!--      </a>-->
-<!--      with attribution to-->
-<!--      <a-->
-<!--        href="https://web3templates.com"-->
-<!--        target="_blank"-->
-<!--        rel="noopener"-->
-<!--        class="hover:underline"-->
-<!--      >-->
-<!--        Web3Templates-->
-<!--      </a>-->
-<!--    </p>-->
+  <footer class="p-4 mt-32 mb-10">
+    <div class="container mx-auto flex flex-col gap-4 items-center">
+      <nav class="mt-2">
+        <ul class="flex gap-10">
+          <li>
+            <NuxtLink href="/privacy-policy" class="hover:text-gray-500 font-sans" >Privacy Policy</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink href="/legal-notice" class="hover:text-gray-500">Legal Notice</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink href="mailto:felix@youb.app" class="hover:text-gray-500">Contact Us</NuxtLink>
+          </li>
+        </ul>
+      </nav>
+      <p class="text-sm font-light text-center">
+        &copy; 2025 YOUB. All rights reserved.
+      </p>
+    </div>
   </footer>
 </template>
+<script setup lang="ts">
+</script>

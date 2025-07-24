@@ -35,7 +35,7 @@
               <p class="mt-2 max-w-lg font-thin text-gray-900 max-lg:text-center">Garmin, Suunto, Apple Health, and more — all your health data, synced and centralized.</p>
             </div>
             <div class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
-              <img src="/WearableLogos.png" alt="" class="w-full max-lg:max-w-xs" />
+              <img src="/TrackEffortless.png" alt="" class="w-full max-lg:max-w-xs" />
             </div>
           </div>
           <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl"></div>
