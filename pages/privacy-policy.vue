@@ -3,7 +3,7 @@
     <div class=" mx-auto pt-20 ">
 
       <div class=" max-w-screen-xl px-5 mx-auto">
-        <NuxtLink to="/privacy.pdf" class="p-4 bg-stone-100 rounded-xl hover:bg-stone-300">Download Privacy Policy as PDF</NuxtLink>
+        <NuxtLink target="_blank" to="/privacy.pdf" class="p-4 bg-stone-100 rounded-xl hover:bg-stone-300">Download Privacy Policy as PDF</NuxtLink>
         <h1 class="text-4xl font-bold text-center mb-6 mt-10">Privacy Policy for YOUB Health App</h1>
 
         <div class="space-y-6">
