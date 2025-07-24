@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="flex flex-col lg:flex-row justify-center items-center my-5 ">
       <div class="flex w-full justify-between items-center max-w-screen-xl">
-        <NuxtLink to="/" class="text-xl font-semibold tracking-tight">youb</NuxtLink>
+        <NuxtLink to="/" class="text-xl font-semibold tracking-tight">YOU<a class="font-thin">B</a></NuxtLink>
         <span class="text-sm text-gray-600">coming soon</span>
       </div>
     </header>
