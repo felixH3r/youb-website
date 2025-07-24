@@ -21,8 +21,7 @@
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink
-          href="https://github.com/Gr33nW33n/nuxtship-template"
-          target="_blank"
+          href="/launching-soon"
           rel="noopener"
           >Get Started</LandingLink
         >
