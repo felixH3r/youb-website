@@ -32,15 +32,16 @@ onUnmounted(() => {
 
 <template>
   <div
-    class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 transition-all duration-500 ease-in-out"
-    :class="{ 'top-2': isScrolled }"
+    class="fixed left-0 right-0 z-50 flex justify-center transition-all duration-500 ease-in-out"
+    :class="[isScrolled ? 'top-0 md:top-2' : 'top-0 md:top-6', 'px-0 md:px-4']"
   >
     <nav
-      class="w-full transition-all duration-500 ease-in-out bg-black/3 backdrop-blur-md border border-white/20 shadow-2xl rounded-full flex items-center justify-between"
+      class="w-full transition-all duration-500 ease-in-out bg-black/3 backdrop-blur-md border-white/20 shadow-2xl flex items-center justify-between"
       :class="[
         isScrolled
           ? 'max-w-3xl px-6 py-2 bg-black/5'
           : 'max-w-6xl px-8 py-4 bg-black/0',
+        'rounded-b-3xl md:rounded-full border-b md:border',
       ]"
     >
       <!-- Logo -->
