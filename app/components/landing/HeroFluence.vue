@@ -91,7 +91,21 @@ onMounted(() => {
       <!-- Hero Graphic -->
       <div
         ref="graphicRef"
-        class="relative w-full max-w-5xl aspect-video rounded-3xl border border-black/5 bg-white/40 backdrop-blur-2xl shadow-2xl shadow-black/5 overflow-hidden animate-in fade-in zoom-in-95 duration-1000 delay-700 ease-out"
+        class="relative w-full max-w-5xl aspect-square md:aspect-[16/7] rounded-3xl border border-black/5 bg-white/40 backdrop-blur-2xl shadow-2xl shadow-black/5 overflow-hidden animate-in fade-in zoom-in-95 duration-1000 delay-700 ease-out"
+        style="
+          mask-image: linear-gradient(
+            to bottom,
+            black 0%,
+            black 80%,
+            transparent 100%
+          );
+          -webkit-mask-image: linear-gradient(
+            to bottom,
+            black 0%,
+            black 80%,
+            transparent 100%
+          );
+        "
       >
         <div
           class="absolute inset-0 bg-linear-to-tr from-black/[0.02] to-transparent pointer-events-none"
@@ -117,20 +131,6 @@ onMounted(() => {
 
         <div
           class="absolute inset-0 pt-20 p-8 flex flex-col gap-5 overflow-hidden pointer-events-none"
-          style="
-            mask-image: linear-gradient(
-              to bottom,
-              black 0%,
-              black 70%,
-              transparent 100%
-            );
-            -webkit-mask-image: linear-gradient(
-              to bottom,
-              black 0%,
-              black 70%,
-              transparent 100%
-            );
-          "
         >
           <!-- User Message 1 -->
           <div
