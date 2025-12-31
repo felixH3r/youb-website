@@ -21,7 +21,7 @@ onMounted(() => {
 <template>
   <section
     ref="heroRef"
-    class="relative min-h-screen w-full flex flex-col items-center justify-center pt-24 pb-20 px-6 overflow-hidden bg-white selection:bg-black selection:text-white"
+    class="relative min-h-screen w-full flex flex-col items-center justify-center pt-24 pb-20 px-3 md:px-6 overflow-hidden bg-white selection:bg-black selection:text-white"
   >
     <!-- Background Image -->
     <div
@@ -40,10 +40,10 @@ onMounted(() => {
     />
 
     <div
-      class="relative z-10 max-w-7xl w-full flex flex-col items-center text-center"
+      class="relative pt-12 md:pt-24 z-10 max-w-7xl w-full flex flex-col items-center text-center"
     >
       <!-- Badge -->
-      <div
+      <!-- <div
         ref="badgeRef"
         class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-black/5 bg-white/50 backdrop-blur-md mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 ease-out"
       >
@@ -51,7 +51,7 @@ onMounted(() => {
         <span class="text-xs font-medium tracking-wider uppercase text-black/60"
           >New Era of Monitoring</span
         >
-      </div>
+      </div> -->
 
       <!-- Main Heading -->
       <h1
@@ -74,15 +74,15 @@ onMounted(() => {
       <!-- CTA Actions -->
       <div
         ref="actionsRef"
-        class="flex flex-col sm:flex-row items-center gap-4 mb-20 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 ease-out"
+        class="flex items-center gap-4 mb-10 md:mb-20 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 ease-out"
       >
         <button
-          class="w-full sm:w-auto px-8 py-4 rounded-full bg-black text-white font-semibold text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-black/10"
+          class="px-6 md:px-8 py-4 rounded-full bg-black text-white font-semibold text-sm md:text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-black/10"
         >
           Get Started
         </button>
         <button
-          class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-black font-semibold text-lg border border-black/10 hover:bg-black/5 hover:scale-105 active:scale-95 transition-all duration-300"
+          class="px-6 md:px-8 py-4 rounded-full bg-white text-black font-semibold text-sm md:text-lg border border-black/10 hover:bg-black/5 hover:scale-105 active:scale-95 transition-all duration-300"
         >
           View Demo
         </button>
@@ -126,18 +126,18 @@ onMounted(() => {
               >Analytics Chat</span
             >
           </div>
-          <div class="w-32 h-2 rounded-full bg-black/5" />
+          <div class="w-16 md:w-32 h-2 rounded-full bg-black/5" />
         </div>
 
         <div
-          class="absolute inset-0 pt-20 p-8 flex flex-col gap-5 overflow-hidden pointer-events-none"
+          class="absolute inset-0 pt-16 p-2 md:pt-20 md:p-8 flex flex-col gap-5 overflow-hidden pointer-events-none"
         >
           <!-- User Message 1 -->
           <div
             class="flex flex-col items-end gap-1.5 max-w-[80%] self-end animate-in fade-in slide-in-from-right-4 duration-500 delay-500 ease-out"
           >
             <div
-              class="px-5 py-3 rounded-3xl rounded-tr-lg bg-gray-200 text-xs font-medium shadow-lg shadow-black/5 overflow-hidden relative"
+              class="px-5 py-3 rounded-3xl rounded-tr-lg bg-gray-200 text-xs text-left font-medium shadow-lg shadow-black/5 overflow-hidden relative"
             >
               <div
                 class="typing-text"
@@ -159,7 +159,7 @@ onMounted(() => {
                 <span class="text-[9px] font-bold">AI</span>
               </div>
               <div
-                class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white border border-black/5 text-black text-xs leading-relaxed shadow-xl shadow-black/[0.01] overflow-hidden relative"
+                class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white border border-black/5 text-black text-xs text-left font-medium leading-relaxed shadow-xl shadow-black/[0.01] overflow-hidden relative"
               >
                 <div
                   class="typing-text"
@@ -177,7 +177,7 @@ onMounted(() => {
             class="flex flex-col items-end gap-1.5 max-w-[80%] self-end animate-in fade-in slide-in-from-right-4 duration-500 delay-3500 ease-out"
           >
             <div
-              class="px-5 py-3 rounded-3xl rounded-tr-lg bg-gray-200 text-xs font-medium shadow-lg shadow-black/5 overflow-hidden relative"
+              class="px-5 py-3 rounded-3xl rounded-tr-lg bg-gray-200 text-xs text-left font-medium shadow-lg shadow-black/5 overflow-hidden relative"
             >
               <div
                 class="typing-text"
@@ -199,7 +199,7 @@ onMounted(() => {
                 <span class="text-[9px] font-bold">AI</span>
               </div>
               <div
-                class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white border border-black/5 text-black text-xs leading-relaxed shadow-xl shadow-black/[0.01] overflow-hidden relative"
+                class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white border border-black/5 text-black text-xs text-left leading-relaxed shadow-xl shadow-black/[0.01] overflow-hidden relative"
               >
                 <div
                   class="typing-text"
