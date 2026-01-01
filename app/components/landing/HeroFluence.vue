@@ -58,8 +58,10 @@ onMounted(() => {
         ref="titleRef"
         class="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-black mb-8 leading-[0.9] text-balance animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 ease-out"
       >
-        Build with <br />
-        <span class="text-black/40 italic">Confidence.</span>
+        {{ $t("hero.titlePrefix") }} <br />
+        <span class="text-black/40 italic">{{
+          $t("hero.titleHighlight")
+        }}</span>
       </h1>
 
       <!-- Sub-heading -->
@@ -67,8 +69,7 @@ onMounted(() => {
         ref="subRef"
         class="text-lg md:text-xl text-black/60 max-w-2xl mb-12 text-balance animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300 ease-out"
       >
-        Track your performance with precision. Gain deep insights into your
-        physical capacity and optimize your training like never before.
+        {{ $t("hero.subtitle") }}
       </p>
 
       <!-- CTA Actions -->
@@ -79,12 +80,12 @@ onMounted(() => {
         <button
           class="px-6 md:px-8 py-4 rounded-full bg-black text-white font-semibold text-sm md:text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-black/10"
         >
-          Get Started
+          {{ $t("hero.ctaPrimary") }}
         </button>
         <button
           class="px-6 md:px-8 py-4 rounded-full bg-white text-black font-semibold text-sm md:text-lg border border-black/10 hover:bg-black/5 hover:scale-105 active:scale-95 transition-all duration-300"
         >
-          View Demo
+          {{ $t("hero.ctaSecondary") }}
         </button>
       </div>
 
@@ -143,7 +144,7 @@ onMounted(() => {
                 class="typing-text"
                 style="--delay: 0.5s; --chars: 55; --duration: 1s"
               >
-                Compare my training load from this week to last week.
+                {{ $t("chat.user1") }}
               </div>
             </div>
           </div>
@@ -165,8 +166,11 @@ onMounted(() => {
                   class="typing-text"
                   style="--delay: 2s; --chars: 85; --duration: 1.5s"
                 >
-                  Your <span class="font-bold">ATL increased by 15%</span>.
-                  Recovery remains stable. Rest tomorrow to optimize.
+                  <i18n-t keypath="chat.ai1" tag="span">
+                    <template #boldStart>
+                      <span class="font-bold" />
+                    </template>
+                  </i18n-t>
                 </div>
               </div>
             </div>
@@ -183,7 +187,7 @@ onMounted(() => {
                 class="typing-text"
                 style="--delay: 3.5s; --chars: 60; --duration: 1.2s"
               >
-                Should I aim for a higher heart rate in my next zone 2 run?
+                {{ $t("chat.user2") }}
               </div>
             </div>
           </div>
@@ -205,9 +209,11 @@ onMounted(() => {
                   class="typing-text"
                   style="--delay: 4.7s; --chars: 95; --duration: 1.8s"
                 >
-                  Maintain <span class="font-bold">135-142 bpm</span>. Pushing
-                  higher will shift you into zone 3, reducing aerobic
-                  adaptations.
+                  <i18n-t keypath="chat.ai2" tag="span">
+                    <template #boldStart>
+                      <span class="font-bold" />
+                    </template>
+                  </i18n-t>
                 </div>
               </div>
             </div>

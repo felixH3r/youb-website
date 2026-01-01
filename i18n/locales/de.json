@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "demo": "Demo ansehen",
+    "getStarted": "Jetzt starten"
+  },
+  "hero": {
+    "badge": "Neue Ära des Monitorings",
+    "titlePrefix": "Entwickle mit",
+    "titleHighlight": "Vertrauen.",
+    "subtitle": "Verfolge deine Leistung mit Präzision. Gewinne tiefe Einblicke in deine körperliche Kapazität und optimiere dein Training wie nie zuvor.",
+    "ctaPrimary": "Jetzt starten",
+    "ctaSecondary": "Demo ansehen"
+  },
+  "chat": {
+    "title": "Analytics Chat",
+    "user1": "Vergleiche meine Trainingsbelastung von dieser Woche mit der letzten Woche.",
+    "ai1": "Deine ATL ist um 15% gestiegen. Erholung bleibt stabil. Morgen ausruhen zum Optimieren.",
+    "user2": "Sollte ich bei meinem nächsten Zone 2 Lauf einen höheren Puls anstreben?",
+    "ai2": "Halte 135-142 bpm ein. Ein höherer Puls verschiebt dich in Zone 3 und reduziert die aeroben Anpassungen."
+  },
+  "footer": {
+    "rights": "© 2026 Youb. Alle Rechte vorbehalten.",
+    "language": "Sprache"
+  }
+}

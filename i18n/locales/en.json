@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "demo": "View Demo",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "New Era of Monitoring",
+    "titlePrefix": "Build with",
+    "titleHighlight": "Confidence.",
+    "subtitle": "Track your performance with precision. Gain deep insights into your physical capacity and optimize your training like never before.",
+    "ctaPrimary": "Get Started",
+    "ctaSecondary": "View Demo"
+  },
+  "chat": {
+    "title": "Analytics Chat",
+    "user1": "Compare my training load from this week to last week.",
+    "ai1": "Your ATL increased by 15%. Recovery remains stable. Rest tomorrow to optimize.",
+    "user2": "Should I aim for a higher heart rate in my next zone 2 run?",
+    "ai2": "Maintain 135-142 bpm. Pushing higher will shift you into zone 3, reducing aerobic adaptations."
+  },
+  "footer": {
+    "rights": "© 2026 Youb. All rights reserved.",
+    "language": "Language"
+  }
+}
