@@ -6,8 +6,8 @@ definePageMeta({
 
 <template>
   <LandingHeroFluence />
+  <LandingProblemSection />
   <LandingContainer>
-    <LandingProblemSection />
     <LandingBentoSection />
     <LandingFeatures />
     <!--    <LandingLogos />-->

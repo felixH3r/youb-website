@@ -21,13 +21,13 @@ onMounted(() => {
 <template>
   <section
     ref="heroRef"
-    class="relative min-h-screen w-full flex flex-col items-center justify-center pt-24 pb-20 px-3 md:px-6 overflow-hidden bg-white selection:bg-black selection:text-white"
+    class="relative min-h-screen w-full flex flex-col items-center justify-center pt-24 pb-20 px-3 md:px-6 overflow-hidden bg-black selection:bg-white selection:text-black"
   >
     <!-- Background Image -->
     <div
       class="absolute inset-0 z-0 pointer-events-none"
       :style="{
-        backgroundImage: `url('/HeroBG.png')`,
+        backgroundImage: `url('/HeroNew.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         transform: `translateY(${scrollY * 0.15}px)`,
@@ -36,7 +36,7 @@ onMounted(() => {
 
     <!-- Gradient Overlay -->
     <div
-      class="absolute inset-0 z-[1] bg-linear-to-b from-white/20 via-white/80 to-white pointer-events-none"
+      class="absolute inset-0 z-[1] bg-linear-to-b from-black/10 via-black/50 to-black pointer-events-none"
     />
 
     <div
@@ -56,10 +56,10 @@ onMounted(() => {
       <!-- Main Heading -->
       <h1
         ref="titleRef"
-        class="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-black mb-8 leading-[0.9] text-balance animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 ease-out"
+        class="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-white mb-8 leading-[0.9] text-balance animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 ease-out"
       >
         {{ $t("hero.titlePrefix") }} <br />
-        <span class="text-black/40 italic">{{
+        <span class="text-white/40 italic">{{
           $t("hero.titleHighlight")
         }}</span>
       </h1>
@@ -67,7 +67,7 @@ onMounted(() => {
       <!-- Sub-heading -->
       <p
         ref="subRef"
-        class="text-lg md:text-xl text-black/60 max-w-2xl mb-12 text-balance animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300 ease-out"
+        class="text-lg md:text-xl text-white/60 max-w-2xl mb-12 text-balance animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300 ease-out"
       >
         {{ $t("hero.subtitle") }}
       </p>
@@ -78,12 +78,12 @@ onMounted(() => {
         class="flex items-center gap-4 mb-10 md:mb-20 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 ease-out"
       >
         <button
-          class="px-6 md:px-8 py-4 rounded-full bg-black text-white font-semibold text-sm md:text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-black/10"
+          class="px-6 md:px-8 py-4 rounded-full bg-white text-black font-semibold text-sm md:text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-white/10"
         >
           {{ $t("hero.ctaPrimary") }}
         </button>
         <button
-          class="px-6 md:px-8 py-4 rounded-full bg-white text-black font-semibold text-sm md:text-lg border border-black/10 hover:bg-black/5 hover:scale-105 active:scale-95 transition-all duration-300"
+          class="px-6 md:px-8 py-4 rounded-full bg-black text-white font-semibold text-sm md:text-lg border border-white/10 hover:bg-white/5 hover:scale-105 active:scale-95 transition-all duration-300"
         >
           {{ $t("hero.ctaSecondary") }}
         </button>
@@ -92,21 +92,7 @@ onMounted(() => {
       <!-- Hero Graphic -->
       <div
         ref="graphicRef"
-        class="relative w-full max-w-5xl aspect-square md:aspect-[16/7] rounded-3xl border border-black/5 bg-white/40 backdrop-blur-2xl shadow-2xl shadow-black/5 overflow-hidden animate-in fade-in zoom-in-95 duration-1000 delay-700 ease-out"
-        style="
-          mask-image: linear-gradient(
-            to bottom,
-            black 0%,
-            black 80%,
-            transparent 100%
-          );
-          -webkit-mask-image: linear-gradient(
-            to bottom,
-            black 0%,
-            black 80%,
-            transparent 100%
-          );
-        "
+        class="relative w-full max-w-5xl rounded-3xl border border-white/10 bg-black/40 backdrop-blur-2xl shadow-2xl shadow-black/20 animate-in fade-in zoom-in-95 duration-1000 delay-700 ease-out"
       >
         <div
           class="absolute inset-0 bg-linear-to-tr from-black/[0.02] to-transparent pointer-events-none"
@@ -114,31 +100,31 @@ onMounted(() => {
 
         <!-- Mock UI Elements -->
         <div
-          class="absolute inset-x-0 top-0 h-12 border-b border-black/5 flex items-center px-6 gap-2 bg-white/40 backdrop-blur-sm z-20"
+          class="absolute inset-x-0 top-0 h-12 border-b border-white/10 flex items-center px-6 gap-2 bg-white/5 backdrop-blur-md z-20"
         >
           <div class="flex gap-1.5">
-            <div class="w-3 h-3 rounded-full bg-black/10" />
-            <div class="w-3 h-3 rounded-full bg-black/10" />
-            <div class="w-3 h-3 rounded-full bg-black/10" />
+            <div class="w-3 h-3 rounded-full bg-white/20" />
+            <div class="w-3 h-3 rounded-full bg-white/20" />
+            <div class="w-3 h-3 rounded-full bg-white/20" />
           </div>
           <div class="flex-1 text-center">
             <span
-              class="text-[10px] uppercase tracking-widest font-bold text-black/30"
+              class="text-[10px] uppercase tracking-widest font-bold text-white/40"
               >Analytics Chat</span
             >
           </div>
-          <div class="w-16 md:w-32 h-2 rounded-full bg-black/5" />
+          <div class="w-16 md:w-32 h-2 rounded-full bg-white/10" />
         </div>
 
         <div
-          class="absolute inset-0 pt-16 p-2 md:pt-20 md:p-8 flex flex-col gap-5 overflow-hidden pointer-events-none"
+          class="relative w-full pt-16 p-4 md:pt-20 md:p-8 flex flex-col gap-6 md:gap-8 pointer-events-none"
         >
           <!-- User Message 1 -->
           <div
             class="flex flex-col items-end gap-1.5 max-w-[80%] self-end animate-in fade-in slide-in-from-right-4 duration-500 delay-500 ease-out"
           >
             <div
-              class="px-5 py-3 rounded-3xl rounded-tr-lg bg-gray-200 text-xs text-left font-medium shadow-lg shadow-black/5 overflow-hidden relative"
+              class="px-5 py-3 rounded-3xl rounded-tr-lg bg-white/10 backdrop-blur-md border border-white/5 text-xs text-left font-medium text-white shadow-lg shadow-black/20 overflow-hidden relative"
             >
               <div
                 class="typing-text"
@@ -155,12 +141,12 @@ onMounted(() => {
           >
             <div class="flex gap-3 items-end">
               <div
-                class="w-8 h-8 rounded-full bg-black/5 border border-black/5 flex items-center justify-center flex-shrink-0"
+                class="w-8 h-8 rounded-full bg-white/10 border border-white/10 flex items-center justify-center flex-shrink-0 text-white"
               >
                 <span class="text-[9px] font-bold">AI</span>
               </div>
               <div
-                class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white border border-black/5 text-black text-xs text-left font-medium leading-relaxed shadow-xl shadow-black/[0.01] overflow-hidden relative"
+                class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white/5 backdrop-blur-xl border border-white/10 text-white text-xs text-left font-medium leading-relaxed shadow-xl shadow-black/20 overflow-hidden relative"
               >
                 <div
                   class="typing-text"
@@ -181,7 +167,7 @@ onMounted(() => {
             class="flex flex-col items-end gap-1.5 max-w-[80%] self-end animate-in fade-in slide-in-from-right-4 duration-500 delay-3500 ease-out"
           >
             <div
-              class="px-5 py-3 rounded-3xl rounded-tr-lg bg-gray-200 text-xs text-left font-medium shadow-lg shadow-black/5 overflow-hidden relative"
+              class="px-5 py-3 rounded-3xl rounded-tr-lg bg-white/10 backdrop-blur-md border border-white/5 text-xs text-left font-medium text-white shadow-lg shadow-black/20 overflow-hidden relative"
             >
               <div
                 class="typing-text"
@@ -198,12 +184,12 @@ onMounted(() => {
           >
             <div class="flex gap-3 items-end">
               <div
-                class="w-8 h-8 rounded-full bg-black/5 border border-black/5 flex items-center justify-center flex-shrink-0"
+                class="w-8 h-8 rounded-full bg-white/10 border border-white/10 flex items-center justify-center flex-shrink-0 text-white"
               >
                 <span class="text-[9px] font-bold">AI</span>
               </div>
               <div
-                class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white border border-black/5 text-black text-xs text-left leading-relaxed shadow-xl shadow-black/[0.01] overflow-hidden relative"
+                class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white/5 backdrop-blur-xl border border-white/10 text-white text-xs text-left leading-relaxed shadow-xl shadow-black/20 overflow-hidden relative"
               >
                 <div
                   class="typing-text"
@@ -216,6 +202,22 @@ onMounted(() => {
                   </i18n-t>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <!-- Chat Input Skeleton -->
+          <div
+            class="mt-auto pt-4 flex items-center gap-3 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-6000 ease-out"
+          >
+            <div
+              class="flex-1 h-10 rounded-full bg-white/5 border border-white/10 flex items-center px-4"
+            >
+              <div class="w-24 h-2 rounded-full bg-white/10" />
+            </div>
+            <div
+              class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center"
+            >
+              <Icon name="ph:paper-plane-right-fill" class="w-4 h-4" />
             </div>
           </div>
         </div>

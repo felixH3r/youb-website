@@ -24,5 +24,21 @@
   "footer": {
     "rights": "© 2026 Youb. All rights reserved.",
     "language": "Language"
+  },
+  "problem": {
+    "title": "Data without meaning is just noise.",
+    "subtitle": "Your wearables collect terabytes of data. But they don't tell you what it means for your life.",
+    "pillar1": {
+      "title": "Data Overload",
+      "text": "Thousands of metrics, but no clear focus. You get lost in numbers instead of making progress."
+    },
+    "pillar2": {
+      "title": "Missing Context",
+      "text": "Low recovery score? High heart rate? Without the context of your daily life, it's all just guesswork."
+    },
+    "pillar3": {
+      "title": "Static Plans",
+      "text": "Classic training plans ignore stress, sleep, and fatigue. YOUB adapts to you, not the other way around."
+    }
   }
 }

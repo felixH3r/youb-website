@@ -24,5 +24,21 @@
   "footer": {
     "rights": "© 2026 Youb. Alle Rechte vorbehalten.",
     "language": "Sprache"
+  },
+  "problem": {
+    "title": "Daten ohne Bedeutung sind nur Rauschen.",
+    "subtitle": "Deine Wearables sammeln Terabytes an Daten. Aber sie sagen dir nicht, was sie für dein Leben bedeuten.",
+    "pillar1": {
+      "title": "Daten-Überlastung",
+      "text": "Tausende Metriken, aber kein klarer Fokus. Du verlierst dich in Zahlen, statt Fortschritte zu machen."
+    },
+    "pillar2": {
+      "title": "Fehlender Kontext",
+      "text": "Ein niedriger Erholungswert? Ein hoher Puls? Ohne den Kontext deines Alltags bleibt alles nur Rätselraten."
+    },
+    "pillar3": {
+      "title": "Starre Pläne",
+      "text": "Klassische Trainingspläne ignorieren Stress, Schlaf und Ermüdung. YOUB passt sich dir an, nicht umgekehrt."
+    }
   }
 }
