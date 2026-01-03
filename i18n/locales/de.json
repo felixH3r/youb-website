@@ -73,5 +73,23 @@
       "gdpr": "DSGVO-konform",
       "aiAct": "AI Act\nready"
     }
+  },
+  "targetGroup": {
+    "title": "Ist YOUB das Richtige für dich?",
+    "forYou": {
+      "title": "Für dich",
+      "subtitle": "YOUB ist für dich, wenn:",
+      "item1": "du Triathlet:in, Radsportler:in oder Läufer:in bist",
+      "item2": "du leistungsorientiert trainierst und klare Ziele verfolgst",
+      "item3": "du bereits Trainingsdaten sammelst und mehr daraus verstehen willst",
+      "item4": "du bereit bist, deinem Trainingsprozess zu vertrauen"
+    },
+    "notForYou": {
+      "title": "Aktuell nicht",
+      "subtitle": "YOUB ist aktuell nicht für dich, wenn:",
+      "item1": "du gerade erst mit Ausdauertraining beginnst",
+      "item2": "du keine Trainingsdaten oder Wearables nutzt",
+      "item3": "du bewusst ohne Struktur trainieren möchtest"
+    }
   }
 }

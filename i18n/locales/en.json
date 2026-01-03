@@ -73,5 +73,23 @@
       "gdpr": "GDPR compliant",
       "aiAct": "AI Act\nready"
     }
+  },
+  "targetGroup": {
+    "title": "Is YOUB right for you?",
+    "forYou": {
+      "title": "For You",
+      "subtitle": "YOUB is for you if:",
+      "item1": "you are a triathlete, cyclist, or runner",
+      "item2": "you train performance-oriented and pursue clear goals",
+      "item3": "you already collect training data and want to understand more from it",
+      "item4": "you are ready to trust your training process"
+    },
+    "notForYou": {
+      "title": "Not right now",
+      "subtitle": "YOUB is currently not for you if:",
+      "item1": "you are just starting with endurance training",
+      "item2": "you don't use training data or wearables",
+      "item3": "you consciously want to train without structure"
+    }
   }
 }
