@@ -58,5 +58,10 @@
       "title": "Science Instead of Bro-Science",
       "text": "Behind the simple interface works a complex deep learning model, trained with over 1,000 athlete years. Developed with sports scientists and diagnostic experts (HYCYS). Your training is based on valid physiological principles, not chance."
     }
+  },
+  "magicMoment": {
+    "line1": "No cluttered dashboards.",
+    "line2": "No complicated charts.",
+    "line3": "Instead a dialogue that creates clarity."
   }
 }
