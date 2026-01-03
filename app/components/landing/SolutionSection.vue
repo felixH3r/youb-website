@@ -37,11 +37,7 @@ onMounted(() => {
             <div
               class="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden shadow-2xl"
             >
-              <img
-                src="/DataOfToday.png"
-                alt="Data Profiling"
-                class="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
-              />
+              <LandingAdaptiveCalendar />
             </div>
             <!-- Decorative Element -->
             <div
