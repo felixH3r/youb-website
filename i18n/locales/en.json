@@ -91,5 +91,22 @@
       "item2": "you don't use training data or wearables",
       "item3": "you consciously want to train without structure"
     }
+  },
+  "waitlist": {
+    "title": "Secure your spot in the first beta.",
+    "subtitle": "We are starting with a limited beta phase. Sign up and get access as soon as a spot becomes available.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "sport": {
+        "label": "Main Sport",
+        "triathlon": "Triathlon",
+        "cycling": "Cycling",
+        "running": "Running",
+        "other": "Other"
+      },
+      "submit": "Request Early Access"
+    },
+    "microcopy": "No credit card required. GDPR compliant. Notification when a spot is available."
   }
 }

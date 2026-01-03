@@ -11,10 +11,10 @@ definePageMeta({
   <LandingMagicMoment />
   <LandingTrustSection />
   <LandingTargetGroupSection />
-  <LandingContainer>
-    <LandingBentoSection />
-    <LandingFeatures />
-    <!--    <LandingLogos />-->
-    <LandingCta />
-  </LandingContainer>
+  <!-- <LandingContainer> -->
+  <!-- <LandingBentoSection /> -->
+  <!-- <LandingFeatures /> -->
+  <!--    <LandingLogos />-->
+  <!-- </LandingContainer> -->
+  <LandingCTASection />
 </template>

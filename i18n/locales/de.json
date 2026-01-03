@@ -91,5 +91,22 @@
       "item2": "du keine Trainingsdaten oder Wearables nutzt",
       "item3": "du bewusst ohne Struktur trainieren möchtest"
     }
+  },
+  "waitlist": {
+    "title": "Sichere dir deinen Platz in der ersten Beta.",
+    "subtitle": "Wir starten mit einer begrenzten Beta-Phase. Trage dich ein und erhalte Zugang, sobald ein Platz frei wird.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "sport": {
+        "label": "Hauptsportart",
+        "triathlon": "Triathlon",
+        "cycling": "Radsport",
+        "running": "Laufen",
+        "other": "Sonstiges"
+      },
+      "submit": "Early Access anfragen"
+    },
+    "microcopy": "Keine Kreditkarte erforderlich. DSGVO-konform. Benachrichtigung bei verfügbarem Platz."
   }
 }
