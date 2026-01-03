@@ -67,14 +67,25 @@ const days = [
         type: "work",
       },
       {
+        id: "team-dinner",
+        name: "Team Dinner",
+        subtitle: "Social",
+        top: "83.33%",
+        adaptedTop: "83.33%",
+        height: "15%",
+        adaptedHeight: "15%",
+        type: "conflict",
+      },
+      {
         id: "training-wed",
         name: "Evening Run",
         subtitle: "Aerobic",
-        top: "75%",
-        adaptedTop: "75%",
+        top: "87.5%",
+        adaptedTop: "100%",
         height: "12%",
         adaptedHeight: "12%",
         type: "training",
+        isAdaptable: true,
       },
     ],
   },
@@ -169,7 +180,9 @@ onMounted(() => {
     </div>
 
     <!-- Calendar Grid -->
-    <div class="flex-1 grid grid-cols-[auto_repeat(5,1fr)] gap-2 relative">
+    <div
+      class="flex-1 grid grid-cols-[auto_repeat(3,1fr)] md:grid-cols-[auto_repeat(5,1fr)] gap-2 relative"
+    >
       <!-- Time Labels -->
       <div class="flex flex-col justify-between py-2 pr-4">
         <span
@@ -181,7 +194,14 @@ onMounted(() => {
       </div>
 
       <!-- Days Column -->
-      <div v-for="day in days" :key="day.name" class="relative group">
+      <div
+        v-for="day in days"
+        :key="day.name"
+        class="relative group"
+        :class="{
+          'hidden md:block': day.name === 'Tue' || day.name === 'Fri',
+        }"
+      >
         <div
           class="text-[9px] text-white/30 font-bold mb-2 text-center uppercase tracking-tighter"
         >
