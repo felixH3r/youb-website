@@ -56,7 +56,7 @@ onMounted(() => {
       <!-- Main Heading -->
       <h1
         ref="titleRef"
-        class="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-white mb-8 leading-[0.9] text-balance animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 ease-out"
+        class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white mb-8 leading-[0.9] text-balance animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 ease-out"
       >
         {{ $t("hero.titlePrefix") }} <br />
         <span class="text-white/40 italic">{{
@@ -110,7 +110,7 @@ onMounted(() => {
           <div class="flex-1 text-center">
             <span
               class="text-[10px] uppercase tracking-widest font-bold text-white/40"
-              >Analytics Chat</span
+              >YOUB Chat</span
             >
           </div>
           <div class="w-16 md:w-32 h-2 rounded-full bg-white/10" />
@@ -128,7 +128,7 @@ onMounted(() => {
             >
               <div
                 class="typing-text"
-                style="--delay: 0.5s; --chars: 55; --duration: 1s"
+                style="--delay: 0.5s; --chars: 60; --duration: 1.2s"
               >
                 {{ $t("chat.user1") }}
               </div>
@@ -150,7 +150,7 @@ onMounted(() => {
               >
                 <div
                   class="typing-text"
-                  style="--delay: 2s; --chars: 85; --duration: 1.5s"
+                  style="--delay: 2s; --chars: 90; --duration: 1.8s"
                 >
                   <i18n-t keypath="chat.ai1" tag="span">
                     <template #boldStart>
@@ -171,7 +171,7 @@ onMounted(() => {
             >
               <div
                 class="typing-text"
-                style="--delay: 3.5s; --chars: 60; --duration: 1.2s"
+                style="--delay: 4.5s; --chars: 15; --duration: 0.5s"
               >
                 {{ $t("chat.user2") }}
               </div>
@@ -193,7 +193,7 @@ onMounted(() => {
               >
                 <div
                   class="typing-text"
-                  style="--delay: 4.7s; --chars: 95; --duration: 1.8s"
+                  style="--delay: 5.5s; --chars: 60; --duration: 1.2s"
                 >
                   <i18n-t keypath="chat.ai2" tag="span">
                     <template #boldStart>
@@ -207,7 +207,7 @@ onMounted(() => {
 
           <!-- Chat Input Skeleton -->
           <div
-            class="mt-auto pt-4 flex items-center gap-3 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-6000 ease-out"
+            class="mt-auto pt-4 flex items-center gap-3 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-[7000ms] ease-out"
           >
             <div
               class="flex-1 h-10 rounded-full bg-white/5 border border-white/10 flex items-center px-4"

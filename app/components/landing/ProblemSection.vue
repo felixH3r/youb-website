@@ -46,7 +46,7 @@
           <div
             class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-white group-hover:scale-110 transition-transform duration-500"
           >
-            <Icon name="ph:graph-light" class="w-6 h-6" />
+            <Icon name="ph:clock-light" class="w-6 h-6" />
           </div>
           <h3 class="text-2xl font-semibold text-white mb-4">
             {{ $t("problem.pillar1.title") }}
@@ -63,7 +63,7 @@
           <div
             class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-white group-hover:scale-110 transition-transform duration-500"
           >
-            <Icon name="ph:activity-light" class="w-6 h-6" />
+            <Icon name="ph:brain-light" class="w-6 h-6" />
           </div>
           <h3 class="text-2xl font-semibold text-white mb-4">
             {{ $t("problem.pillar2.title") }}
@@ -80,7 +80,7 @@
           <div
             class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-white group-hover:scale-110 transition-transform duration-500"
           >
-            <Icon name="ph:clock-light" class="w-6 h-6" />
+            <Icon name="ph:calendar-x-light" class="w-6 h-6" />
           </div>
           <h3 class="text-2xl font-semibold text-white mb-4">
             {{ $t("problem.pillar3.title") }}

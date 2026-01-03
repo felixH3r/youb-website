@@ -8,37 +8,37 @@
   },
   "hero": {
     "badge": "Neue Ära des Monitorings",
-    "titlePrefix": "Entwickle mit",
-    "titleHighlight": "Vertrauen.",
-    "subtitle": "Verfolge deine Leistung mit Präzision. Gewinne tiefe Einblicke in deine körperliche Kapazität und optimiere dein Training wie nie zuvor.",
+    "titlePrefix": "Ein Coach, mit dem du reden kannst.",
+    "titleHighlight": "Nicht ein Dashboard, das du verstehen musst.",
+    "subtitle": "YOUB kennt deine Daten, aber auch deinen Alltag. Training entsteht im Dialog – gemeinsam mit dir.",
     "ctaPrimary": "Jetzt starten",
     "ctaSecondary": "Demo ansehen"
   },
   "chat": {
     "title": "Analytics Chat",
-    "user1": "Vergleiche meine Trainingsbelastung von dieser Woche mit der letzten Woche.",
-    "ai1": "Deine ATL ist um 15% gestiegen. Erholung bleibt stabil. Morgen ausruhen zum Optimieren.",
-    "user2": "Sollte ich bei meinem nächsten Zone 2 Lauf einen höheren Puls anstreben?",
-    "ai2": "Halte 135-142 bpm ein. Ein höherer Puls verschiebt dich in Zone 3 und reduziert die aeroben Anpassungen."
+    "user1": "Ich fühle mich müde, aber laut Plan wären Intervalle dran.",
+    "ai1": "Dein Gefühl passt zu deinen Daten. Heute ist ein voller Tag – wir passen das Training an.",
+    "user2": "Und morgen?",
+    "ai2": "Morgen ist mehr Luft. Dann gehen wir die Intervalle an."
   },
   "footer": {
     "rights": "© 2026 Youb. Alle Rechte vorbehalten.",
     "language": "Sprache"
   },
   "problem": {
-    "title": "Daten ohne Bedeutung sind nur Rauschen.",
-    "subtitle": "Deine Wearables sammeln Terabytes an Daten. Aber sie sagen dir nicht, was sie für dein Leben bedeuten.",
+    "title": "Dein Training konkurriert mit deinem Alltag.",
+    "subtitle": "Du willst dein Ziel erreichen. Aber zwischen Job, Familie und Alltag fehlt oft die Zeit, Trainingsdaten zu analysieren und ständig neu zu entscheiden.",
     "pillar1": {
-      "title": "Daten-Überlastung",
-      "text": "Tausende Metriken, aber kein klarer Fokus. Du verlierst dich in Zahlen, statt Fortschritte zu machen."
+      "title": "Zeitmangel",
+      "text": "Du willst sinnvoll trainieren. Aber nicht jeden Tag alles planen, bewerten und hinterfragen."
     },
     "pillar2": {
-      "title": "Fehlender Kontext",
-      "text": "Ein niedriger Erholungswert? Ein hoher Puls? Ohne den Kontext deines Alltags bleibt alles nur Rätselraten."
+      "title": "Mentale Überforderung",
+      "text": "Zu viele Entscheidungen. Zu viele Zahlen. Zu wenig Klarheit."
     },
     "pillar3": {
       "title": "Starre Pläne",
-      "text": "Klassische Trainingspläne ignorieren Stress, Schlaf und Ermüdung. YOUB passt sich dir an, nicht umgekehrt."
+      "text": "Pläne erwarten perfekte Wochen. Dein Alltag ist das nicht."
     }
   },
   "solution": {
