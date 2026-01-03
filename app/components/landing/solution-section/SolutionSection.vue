@@ -146,7 +146,7 @@ onMounted(() => {
               {{ $t("solution.block3.title") }}
             </h3>
             <p
-              class="text-lg md:text-xl text-white/50 leading-relaxed font-light"
+              class="text-lg md:text-xl text-white/50 leading-relaxed font-light whitespace-pre-line"
             >
               {{ $t("solution.block3.text") }}
             </p>
