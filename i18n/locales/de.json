@@ -63,5 +63,15 @@
     "line1": "Keine überfüllten Dashboards.",
     "line2": "Keine komplizierten Grafiken.",
     "line3": "Sondern ein Dialog, der Klarheit schafft."
+  },
+  "trust": {
+    "titlePrefix": "Entwickelt aus Leistung.",
+    "titleHighlight": "Gestützt auf Wissenschaft.",
+    "text": "YOUB verbindet sportliche Erfahrung mit wissenschaftlicher Methodik. Gebaut von Athleten, entwickelt mit Daten – für Entscheidungen, die im Alltag funktionieren.",
+    "badges": {
+      "hycys": "In Zusammenarbeit mit HYCYS",
+      "gdpr": "DSGVO-konform",
+      "aiAct": "AI Act\nready"
+    }
   }
 }

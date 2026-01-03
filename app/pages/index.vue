@@ -9,6 +9,7 @@ definePageMeta({
   <LandingProblemSection />
   <LandingSolutionSection />
   <LandingMagicMoment />
+  <LandingTrustSection />
   <LandingContainer>
     <LandingBentoSection />
     <LandingFeatures />
