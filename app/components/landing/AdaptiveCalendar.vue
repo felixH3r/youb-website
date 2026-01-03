@@ -67,21 +67,21 @@ const days = [
         type: "work",
       },
       {
-        id: "team-dinner",
-        name: "Team Dinner",
-        subtitle: "Social",
-        top: "83.33%",
-        adaptedTop: "83.33%",
-        height: "15%",
-        adaptedHeight: "15%",
+        id: "project-sync",
+        name: "Project Sync",
+        subtitle: "Sprint Planning",
+        top: "54.16%",
+        adaptedTop: "54.16%",
+        height: "18%",
+        adaptedHeight: "18%",
         type: "conflict",
       },
       {
         id: "training-wed",
         name: "Evening Run",
         subtitle: "Aerobic",
-        top: "87.5%",
-        adaptedTop: "100%",
+        top: "66.66%",
+        adaptedTop: "75%",
         height: "12%",
         adaptedHeight: "12%",
         type: "training",
@@ -199,7 +199,7 @@ onMounted(() => {
         :key="day.name"
         class="relative group"
         :class="{
-          'hidden md:block': day.name === 'Tue' || day.name === 'Fri',
+          'hidden md:block': day.name === 'Thu' || day.name === 'Fri',
         }"
       >
         <div
