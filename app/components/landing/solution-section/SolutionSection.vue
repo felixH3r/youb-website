@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
+import MockChat from "./MockChat.vue";
+import AdaptiveCalendar from "./AdaptiveCalendar.vue";
 
 const scrollY = ref(0);
 
@@ -37,7 +39,7 @@ onMounted(() => {
             <div
               class="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden shadow-2xl"
             >
-              <LandingAdaptiveCalendar />
+              <AdaptiveCalendar />
             </div>
             <!-- Decorative Element -->
             <div
@@ -100,51 +102,7 @@ onMounted(() => {
             <div
               class="absolute -inset-4 bg-white/5 rounded-[2rem] blur-2xl group-hover:bg-white/10 transition-colors duration-700"
             />
-            <div
-              class="relative rounded-[2rem] border border-white/10 bg-black/40 backdrop-blur-2xl overflow-hidden shadow-2xl aspect-[4/3] flex flex-col p-6 md:p-8"
-            >
-              <!-- Mock Chat Interface -->
-              <div class="space-y-4">
-                <div class="flex flex-col items-start gap-1 max-w-[85%]">
-                  <div
-                    class="px-4 py-3 rounded-2xl rounded-bl-none bg-white/10 border border-white/10 text-xs md:text-sm text-white font-medium"
-                  >
-                    Hey! Dein Schlaf-Score ist heute niedrig (45). Ich habe dein
-                    Schwellen-Training in eine lockere Erholungseinheit
-                    umgewandelt. Gönn dir die Ruhe. 💤
-                  </div>
-                </div>
-                <div class="flex flex-col items-end gap-1 max-w-[80%] self-end">
-                  <div
-                    class="px-4 py-3 rounded-2xl rounded-br-none bg-white text-black text-xs md:text-sm font-semibold"
-                  >
-                    Danke Coach, fühle mich tatsächlich etwas platt. 🙏
-                  </div>
-                </div>
-                <div class="flex flex-col items-start gap-1 max-w-[85%]">
-                  <div
-                    class="px-4 py-3 rounded-2xl rounded-bl-none bg-white/10 border border-white/10 text-xs md:text-sm text-white font-medium"
-                  >
-                    Gerne! Morgen checken wir die HRV und schauen, ob wir wieder
-                    angreifen. 🚀
-                  </div>
-                </div>
-              </div>
-
-              <!-- Chat Input Placeholder -->
-              <div class="mt-auto pt-6 flex items-center gap-3">
-                <div
-                  class="flex-1 h-10 rounded-full bg-white/5 border border-white/10 flex items-center px-4"
-                >
-                  <div class="w-16 h-1.5 rounded-full bg-white/10" />
-                </div>
-                <div
-                  class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center"
-                >
-                  <Icon name="ph:paper-plane-right-fill" class="w-4 h-4" />
-                </div>
-              </div>
-            </div>
+            <MockChat />
             <!-- Decorative Element -->
             <div
               class="absolute -bottom-6 -right-6 w-32 h-32 bg-white/5 rounded-full blur-3xl animate-pulse delay-700"
@@ -164,7 +122,7 @@ onMounted(() => {
               class="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden shadow-2xl"
             >
               <img
-                src="/AIBrain.png"
+                src="/SolutionScience.png"
                 alt="Intelligence"
                 class="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
               />
