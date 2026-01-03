@@ -1,5 +1,5 @@
 <template>
-  <LandingNavbarFluence></LandingNavbarFluence>
+  <Navbar></Navbar>
   <slot></slot>
-  <LandingFooter></LandingFooter>
+  <Footer></Footer>
 </template>

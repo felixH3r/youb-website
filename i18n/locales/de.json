@@ -40,5 +40,23 @@
       "title": "Starre Pläne",
       "text": "Klassische Trainingspläne ignorieren Stress, Schlaf und Ermüdung. YOUB passt sich dir an, nicht umgekehrt."
     }
+  },
+  "solution": {
+    "title": "Mehr als ein Plan. Ein intelligentes Nervensystem für deine Performance.",
+    "block1": {
+      "tag": "Deep Data Profiling",
+      "title": "Adaptivität in Echtzeit",
+      "text": "YOUB plant nicht nur stur voraus. Unsere KI analysiert kontinuierlich deine Daten von Garmin, HRV und Schlaf. Wenn dein Körper Ruhe braucht, erkennt YOUB das, bevor du ins Übertraining rutschst. Wir ersetzen statische Pläne durch dynamische Intelligenz."
+    },
+    "block2": {
+      "tag": "Proactive Interaction",
+      "title": "Ein Coach, der mit dir spricht",
+      "text": "Keine Lust auf komplexe Dashboards? YOUB meldet sich proaktiv bei dir – via WhatsApp oder App. Wie ein echter Trainer gibt dir YOUB Feedback, motiviert dich oder bremst dich, wenn es nötig ist. Einfach, menschlich, direkt."
+    },
+    "block3": {
+      "tag": "Science over Bro-Science",
+      "title": "Wissenschaft statt Bro-Science",
+      "text": "Hinter der einfachen Oberfläche arbeitet ein komplexes Deep-Learning-Modell, trainiert mit über 1.000 Athletenjahren. Entwickelt mit Sportwissenschaftlern und Diagnostik-Experten (HYCYS). Dein Training basiert auf validen physiologischen Prinzipien, nicht auf Zufall."
+    }
   }
 }

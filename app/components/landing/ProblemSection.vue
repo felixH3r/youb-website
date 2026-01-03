@@ -18,6 +18,9 @@
       <div
         class="absolute inset-0 bg-linear-to-b from-black from-0% via-transparent via-10% to-transparent to-90% to-black to-100%"
       />
+      <div
+        class="absolute inset-x-0 bottom-0 h-64 bg-linear-to-t from-black to-transparent"
+      />
       <div class="absolute inset-0 bg-black/40" />
     </div>
 

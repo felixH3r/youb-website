@@ -36,7 +36,7 @@ onUnmounted(() => {
     :class="[isScrolled ? 'top-0 md:top-2' : 'top-0 md:top-6', 'px-0 md:px-4']"
   >
     <nav
-      class="w-full transition-all duration-500 ease-in-out bg-black/3 backdrop-blur-md border-white/20 shadow-2xl flex items-center justify-between"
+      class="w-full transition-all duration-500 ease-in-out bg-white/10 backdrop-blur-md border-white/20 shadow-2xl flex items-center justify-between"
       :class="[
         isScrolled
           ? 'max-w-3xl px-6 py-2 bg-black/5'
@@ -46,12 +46,7 @@ onUnmounted(() => {
     >
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center gap-2 group">
-        <div
-          class="w-8 h-8 bg-black rounded-lg flex items-center justify-center transition-transform group-hover:rotate-12"
-        >
-          <div class="w-4 h-4 bg-white rounded-sm"></div>
-        </div>
-        <span class="text-xl font-bold tracking-tighter text-black"
+        <span class="text-xl font-bold tracking-tighter text-white"
           >YOU<span class="font-normal opacity-50">B</span></span
         >
       </NuxtLink>
@@ -61,7 +56,7 @@ onUnmounted(() => {
         <li v-for="item in menuitems" :key="item.title">
           <NuxtLink
             :to="item.path"
-            class="text-sm font-medium text-black/60 hover:text-black transition-colors"
+            class="text-sm font-medium text-white hover:text-black transition-colors"
           >
             {{ item.title }}
           </NuxtLink>

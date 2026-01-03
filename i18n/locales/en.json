@@ -40,5 +40,23 @@
       "title": "Static Plans",
       "text": "Classic training plans ignore stress, sleep, and fatigue. YOUB adapts to you, not the other way around."
     }
+  },
+  "solution": {
+    "title": "More than a Plan. An intelligent nervous system for your performance.",
+    "block1": {
+      "tag": "Deep Data Profiling",
+      "title": "Real-time Adaptivity",
+      "text": "YOUB doesn't just stubbornly plan ahead. Our AI continuously analyzes your data from Garmin, HRV and sleep. When your body needs rest, YOUB detects it before you slip into overtraining. We replace static plans with dynamic intelligence."
+    },
+    "block2": {
+      "tag": "Proactive Interaction",
+      "title": "A Coach That Speaks to You",
+      "text": "Don't feel like navigating complex dashboards? YOUB proactively reaches out to you – via WhatsApp or app. Like a real trainer, YOUB gives you feedback, motivates you, or slows you down when necessary. Simple, human, direct."
+    },
+    "block3": {
+      "tag": "Science Over Bro-Science",
+      "title": "Science Instead of Bro-Science",
+      "text": "Behind the simple interface works a complex deep learning model, trained with over 1,000 athlete years. Developed with sports scientists and diagnostic experts (HYCYS). Your training is based on valid physiological principles, not chance."
+    }
   }
 }
