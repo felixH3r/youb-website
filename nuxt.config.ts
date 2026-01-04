@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     url: "https://youb.app",
     name: "YOUB",
   },
-  modules: ["@nuxt/icon", "@nuxtjs/i18n", "@nuxtjs/seo"],
+  modules: ["@nuxt/icon", "@nuxtjs/i18n", "@nuxtjs/seo", "@storyblok/nuxt"],
   i18n: {
     locales: [
       { code: "en", name: "English", file: "en.json" },
@@ -14,6 +14,11 @@ export default defineNuxtConfig({
     defaultLocale: "de",
     langDir: "locales",
     strategy: "no_prefix",
+  },
+  storyblok: {
+    accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
+    bridge: true,
+    devtools: true,
   },
   css: ["~/assets/css/main.css"],
   app: {
