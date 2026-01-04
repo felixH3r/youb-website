@@ -12,24 +12,21 @@
         <div
           class="px-4 py-3 rounded-2xl rounded-bl-none bg-white/10 border border-white/10 text-xs md:text-sm text-white font-medium"
         >
-          Hey! Dein Schlaf-Score ist heute niedrig (45). Ich habe dein
-          Schwellen-Training in eine lockere Erholungseinheit umgewandelt. Gönn
-          dir die Ruhe. 💤
+          {{ $t("solution.mockChat.msg1") }}
         </div>
       </div>
       <div class="flex flex-col items-end gap-1 max-w-[80%] self-end">
         <div
           class="px-4 py-3 rounded-2xl rounded-br-none bg-white text-black text-xs md:text-sm font-semibold"
         >
-          Danke Coach, fühle mich tatsächlich etwas platt. 🙏
+          {{ $t("solution.mockChat.msg2") }}
         </div>
       </div>
       <div class="flex flex-col items-start gap-1 max-w-[85%]">
         <div
-          class="px-4 py-3 rounded-2xl rounded-bl-none bg-white/10 border border-white/10 text-xs md:text-sm text-white font-medium"
+          class="px-4 py-3 rounded-2xl rounded-bl-none bg-white/10 border border-white/10 text-xs md:text-sm text-white font-medium whitespace-pre-line"
         >
-          Gerne! Morgen checken wir die HRV und schauen, ob wir wieder
-          angreifen. 🚀
+          {{ $t("solution.mockChat.msg3") }}
         </div>
       </div>
     </div>

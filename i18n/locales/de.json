@@ -57,6 +57,11 @@
       "tag": "Science over Bro-Science",
       "title": "Wissenschaft statt Blackbox",
       "text": "Hinter jeder Empfehlung steht ein klarer Entscheidungsweg, aufgebaut aus Sportwissenschaft und den Regeln, die HYCYS in der Praxis nutzt.\nKI verwenden wir, um diesen Entscheidungsweg verständlich, dialogisch und alltagstauglich zu machen nicht um Trainingspläne in einer Blackbox zu erzeugen."
+    },
+    "mockChat": {
+      "msg1": "Hey, wie war die Radfahrt gerade?",
+      "msg2": "Ziemlich zäh heute.",
+      "msg3": "Alles klar.\nDann war das heute genau richtig so."
     }
   },
   "magicMoment": {

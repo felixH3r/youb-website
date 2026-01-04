@@ -57,6 +57,11 @@
       "tag": "Science Over Bro-Science",
       "title": "Science Instead of a Black Box",
       "text": "Behind every recommendation is a clear decision-making path, built on sports science and the rules used by HYCYS in practice.\nWe use AI to make this decision path understandable, conversational, and suitable for everyday use not to generate training plans in a black box."
+    },
+    "mockChat": {
+      "msg1": "Hey, how was the ride just now?",
+      "msg2": "Pretty tough today.",
+      "msg3": "Alright.\nThen it was exactly the right choice today."
     }
   },
   "magicMoment": {
