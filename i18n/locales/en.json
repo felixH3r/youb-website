@@ -108,5 +108,9 @@
       "submit": "Request Early Access"
     },
     "microcopy": "No credit card required. GDPR compliant. Notification when a spot is available."
+  },
+  "seo": {
+    "title": "YOUB - Training That Adapts to Your Life",
+    "description": "YOUB is your intelligent AI coach for triathlon, cycling, and running. We combine sports science with real-time data analysis for your optimal training."
   }
 }

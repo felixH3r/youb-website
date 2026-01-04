@@ -108,5 +108,9 @@
       "submit": "Early Access anfragen"
     },
     "microcopy": "Keine Kreditkarte erforderlich. DSGVO-konform. Benachrichtigung bei verfügbarem Platz."
+  },
+  "seo": {
+    "title": "YOUB - Training, das sich an dein Leben anpasst",
+    "description": "YOUB ist dein intelligenter KI-Coach für Triathlon, Radsport und Laufen. Wir verbinden Sportwissenschaft mit Echtzeit-Datenanalyse für dein optimales Training."
   }
 }

@@ -1,20 +1,28 @@
 <script setup>
-definePageMeta({
-  layout: "landing",
+const { t } = useI18n();
+
+useHead({
+  title: () => t("seo.title"),
 });
+
+useSeoMeta({
+  ogTitle: () => t("seo.title"),
+  description: () => t("seo.description"),
+  ogDescription: () => t("seo.description"),
+  twitterCard: "summary_large_image",
+  twitterTitle: () => t("seo.title"),
+  twitterDescription: () => t("seo.description"),
+});
+
+definePageMeta({});
 </script>
 
 <template>
-  <LandingHeroFluence />
+  <LandingHeroSection />
   <LandingProblemSection />
   <LandingSolutionSection />
   <LandingMagicMoment />
   <LandingTrustSection />
   <LandingTargetGroupSection />
-  <!-- <LandingContainer> -->
-  <!-- <LandingBentoSection /> -->
-  <!-- <LandingFeatures /> -->
-  <!--    <LandingLogos />-->
-  <!-- </LandingContainer> -->
   <LandingCTASection />
 </template>

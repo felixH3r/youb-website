@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/icon", "@nuxtjs/i18n"],
+  site: {
+    url: "https://youb.app",
+    name: "YOUB",
+  },
+  modules: ["@nuxt/icon", "@nuxtjs/i18n", "@nuxtjs/seo"],
   i18n: {
     locales: [
       { code: "en", name: "English", file: "en.json" },
@@ -12,6 +16,13 @@ export default defineNuxtConfig({
     strategy: "no_prefix",
   },
   css: ["~/assets/css/main.css"],
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
+  },
   postcss: {
     plugins: {
       "@tailwindcss/postcss": {},
