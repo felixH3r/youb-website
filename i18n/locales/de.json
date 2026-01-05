@@ -137,17 +137,39 @@
       "msg3": "Heute lieber locker. Dein Körper braucht es."
     },
     "principle": {
-      "title": "Das Prinzip dahinter",
-      "subtitle": "Kein Trainingsplan. Kein KI-Orakel.",
-      "step1": "YOUB hört zu (Training, Gefühl, Alltag)",
-      "step2": "YOUB ordnet ein (Sportwissenschaft + Erfahrung)",
-      "step3": "Du entscheidest"
+      "title": "Hinter jedem Dialog steht ein Entscheidungsweg",
+      "subtitle": "Gemeinsam mit HYCYS aus Sportwissenschaft und realer Coaching-Praxis entwickelt",
+      "block1": {
+        "title": "Training & Kontext",
+        "items": ["Trainingseinheiten", "Gefühl", "Alltag"],
+        "icon": "ph:circle-dashed-light"
+      },
+      "block2": {
+        "title": "Sportwissenschaftliche Logik",
+        "items": ["Belastung", "Anpassung", "Regeneration"],
+        "icon": "ph:layout-light"
+      },
+      "block3": {
+        "title": "Erfahrung aus echtem Coaching (HYCYS)",
+        "items": ["reale Athleten", "echte Entscheidungen", "keine Simulation"],
+        "icon": "ph:users-light"
+      },
+      "block4": {
+        "title": "KI als Kommunikationslayer",
+        "items": [
+          "versteht Zusammenhänge",
+          "kommuniziert empathisch",
+          "passt Sprache & Timing an"
+        ],
+        "icon": "ph:chat-teardrop-dots-light"
+      }
     },
     "anti": {
       "title": "Was YOUB bewusst nicht ist",
       "item1": "kein Dashboard-Tool",
-      "item2": "kein Zahlenfriedhof",
-      "item3": "kein starrer Wochenplan"
+      "item2": "kein Zahlen-Overload",
+      "item3": "kein starrer Wochenplan",
+      "closing": "YOUB setzt auf Orientierung durch Dialog, nicht auf Kontrolle durch Daten."
     },
     "cta": {
       "text": "YOUB begleitet dich im Dialog – angepasst an dein Leben, nicht an einen Plan.",

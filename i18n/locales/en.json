@@ -137,17 +137,39 @@
       "msg3": "Take it easy today. Your body needs it."
     },
     "principle": {
-      "title": "The principle behind it",
-      "subtitle": "Not a training plan. Not an AI oracle.",
-      "step1": "YOUB listens (Training, Feeling, Everyday life)",
-      "step2": "YOUB categorizes (Sports science + Experience)",
-      "step3": "You decide"
+      "title": "Behind every dialogue is a decision path",
+      "subtitle": "Developed together with HYCYS from sports science and real coaching practice",
+      "block1": {
+        "title": "Training & Context",
+        "items": ["Training units", "Feeling", "Everyday life"],
+        "icon": "ph:circle-dashed-light"
+      },
+      "block2": {
+        "title": "Sports science logic",
+        "items": ["Load", "Adaptation", "Recovery"],
+        "icon": "ph:layout-light"
+      },
+      "block3": {
+        "title": "Experience from real coaching (HYCYS)",
+        "items": ["real athletes", "real decisions", "no simulation"],
+        "icon": "ph:users-light"
+      },
+      "block4": {
+        "title": "AI as communication layer",
+        "items": [
+          "understands context",
+          "communicates empathetically",
+          "adapts language & timing"
+        ],
+        "icon": "ph:chat-teardrop-dots-light"
+      }
     },
     "anti": {
-      "title": "What YOUB intentionally is not",
-      "item1": "not a dashboard tool",
-      "item2": "not a graveyard of numbers",
-      "item3": "not a rigid weekly plan"
+      "title": "What YOUB is consciously not",
+      "item1": "no dashboard tool",
+      "item2": "no numbers overload",
+      "item3": "no rigid weekly plan",
+      "closing": "YOUB focuses on orientation through dialogue, not control through data."
     },
     "cta": {
       "text": "YOUB accompanies you through dialogue – adapted to your life, not to a plan.",

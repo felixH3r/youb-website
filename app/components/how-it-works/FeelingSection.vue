@@ -21,7 +21,7 @@ const chatMessages = computed(() => [
             class="inline-flex items-center px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md w-fit"
           >
             <span
-              class="text-[10px] uppercase tracking-widest font-bold text-white/40"
+              class="text-[10px] uppercase tracking-widest font-bold text-white/80"
               >{{ $t("howItWorks.feeling.tag") }}</span
             >
           </div>
@@ -30,12 +30,12 @@ const chatMessages = computed(() => [
           </h2>
           <div class="flex flex-col gap-6">
             <p
-              class="text-lg md:text-xl text-white/50 leading-relaxed font-light whitespace-pre-line"
+              class="text-lg md:text-xl text-white/80 leading-relaxed font-light whitespace-pre-line"
             >
               {{ $t("howItWorks.feeling.text1") }}
             </p>
             <p
-              class="text-lg md:text-xl text-white/50 leading-relaxed font-light whitespace-pre-line"
+              class="text-lg md:text-xl text-white/80 leading-relaxed font-light whitespace-pre-line"
             >
               {{ $t("howItWorks.feeling.text2") }}
             </p>

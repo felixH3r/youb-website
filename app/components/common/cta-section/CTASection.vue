@@ -10,15 +10,12 @@
         alt="Cyclist in mountains"
         class="w-full h-full object-cover"
       />
-      <div class="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
+      <div class="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
       <div
-        class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/60"
+        class="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black via-black/20 to-transparent"
       />
       <div
-        class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent"
-      />
-      <div
-        class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent"
+        class="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-black via-black/20 to-transparent"
       />
     </div>
 

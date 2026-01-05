@@ -16,9 +16,8 @@ useSeoMeta({
   <main class="bg-black min-h-screen">
     <HowItWorksHero />
     <HowItWorksFeelingSection />
-    <HowItWorksExamples />
     <HowItWorksPrinciple />
-    <HowItWorksAntiFeatures />
+    <HowItWorksDifferentiation />
     <CommonCTASection />
 
     <LandingFooter />

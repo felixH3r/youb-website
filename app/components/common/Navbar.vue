@@ -5,16 +5,8 @@ const menuitems = [
     path: "/how-it-works",
   },
   {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
     title: "Blog",
     path: "/blog",
-  },
-  {
-    title: "About",
-    path: "/about",
   },
 ];
 
