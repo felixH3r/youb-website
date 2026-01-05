@@ -24,5 +24,5 @@ definePageMeta({});
   <LandingMagicMoment />
   <LandingTrustSection />
   <LandingTargetGroupSection />
-  <LandingCTASection />
+  <CommonCTASection />
 </template>

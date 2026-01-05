@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const menuitems = [
   {
-    title: "Features",
-    path: "#",
+    title: "How it works",
+    path: "/how-it-works",
   },
   {
     title: "Pricing",

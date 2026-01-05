@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import MockChat from "./MockChat.vue";
+import MockChat from "../../common/MockChat.vue";
 import AdaptiveCalendar from "./AdaptiveCalendar.vue";
 
 const scrollY = ref(0);

@@ -117,5 +117,52 @@
   "seo": {
     "title": "YOUB - Training, das sich an dein Leben anpasst",
     "description": "YOUB ist dein intelligenter KI-Coach für Triathlon, Radsport und Laufen. Wir verbinden Sportwissenschaft mit Echtzeit-Datenanalyse für dein optimales Training."
+  },
+  "howItWorks": {
+    "hero": {
+      "title": "YOUB ist Chat-first Coaching",
+      "subtitle": "Kein überladenes Dashboard. Keine endlosen Grafiken.\nYOUB kommuniziert mit dir so, wie echtes Coaching funktioniert: im Gespräch.",
+      "micro": "Weil Verstehen wichtiger ist als Auswerten."
+    },
+    "why": {
+      "title": "Warum Chat-first?",
+      "text": "Gutes Coaching passiert nicht in Diagrammen. Es passiert im Austausch: nach der Einheit, im Alltag, im richtigen Moment.\nYOUB setzt deshalb auf Kommunikation statt Kontrolle – und begleitet dein Training im Dialog.",
+      "note": "Kein Buzzword. Kein KI. Kein Tech."
+    },
+    "examples": {
+      "title": "So fühlt sich das an",
+      "subtitle": "Beispiele aus dem Alltag",
+      "msg1": "Hey, wie war die Ausfahrt gerade?",
+      "msg2": "Sieht so aus, als hättest du sie sauber durchgezogen – stark.",
+      "msg3": "Heute lieber locker. Dein Körper braucht es."
+    },
+    "principle": {
+      "title": "Das Prinzip dahinter",
+      "subtitle": "Kein Trainingsplan. Kein KI-Orakel.",
+      "step1": "YOUB hört zu (Training, Gefühl, Alltag)",
+      "step2": "YOUB ordnet ein (Sportwissenschaft + Erfahrung)",
+      "step3": "Du entscheidest"
+    },
+    "anti": {
+      "title": "Was YOUB bewusst nicht ist",
+      "item1": "kein Dashboard-Tool",
+      "item2": "kein Zahlenfriedhof",
+      "item3": "kein starrer Wochenplan"
+    },
+    "cta": {
+      "text": "YOUB begleitet dich im Dialog – angepasst an dein Leben, nicht an einen Plan.",
+      "button": "Zur Beta anmelden"
+    },
+    "feeling": {
+      "tag": "Experience",
+      "title": "Coaching ist ein Gespräch",
+      "text1": "Gutes Coaching passiert nicht in Diagrammen.\nEs passiert im Austausch – nach dem Training, im Alltag, im richtigen Moment.",
+      "text2": "YOUB begleitet dich genau dort:\nim Gespräch, nicht im Dashboard.",
+      "chat": {
+        "msg1": "Hey, wie war die Ausfahrt gerade?",
+        "msg2": "Ziemlich gut, Beine waren am Anfang etwas schwer.",
+        "msg3": "Sah nach sauberer Arbeit aus.\nMorgen lieber locker – dein Körper holt sich gerade viel Trainingseffekt."
+      }
+    }
   }
 }

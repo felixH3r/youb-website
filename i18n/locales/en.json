@@ -117,5 +117,52 @@
   "seo": {
     "title": "YOUB - Training That Adapts to Your Life",
     "description": "YOUB is your intelligent AI coach for triathlon, cycling, and running. We combine sports science with real-time data analysis for your optimal training."
+  },
+  "howItWorks": {
+    "hero": {
+      "title": "YOUB is Chat-first Coaching",
+      "subtitle": "No cluttered dashboard. No endless charts.\nYOUB communicates with you the way real coaching works: through conversation.",
+      "micro": "Because understanding is more important than evaluating."
+    },
+    "why": {
+      "title": "Why Chat-first?",
+      "text": "Good coaching doesn't happen in diagrams. It happens in the exchange: after a session, in daily life, at the right moment.\nYOUB focuses on communication instead of control – and accompanies your training through dialogue.",
+      "note": "No buzzwords. No AI. No tech."
+    },
+    "examples": {
+      "title": "How it feels",
+      "subtitle": "Everyday examples",
+      "msg1": "Hey, how was your ride just now?",
+      "msg2": "Looks like you nailed it – strong work.",
+      "msg3": "Take it easy today. Your body needs it."
+    },
+    "principle": {
+      "title": "The principle behind it",
+      "subtitle": "Not a training plan. Not an AI oracle.",
+      "step1": "YOUB listens (Training, Feeling, Everyday life)",
+      "step2": "YOUB categorizes (Sports science + Experience)",
+      "step3": "You decide"
+    },
+    "anti": {
+      "title": "What YOUB intentionally is not",
+      "item1": "not a dashboard tool",
+      "item2": "not a graveyard of numbers",
+      "item3": "not a rigid weekly plan"
+    },
+    "cta": {
+      "text": "YOUB accompanies you through dialogue – adapted to your life, not to a plan.",
+      "button": "Join the Beta"
+    },
+    "feeling": {
+      "tag": "Experience",
+      "title": "Coaching is a Conversation",
+      "text1": "Good coaching doesn't happen in diagrams.\nIt happens in the exchange – after training, in daily life, at the right moment.",
+      "text2": "YOUB accompanies you exactly there:\nin conversation, not in the dashboard.",
+      "chat": {
+        "msg1": "Hey, how was the ride just now?",
+        "msg2": "Pretty good, legs were a bit heavy at the start.",
+        "msg3": "Looked like solid work.\nTake it easy tomorrow – your body is currently absorbing a lot of training effect."
+      }
+    }
   }
 }
