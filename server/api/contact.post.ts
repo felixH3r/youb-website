@@ -58,7 +58,7 @@ export default defineEventHandler(async (event) => {
       "base64"
     );
     const verificationUrl = `${
-      process.env.PUBLIC_URL || "http://localhost:3000"
+      process.env.PUBLIC_URL || "https://youb.app"
     }/api/verify?token=${token}`;
 
     // 3. Send Verification Email
