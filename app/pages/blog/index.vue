@@ -93,7 +93,7 @@ const {
   "blog-posts",
   async () => {
     const { data } = await storyblokApi.get("cdn/stories", {
-      version: "draft", // or 'published'
+      version: "published", // or 'published'
       starts_with: "blog/",
       is_startpage: false,
     });
