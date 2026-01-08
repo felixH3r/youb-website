@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^10.2.1",
-    "@storyblok/nuxt": "^8.2.3"
+    "@storyblok/nuxt": "^8.2.3",
+    "resend": "^6.7.0"
   }
 }

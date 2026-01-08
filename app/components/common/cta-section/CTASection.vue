@@ -39,9 +39,31 @@
 
         <!-- Waitlist Form -->
         <div
-          class="w-full max-w-md mx-auto lg:ml-auto lg:mr-0 p-8 md:p-10 rounded-[2.5rem] border border-white/10 bg-white/[0.02] backdrop-blur-3xl animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300 shadow-2xl"
+          class="w-full max-w-md mx-auto lg:ml-auto lg:mr-0 p-8 md:p-10 rounded-[2.5rem] border border-white/10 bg-white/[0.02] backdrop-blur-3xl animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300 shadow-2xl overflow-hidden"
         >
-          <form @submit.prevent="handleSubmit" class="space-y-6">
+          <div
+            v-if="submitted"
+            class="text-center py-8 animate-in fade-in duration-500"
+          >
+            <div
+              class="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 text-white"
+            >
+              <Icon name="ph:check-bold" class="w-10 h-10" />
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Fast geschafft!</h3>
+            <p class="text-white/60 leading-relaxed italic mb-8">
+              Wir haben dir eine E-Mail zur Bestätigung gesendet. Bitte schau in
+              dein Postfach (und ggf. Spam-Ordner).
+            </p>
+            <button
+              @click="submitted = false"
+              class="text-white/40 hover:text-white transition-colors text-sm font-medium"
+            >
+              Noch eine Anmeldung?
+            </button>
+          </div>
+
+          <form v-else @submit.prevent="handleSubmit" class="space-y-6">
             <!-- Name Field -->
             <div class="space-y-2">
               <input
@@ -121,14 +143,22 @@
                 />
               </div>
             </button>
-          </form>
 
-          <!-- Microcopy -->
-          <p
-            class="mt-8 text-center text-sm text-white/40 leading-relaxed max-w-[280px] mx-auto"
-          >
-            {{ $t("waitlist.microcopy") }}
-          </p>
+            <!-- Error Message -->
+            <p
+              v-if="error"
+              class="text-red-400 text-sm text-center animate-in fade-in duration-300"
+            >
+              {{ error }}
+            </p>
+
+            <!-- Microcopy -->
+            <p
+              class="mt-8 text-center text-sm text-white/40 leading-relaxed max-w-[280px] mx-auto"
+            >
+              {{ $t("waitlist.microcopy") }}
+            </p>
+          </form>
         </div>
       </div>
     </div>
@@ -143,15 +173,27 @@ const form = ref({
 });
 
 const loading = ref(false);
+const submitted = ref(false);
+const error = ref("");
 
 const handleSubmit = async () => {
   loading.value = true;
-  // Simulate API call
-  await new Promise((resolve) => setTimeout(resolve, 1500));
-  loading.value = false;
-  // In a real app, we would handle the success state better (e.g. show a success message instead of the form)
-  alert("Success! You will be notified.");
-  form.value = { name: "", email: "", sport: "" };
+  error.value = "";
+
+  try {
+    await $fetch("/api/contact", {
+      method: "POST",
+      body: form.value,
+    });
+    submitted.value = true;
+    form.value = { name: "", email: "", sport: "" };
+  } catch (err: any) {
+    console.error("Submission Error:", err);
+    error.value =
+      err.data?.statusMessage || "Something went wrong. Please try again.";
+  } finally {
+    loading.value = false;
+  }
 };
 </script>
 
