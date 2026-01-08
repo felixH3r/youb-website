@@ -205,6 +205,25 @@
       "p6": "I wanted to change that.",
       "p7": "I founded YOUB to make \"my Markus\" available to everyone. We have translated Markus' logic, his empathy, and his sports science knowledge into an AI. So that you have exactly this daily consultation, this sensitive adjustment, and this security – 24/7, right in your pocket.",
       "p8": "YOUB is the attempt to share this luck."
+    },
+    "team": {
+      "headline": "The team behind YOUB",
+      "subline": "Expertise from sports science, technology, and passion.",
+      "member1": {
+        "name": "Felix Hermanutz",
+        "role": "Founder",
+        "text": "Passionate cyclist and visionary. Felix combines his experience in competitive sports with the vision of making high-end coaching accessible to everyone."
+      },
+      "member2": {
+        "name": "Thomas Grininger",
+        "role": "Technical Mastermind",
+        "text": "From the center court to the code. As a former professional table tennis player, Thomas knows that in the end, tiny nuances decide between victory and defeat. This uncompromising precision and the ability to make clear decisions under intense pressure are embedded in the architecture of YOUB today. He builds the technological foundation that is as responsive as a reflex – so that the AI understands your life in real-time."
+      },
+      "member3": {
+        "name": "Markus Hertlein",
+        "role": "Scientific Architect",
+        "text": "The brain behind the logic. Markus brings years of experience from diagnostics and high-performance coaching at Hycys to the system. He has learned how to lead professionals to victory – and now translates this knowledge for YOUB into an intelligence that helps every athlete reliably reach their potential."
+      }
     }
   }
 }
