@@ -39,56 +39,24 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- Pillar 1 -->
-        <div
-          class="group relative p-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl hover:bg-white/[0.06] transition-all duration-500 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300"
-        >
-          <div
-            class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-white group-hover:scale-110 transition-transform duration-500"
-          >
-            <Icon name="ph:clock-light" class="w-6 h-6" />
-          </div>
-          <h3 class="text-2xl font-semibold text-white mb-4">
-            {{ $t("problem.pillar1.title") }}
-          </h3>
-          <p class="text-white/50 leading-relaxed font-light">
-            {{ $t("problem.pillar1.text") }}
-          </p>
-        </div>
-
-        <!-- Pillar 2 -->
-        <div
-          class="group relative p-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl hover:bg-white/[0.06] transition-all duration-500 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-450"
-        >
-          <div
-            class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-white group-hover:scale-110 transition-transform duration-500"
-          >
-            <Icon name="ph:brain-light" class="w-6 h-6" />
-          </div>
-          <h3 class="text-2xl font-semibold text-white mb-4">
-            {{ $t("problem.pillar2.title") }}
-          </h3>
-          <p class="text-white/50 leading-relaxed font-light">
-            {{ $t("problem.pillar2.text") }}
-          </p>
-        </div>
-
-        <!-- Pillar 3 -->
-        <div
-          class="group relative p-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl hover:bg-white/[0.06] transition-all duration-500 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-600"
-        >
-          <div
-            class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-white group-hover:scale-110 transition-transform duration-500"
-          >
-            <Icon name="ph:calendar-x-light" class="w-6 h-6" />
-          </div>
-          <h3 class="text-2xl font-semibold text-white mb-4">
-            {{ $t("problem.pillar3.title") }}
-          </h3>
-          <p class="text-white/50 leading-relaxed font-light">
-            {{ $t("problem.pillar3.text") }}
-          </p>
-        </div>
+        <CommonCard
+          :title="$t('problem.pillar1.title')"
+          :text="$t('problem.pillar1.text')"
+          icon="ph:clock-light"
+          :delay="300"
+        />
+        <CommonCard
+          :title="$t('problem.pillar2.title')"
+          :text="$t('problem.pillar2.text')"
+          icon="ph:brain-light"
+          :delay="450"
+        />
+        <CommonCard
+          :title="$t('problem.pillar3.title')"
+          :text="$t('problem.pillar3.text')"
+          icon="ph:calendar-x-light"
+          :delay="600"
+        />
       </div>
     </div>
   </section>

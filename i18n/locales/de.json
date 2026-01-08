@@ -1,10 +1,13 @@
 {
   "nav": {
     "home": "Startseite",
-    "features": "Funktionen",
-    "pricing": "Preise",
+    "howItWorks": "So funktioniert's",
+    "mission": "Mission",
+    "blog": "Blog",
+    "contact": "Kontakt",
     "demo": "Demo ansehen",
-    "getStarted": "Jetzt starten"
+    "getStarted": "Jetzt starten",
+    "comingSoon": "coming soon"
   },
   "hero": {
     "badge": "Neue Ära des Monitorings",
@@ -185,6 +188,23 @@
         "msg2": "Ziemlich gut, Beine waren am Anfang etwas schwer.",
         "msg3": "Sah nach sauberer Arbeit aus.\nMorgen lieber locker – dein Körper holt sich gerade viel Trainingseffekt."
       }
+    }
+  },
+  "mission": {
+    "hero": {
+      "title": "Training für das echte Leben. Nicht für das Labor.",
+      "subtitle": "Wir glauben, dass ein Trainingsplan sich dem Menschen anpassen muss – nicht umgekehrt. YOUB ist die Antwort auf die Frage: Wie können wir ambitioniert bleiben, ohne auszubrennen?"
+    },
+    "story": {
+      "headline": "Jeder verdient einen Markus.",
+      "p1": "Ich hatte Glück. Ich hatte etwas, das den meisten Athleten fehlt: Einen Coach, der nicht nur Trainingspläne schrieb, sondern der wirklich da war.",
+      "p2": "Markus – der Sportwissenschaftler, der heute das Hirn hinter YOUB ist – war für mich mehr als ein Trainer. Er war ein Freund und Sparringspartner. Wir haben uns jeden Tag ausgetauscht.",
+      "p3": "Wenn ich müde war, hat er nicht gesagt „Zieh durch“, sondern „Ruh dich aus“. Wenn ich Zweifel hatte, gab er mir Sicherheit. Ich konnte jederzeit Rücksprache halten. Ich musste nie allein entscheiden, ob das Zwicken im Bein schlimm ist oder ob ich das Intervalltraining trotz Stress im Job durchziehen soll. Wir haben es zusammen entschieden.",
+      "p4": "Dieses Gefühl – diese absolute Sicherheit, dass jemand mitdenkt und auf mich aufpasst – hat meine Leistung mehr gesteigert als jeder Trainingsplan zuvor.",
+      "p5": "Aber mir wurde klar: Markus kann sich nicht teilen. Er hat nur 24 Stunden am Tag. Nur wenige Athleten haben das Privileg (oder das Budget), eine solch enge 1:1-Betreuung zu erleben.",
+      "p6": "Das wollte ich ändern.",
+      "p7": "Ich habe YOUB gegründet, um „meinen Markus“ jedem zur Verfügung zu stellen. Wir haben Markus' Logik, seine Empathie und sein sportwissenschaftliches Wissen in eine KI übersetzt. Damit du genau diese tägliche Rücksprache, dieses feinfühlige Anpassen und diese Sicherheit hast – 24/7, direkt in deiner Tasche.",
+      "p8": "YOUB ist der Versuch, dieses Glück zu teilen."
     }
   }
 }

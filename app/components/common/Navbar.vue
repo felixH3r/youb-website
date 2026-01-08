@@ -1,11 +1,17 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
 const menuitems = [
   {
-    title: "How it works",
+    title: "nav.howItWorks",
     path: "/how-it-works",
   },
   {
-    title: "Blog",
+    title: "nav.mission",
+    path: "/mission",
+  },
+  {
+    title: "nav.blog",
     path: "/blog",
   },
 ];
@@ -54,7 +60,7 @@ onUnmounted(() => {
             :to="item.path"
             class="text-sm font-medium text-white hover:text-black transition-colors"
           >
-            {{ item.title }}
+            {{ t(item.title) }}
           </NuxtLink>
         </li>
       </ul>
@@ -65,7 +71,7 @@ onUnmounted(() => {
           to="/contact"
           class="hidden md:block bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-black/80 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-black/10"
         >
-          Contact
+          {{ t("nav.contact") }}
         </NuxtLink>
 
         <button
@@ -108,7 +114,7 @@ onUnmounted(() => {
               class="text-lg font-semibold text-black/80 hover:text-black block py-2 border-b border-black/5"
               @click="open = false"
             >
-              {{ item.title }}
+              {{ t(item.title) }}
             </NuxtLink>
           </li>
           <li>
@@ -117,7 +123,7 @@ onUnmounted(() => {
               class="mt-4 w-full bg-black text-white py-4 rounded-2xl flex items-center justify-center text-lg font-bold shadow-xl shadow-black/20"
               @click="open = false"
             >
-              Contact Us
+              {{ t("nav.contact") }}
             </NuxtLink>
           </li>
         </ul>

@@ -1,10 +1,13 @@
 {
   "nav": {
     "home": "Home",
-    "features": "Features",
-    "pricing": "Pricing",
+    "howItWorks": "How it works",
+    "mission": "Mission",
+    "blog": "Blog",
+    "contact": "Contact",
     "demo": "View Demo",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "comingSoon": "coming soon"
   },
   "hero": {
     "badge": "New Era of Monitoring",
@@ -185,6 +188,23 @@
         "msg2": "Pretty good, legs were a bit heavy at the start.",
         "msg3": "Looked like solid work.\nTake it easy tomorrow – your body is currently absorbing a lot of training effect."
       }
+    }
+  },
+  "mission": {
+    "hero": {
+      "title": "Training for real life. Not for the lab.",
+      "subtitle": "We believe a training plan must adapt to the person – not the other way around. YOUB is the answer to the question: How can we stay ambitious without burning out?"
+    },
+    "story": {
+      "headline": "Everyone deserves a Markus.",
+      "p1": "I was lucky. I had something most athletes lack: A coach who didn't just write training plans, but who was truly there.",
+      "p2": "Markus – the sports scientist who is the brain behind YOUB today – was more than just a coach to me. He was a friend and sparring partner. We exchanged ideas every day.",
+      "p3": "When I was tired, he didn't say \"push through,\" but \"rest.\" When I had doubts, he gave me security. I could consult him at any time. I never had to decide alone whether that twitch in my leg was serious or whether I should go through with the interval training despite stress at work. We found it out together.",
+      "p4": "This feeling – this absolute security that someone is thinking along and looking out for me – increased my performance more than any training plan before.",
+      "p5": "But I realized: Markus can't divide himself. He only has 24 hours a day. Only a few athletes have the privilege (or the budget) to experience such close 1:1 support.",
+      "p6": "I wanted to change that.",
+      "p7": "I founded YOUB to make \"my Markus\" available to everyone. We have translated Markus' logic, his empathy, and his sports science knowledge into an AI. So that you have exactly this daily consultation, this sensitive adjustment, and this security – 24/7, right in your pocket.",
+      "p8": "YOUB is the attempt to share this luck."
     }
   }
 }

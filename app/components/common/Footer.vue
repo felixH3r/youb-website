@@ -33,7 +33,7 @@ const toggleLanguage = () => {
       </div>
 
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-        <nav class="flex gap-8">
+        <!-- <nav class="flex gap-8">
           <a
             href="#"
             class="text-sm font-medium text-white/60 hover:text-white transition-colors"
@@ -44,7 +44,7 @@ const toggleLanguage = () => {
             class="text-sm font-medium text-white/60 hover:text-white transition-colors"
             >{{ $t("nav.pricing") }}</a
           >
-        </nav>
+        </nav> -->
 
         <!-- Premium Language Switcher (Dark Mode) -->
         <button
