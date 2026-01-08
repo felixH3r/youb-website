@@ -68,7 +68,7 @@ onUnmounted(() => {
       <!-- CTA & Mobile Toggle -->
       <div class="flex items-center gap-4">
         <NuxtLink
-          to="/contact"
+          to="/#waitlist"
           class="hidden md:block bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-black/80 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-black/10"
         >
           {{ t("nav.contact") }}
@@ -119,7 +119,7 @@ onUnmounted(() => {
           </li>
           <li>
             <NuxtLink
-              to="/contact"
+              to="/#waitlist"
               class="mt-4 w-full bg-black text-white py-4 rounded-2xl flex items-center justify-center text-lg font-bold shadow-xl shadow-black/20"
               @click="open = false"
             >

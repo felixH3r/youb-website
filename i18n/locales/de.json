@@ -4,7 +4,7 @@
     "howItWorks": "So funktioniert's",
     "mission": "Mission",
     "blog": "Blog",
-    "contact": "Kontakt",
+    "contact": "Beta vormerken",
     "demo": "Demo ansehen",
     "getStarted": "Jetzt starten",
     "comingSoon": "coming soon"
@@ -14,8 +14,8 @@
     "titlePrefix": "Ein Coach, mit dem du reden kannst.",
     "titleHighlight": "Nicht ein Dashboard, das du verstehen musst.",
     "subtitle": "YOUB kennt deine Daten, aber auch deinen Alltag. Training entsteht im Dialog – gemeinsam mit dir.",
-    "ctaPrimary": "Jetzt starten",
-    "ctaSecondary": "Demo ansehen"
+    "ctaPrimary": "Beta vormerken",
+    "ctaSecondary": "Mission"
   },
   "chat": {
     "title": "Analytics Chat",
