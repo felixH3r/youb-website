@@ -6,30 +6,28 @@
         <h2
           class="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-6 animate-in fade-in slide-in-from-bottom duration-1000"
         >
-          {{ $t("mission.principles.title") }}
+          {{ $t("mission.values.title") }}
         </h2>
-        <p
-          class="text-xl md:text-2xl font-light text-white/60 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom duration-1000 delay-150"
-        >
-          {{ $t("mission.principles.subtitle") }}
-        </p>
       </div>
 
-      <!-- Principles Cards -->
+      <!-- Values Cards -->
       <div class="grid md:grid-cols-3 gap-8">
         <CommonCard
-          :title="$t('mission.principles.item1.title')"
-          :text="$t('mission.principles.item1.text')"
+          :title="$t('mission.values.item1.title')"
+          :text="$t('mission.values.item1.text')"
+          icon="ph:brain-light"
           :delay="300"
         />
         <CommonCard
-          :title="$t('mission.principles.item2.title')"
-          :text="$t('mission.principles.item2.text')"
+          :title="$t('mission.values.item2.title')"
+          :text="$t('mission.values.item2.text')"
+          icon="ph:eye-light"
           :delay="450"
         />
         <CommonCard
-          :title="$t('mission.principles.item3.title')"
-          :text="$t('mission.principles.item3.text')"
+          :title="$t('mission.values.item3.title')"
+          :text="$t('mission.values.item3.text')"
+          icon="ph:timer-light"
           :delay="600"
         />
       </div>
@@ -70,9 +68,5 @@
 
 .slide-in-from-bottom {
   animation-name: fade-in, slide-in-from-bottom;
-}
-
-.delay-150 {
-  animation-delay: 150ms;
 }
 </style>

@@ -22,5 +22,6 @@ definePageMeta({});
   <MissionPrinciples />
   <MissionFoundersStory />
   <MissionTeamSection />
+  <MissionValues />
   <CommonCTASection />
 </template>

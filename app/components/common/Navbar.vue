@@ -11,6 +11,10 @@ const menuitems = [
     path: "/mission",
   },
   {
+    title: "nav.faq",
+    path: "/faq",
+  },
+  {
     title: "nav.blog",
     path: "/blog",
   },

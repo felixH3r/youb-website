@@ -7,7 +7,8 @@
     "contact": "Beta vormerken",
     "demo": "Demo ansehen",
     "getStarted": "Jetzt starten",
-    "comingSoon": "coming soon"
+    "comingSoon": "coming soon",
+    "faq": "FAQ"
   },
   "hero": {
     "badge": "Neue Ära des Monitorings",
@@ -115,7 +116,12 @@
       },
       "submit": "Early Access anfragen"
     },
-    "microcopy": "Keine Kreditkarte erforderlich. DSGVO-konform. Benachrichtigung bei verfügbarem Platz."
+    "microcopy": "Keine Kreditkarte erforderlich. DSGVO-konform. Benachrichtigung bei verfügbarem Platz.",
+    "success": {
+      "title": "Fast geschafft!",
+      "message": "Wir haben dir eine E-Mail zur Bestätigung gesendet. Bitte schau in dein Postfach (und ggf. Spam-Ordner).",
+      "reset": "Noch eine Anmeldung?"
+    }
   },
   "seo": {
     "title": "YOUB - Training, das sich an dein Leben anpasst",
@@ -195,6 +201,22 @@
       "title": "Training für das echte Leben. Nicht für das Labor.",
       "subtitle": "Wir glauben, dass ein Trainingsplan sich dem Menschen anpassen muss – nicht umgekehrt. YOUB ist die Antwort auf die Frage: Wie können wir ambitioniert bleiben, ohne auszubrennen?"
     },
+    "principles": {
+      "title": "Dein Körper ist keine Excel-Tabelle.",
+      "subtitle": "Herkömmliche Trainingspläne gehen davon aus, dass jeder Tag perfekt ist. Dass du immer 8 Stunden schläfst, keinen Stress im Job hast und nie krank wirst. Aber das ist nicht die Realität. Das ist Labor-Theorie.",
+      "item1": {
+        "title": "Das Leben ist dynamisch.",
+        "text": "Ein starrer Plan, der Stress ignoriert, führt nicht zu Bestzeiten. Er führt zu Verletzungen."
+      },
+      "item2": {
+        "title": "Kontext ist alles.",
+        "text": "300 Watt fühlen sich nach einem Meeting-Marathon anders an als im Urlaub. Dein Training muss das wissen."
+      },
+      "item3": {
+        "title": "Konsistenz schlägt Heldentum.",
+        "text": "Es geht nicht darum, einmal alles zu geben. Es geht darum, morgen wieder trainieren zu können."
+      }
+    },
     "story": {
       "headline": "Jeder verdient einen Markus.",
       "p1": "Ich hatte Glück. Ich hatte etwas, das den meisten Athleten fehlt: Einen Coach, der nicht nur Trainingspläne schrieb, sondern der wirklich da war.",
@@ -224,6 +246,99 @@
         "role": "Wissenschaftlicher Architekt",
         "text": "Das Hirn hinter der Logik. Markus bringt jahrelange Erfahrung aus der Diagnostik und dem High-Performance-Coaching bei Hycys mit in das System. Er hat gelernt, wie man Profis zu Siegen führt – und übersetzt dieses Wissen nun für YOUB in eine Intelligenz, die jedem Athleten hilft, sein Potenzial sicher zu erreichen."
       }
+    },
+    "values": {
+      "title": "Was uns antreibt.",
+      "item1": {
+        "title": "Intelligenz statt Härte",
+        "text": "Wir glauben, dass der smartest Athlete gewinnt, nicht der, der sich am schnellsten kaputt trainiert."
+      },
+      "item2": {
+        "title": "Kontext ist King",
+        "text": "Ein Wattwert bedeutet nichts, wenn wir nicht wissen, wie du geschlafen hast. Wir sehen das ganze Bild."
+      },
+      "item3": {
+        "title": "Langfristigkeit",
+        "text": "Wir optimieren nicht für das nächste Segment auf Strava, sondern für deine Gesundheit und Leistung in 5 Jahren."
+      }
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "categories": {
+      "trust": {
+        "title": "1. Das YOUB Prinzip",
+        "items": {
+          "isOnlyApp": {
+            "question": "Ist YOUB nur eine weitere Trainingsplan-App?",
+            "answer": "Nein. YOUB ist eine Everyday Training Intelligence. Während Apps nur Pläne abspulen, passt YOUB dein Training täglich an deinen echten Stresslevel, deinen Schlaf und dein Feedback an – genau wie ein menschlicher Coach (unser „Markus-Prinzip“)."
+          },
+          "dataUsage": {
+            "question": "Werden meine Daten für die KI-Entwicklung genutzt?",
+            "answer": "Nein, dein Feedback unterstützt uns bei der Entwicklung von YOUB als Produkt, aber wir trainieren kein KI-Modell mit deinen Daten. Datenschutz und Transparenz stehen bei uns an vorderster Stelle."
+          }
+        }
+      },
+      "tech": {
+        "title": "2. Technik & Synchronisation",
+        "items": {
+          "devices": {
+            "question": "Welche Geräte werden unterstützt?",
+            "answer": "In der aktuellen Beta-Phase konzentrieren wir uns auf die nahtlose Integration von Garmin. Suunto, Whoop, Wahoo, Zwift, Rouvy und Apple Health kommen in Kürze."
+          },
+          "manualUpload": {
+            "question": "Muss ich meine Daten manuell hochladen?",
+            "answer": "Nein. Sobald dein Account verbunden ist, fließen deine Daten automatisch zu YOUB. Die Kommunikation und dein Feedback erfolgen bequem über WhatsApp oder Web-Interface."
+          }
+        }
+      },
+      "beta": {
+        "title": "3. Dein Beta-Zugang",
+        "items": {
+          "free": {
+            "question": "Ist die Beta-Teilnahme kostenlos?",
+            "answer": "Ja. Als Dankeschön für dein Feedback ist die Nutzung während der Beta-Phase komplett kostenlos."
+          },
+          "afterBeta": {
+            "question": "Was passiert nach der Beta-Phase mit meinem Account?",
+            "answer": "Du behältst deinen Status als „Early Bird“. Wir garantieren dir einen lebenslangen Sonderpreis (Founder-Offer), wenn YOUB offiziell startet."
+          },
+          "feedbackAmount": {
+            "question": "Wie viel Feedback muss ich geben?",
+            "answer": "Gerne so viel wie du willst, jeder Hinweis hilft uns YOUB ein Stück besser zu machen. Als Beta-Tester steht dir ein direkter Kommunikationskanal zum Team von YOUB zur Verfügung."
+          }
+        }
+      },
+      "safety": {
+        "title": "4. Wissenschaft & Sicherheit",
+        "items": {
+          "overtraining": {
+            "question": "Kann die KI mich ins Übertraining führen?",
+            "answer": "Das ist genau das, was wir verhindern. Die Logik von Markus (Hycys-Hintergrund) ist darauf programmiert, bei Anzeichen von Überlastung sofort gegenzusteuern. YOUB ist „Safety First“. Das heißt aber nicht, dass sofort eine Einheit ausgelassen wird, wir versuchen intelligent Trainings und Intensitäten anzupassen."
+          },
+          "wrongSuggestion": {
+            "question": "Was mache ich, wenn die KI einen Vorschlag macht, der sich falsch anfühlt?",
+            "answer": "Dein Körpergefühl schlägt immer die KI. Du kannst dem System jederzeit sagen: „Ich fühle mich heute nicht gut“, und YOUB passt den Plan sofort an."
+          }
+        }
+      },
+      "feedback": {
+        "title": "5. Dialog & Feedback",
+        "items": {
+          "howToFeedback": {
+            "question": "Wie kann ich Feedback geben oder Fehler melden?",
+            "answer": "Während der Beta-Phase hast du einen direkten Draht zu uns. Du kannst uns jederzeit über WhatsApp oder per E-Mail an feedback{'@'}youb.app erreichen. Dein Input fließt direkt in die Weiterentwicklung ein."
+          },
+          "voiceMessages": {
+            "question": "Kann ich auch Sprachnachrichten schicken?",
+            "answer": "Ja, unbedingt! Wir lieben Sprachnachrichten, da sie oft am besten beschreiben, wie sich dein Training angefühlt hat. Unsere KI versteht den Kontext deiner Nachricht."
+          }
+        }
+      }
+    },
+    "founderQuote": {
+      "text": "Hast du eine Frage, die hier nicht steht? Schreib uns direkt. In der Beta-Phase hast du direkten Draht zum Team.",
+      "author": "Felix Hermanutz — Founder"
     }
   }
 }

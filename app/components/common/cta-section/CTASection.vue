@@ -50,16 +50,17 @@
             >
               <Icon name="ph:check-bold" class="w-10 h-10" />
             </div>
-            <h3 class="text-2xl font-bold text-white mb-4">Fast geschafft!</h3>
+            <h3 class="text-2xl font-bold text-white mb-4">
+              {{ $t("waitlist.success.title") }}
+            </h3>
             <p class="text-white/60 leading-relaxed italic mb-8">
-              Wir haben dir eine E-Mail zur Bestätigung gesendet. Bitte schau in
-              dein Postfach (und ggf. Spam-Ordner).
+              {{ $t("waitlist.success.message") }}
             </p>
             <button
               @click="submitted = false"
               class="text-white/40 hover:text-white transition-colors text-sm font-medium"
             >
-              Noch eine Anmeldung?
+              {{ $t("waitlist.success.reset") }}
             </button>
           </div>
 

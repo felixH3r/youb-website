@@ -7,7 +7,8 @@
     "contact": "Join Beta",
     "demo": "View Demo",
     "getStarted": "Get Started",
-    "comingSoon": "coming soon"
+    "comingSoon": "coming soon",
+    "faq": "FAQ"
   },
   "hero": {
     "badge": "New Era of Monitoring",
@@ -115,7 +116,12 @@
       },
       "submit": "Request Early Access"
     },
-    "microcopy": "No credit card required. GDPR compliant. Notification when a spot is available."
+    "microcopy": "No credit card required. GDPR compliant. Notification when a spot is available.",
+    "success": {
+      "title": "Almost there!",
+      "message": "We've sent you a confirmation email. Please check your inbox (and spam folder if necessary).",
+      "reset": "Another registration?"
+    }
   },
   "seo": {
     "title": "YOUB - Training That Adapts to Your Life",
@@ -195,6 +201,22 @@
       "title": "Training for real life. Not for the lab.",
       "subtitle": "We believe a training plan must adapt to the person – not the other way around. YOUB is the answer to the question: How can we stay ambitious without burning out?"
     },
+    "principles": {
+      "title": "Your body is not an Excel spreadsheet.",
+      "subtitle": "Conventional training plans assume every day is perfect. That you always sleep 8 hours, have no stress at work and never get sick. But that's not reality. That's lab theory.",
+      "item1": {
+        "title": "Life is dynamic.",
+        "text": "A rigid plan that ignores stress doesn't lead to personal bests. It leads to injuries."
+      },
+      "item2": {
+        "title": "Context is everything.",
+        "text": "300 watts feel different after a meeting marathon than they do on vacation. Your training needs to know that."
+      },
+      "item3": {
+        "title": "Consistency beats heroism.",
+        "text": "It's not about giving it your all once. It's about being able to train again tomorrow."
+      }
+    },
     "story": {
       "headline": "Everyone deserves a Markus.",
       "p1": "I was lucky. I had something most athletes lack: A coach who didn't just write training plans, but who was truly there.",
@@ -224,6 +246,99 @@
         "role": "Scientific Architect",
         "text": "The brain behind the logic. Markus brings years of experience from diagnostics and high-performance coaching at Hycys to the system. He has learned how to lead professionals to victory – and now translates this knowledge for YOUB into an intelligence that helps every athlete reliably reach their potential."
       }
+    },
+    "values": {
+      "title": "What drives us.",
+      "item1": {
+        "title": "Intelligence over toughness",
+        "text": "We believe the smartest athlete wins, not the one who burns out the fastest."
+      },
+      "item2": {
+        "title": "Context is King",
+        "text": "A wattage value means nothing if we don't know how you slept. We see the whole picture."
+      },
+      "item3": {
+        "title": "Long-term focus",
+        "text": "We don't optimize for the next segment on Strava, but for your health and performance in 5 years."
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "categories": {
+      "trust": {
+        "title": "1. The YOUB Principle",
+        "items": {
+          "isOnlyApp": {
+            "question": "Is YOUB just another training plan app?",
+            "answer": "No. YOUB is an Everyday Training Intelligence. While apps just run through plans, YOUB adapts your training daily to your real stress levels, your sleep, and your feedback – just like a human coach (our \"Markus Principle\")."
+          },
+          "dataUsage": {
+            "question": "Will my data be used for AI development?",
+            "answer": "No, your feedback supports us in developing YOUB as a product, but we do not train an AI model with your data. Data protection and transparency are our top priorities."
+          }
+        }
+      },
+      "tech": {
+        "title": "2. Tech & Synchronization",
+        "items": {
+          "devices": {
+            "question": "Which devices are supported?",
+            "answer": "In the current beta phase, we are focusing on seamless Garmin integration. Suunto, Whoop, Wahoo, Zwift, Rouvy, and Apple Health are coming soon."
+          },
+          "manualUpload": {
+            "question": "Do I have to upload my data manually?",
+            "answer": "No. Once your account is connected, your data flows automatically to YOUB. Communication and feedback happen conveniently via WhatsApp or the web interface."
+          }
+        }
+      },
+      "beta": {
+        "title": "3. Your Beta Access",
+        "items": {
+          "free": {
+            "question": "Is participating in the beta free?",
+            "answer": "Yes. As a thank you for your feedback, use during the beta phase is completely free."
+          },
+          "afterBeta": {
+            "question": "What happens to my account after the beta phase?",
+            "answer": "You keep your \"Early Bird\" status. We guarantee you a lifelong special price (Founder Offer) when YOUB officially launches."
+          },
+          "feedbackAmount": {
+            "question": "How much feedback do I need to give?",
+            "answer": "As much as you like; every bit of feedback helps us make YOUB a little better. As a beta tester, you have a direct communication channel to the YOUB team."
+          }
+        }
+      },
+      "safety": {
+        "title": "4. Science & Safety",
+        "items": {
+          "overtraining": {
+            "question": "Can the AI lead me into overtraining?",
+            "answer": "That's exactly what we prevent. Markus' logic (Hycys background) is programmed to counter immediately at signs of overload. YOUB is \"Safety First.\" However, that doesn't mean a session is skipped immediately; we try to intelligently adjust training and intensities."
+          },
+          "wrongSuggestion": {
+            "question": "What should I do if the AI makes a suggestion that feels wrong?",
+            "answer": "Your body's intuition always beats the AI. You can tell the system at any time: \"I don't feel good today,\" and YOUB will adjust the plan immediately."
+          }
+        }
+      },
+      "feedback": {
+        "title": "5. Dialogue & Feedback",
+        "items": {
+          "howToFeedback": {
+            "question": "How can I give feedback or report bugs?",
+            "answer": "During the beta phase, you have a direct line to us. You can reach us anytime via WhatsApp or by email at feedback{'@'}youb.app. Your input flows directly into further development."
+          },
+          "voiceMessages": {
+            "question": "Can I also send voice messages?",
+            "answer": "Yes, absolutely! We love voice messages because they often best describe how your training felt. Our AI understands the context of your message."
+          }
+        }
+      }
+    },
+    "founderQuote": {
+      "text": "Do you have a question that isn't listed here? Write to us directly. During the beta phase, you have a direct line to the team.",
+      "author": "Felix Hermanutz — Founder"
     }
   }
 }
