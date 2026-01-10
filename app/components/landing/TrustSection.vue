@@ -22,7 +22,10 @@
         <!-- Badges Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6">
           <!-- HYCYS -->
-          <div
+          <a
+            href="https://hycys.de"
+            target="_blank"
+            rel="noopener noreferrer"
             class="group flex flex-col items-center justify-center p-12 rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-xl transition-all duration-500 hover:bg-white/[0.08] hover:border-white/20 text-center animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500"
           >
             <div
@@ -39,7 +42,7 @@
             >
               {{ $t("trust.badges.hycys") }}
             </span>
-          </div>
+          </a>
 
           <!-- GDPR -->
           <div
