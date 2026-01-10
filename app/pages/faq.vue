@@ -26,7 +26,7 @@ const categories = computed(() => {
 </script>
 
 <template>
-  <div class="faq-page bg-black min-h-screen pt-32 pb-24 px-4">
+  <div class="faq-page bg-black min-h-screen pt-32 md:pt-42 pb-24 px-4">
     <div class="max-w-4xl mx-auto">
       <!-- Header -->
       <div class="mb-20 text-center">
