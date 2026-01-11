@@ -8,7 +8,8 @@
     "demo": "Demo ansehen",
     "getStarted": "Jetzt starten",
     "comingSoon": "coming soon",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "analysis": "Analyse"
   },
   "hero": {
     "badge": "Neue Ära des Monitorings",
@@ -339,6 +340,28 @@
     "founderQuote": {
       "text": "Hast du eine Frage, die hier nicht steht? Schreib uns direkt. In der Beta-Phase hast du direkten Draht zum Team.",
       "author": "Felix Hermanutz — Founder"
+    }
+  },
+  "analysis": {
+    "title": "Aktivität analysieren",
+    "subtitle": "Lade deine .fit Datei hoch und besprich die Analyse mit YOUB AI.",
+    "upload": {
+      "drop": "Datei hierher ziehen oder klicken zum Auswählen",
+      "hint": "Nur .fit Dateien werden unterstützt",
+      "loading": "Analysiere Datei..."
+    },
+    "summary": {
+      "title": "Aktivitätsübersicht",
+      "sport": "Sportart",
+      "duration": "Dauer",
+      "distance": "Distanz",
+      "elevation": "Höhenmeter",
+      "avgSpeed": "Ø Geschwindigkeit"
+    },
+    "chat": {
+      "placeholder": "Frag nach Climbs, NP oder Intensität...",
+      "welcome": "Datei erfolgreich analysiert! Was möchtest du über dein Training wissen?",
+      "error": "Fehler bei der Kommunikation mit der KI."
     }
   }
 }

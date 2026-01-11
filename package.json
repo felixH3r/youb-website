@@ -22,9 +22,11 @@
     "vue-router": "^4.5.0"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@nuxtjs/i18n": "^10.2.1",
     "@storyblok/nuxt": "^8.2.3",
     "@vercel/analytics": "^1.6.1",
+    "@youbdev/sport-intelligence": "^1.0.0",
     "resend": "^6.7.0"
   }
 }

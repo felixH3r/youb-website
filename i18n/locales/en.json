@@ -8,7 +8,8 @@
     "demo": "View Demo",
     "getStarted": "Get Started",
     "comingSoon": "coming soon",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "analysis": "Analysis"
   },
   "hero": {
     "badge": "New Era of Monitoring",
@@ -339,6 +340,28 @@
     "founderQuote": {
       "text": "Do you have a question that isn't listed here? Write to us directly. During the beta phase, you have a direct line to the team.",
       "author": "Felix Hermanutz — Founder"
+    }
+  },
+  "analysis": {
+    "title": "Analyze Activity",
+    "subtitle": "Upload your .fit file and discuss the analysis with YOUB AI.",
+    "upload": {
+      "drop": "Drop file here or click to select",
+      "hint": "Only .fit files are supported",
+      "loading": "Analyzing file..."
+    },
+    "summary": {
+      "title": "Activity Summary",
+      "sport": "Sport",
+      "duration": "Duration",
+      "distance": "Distance",
+      "elevation": "Elevation",
+      "avgSpeed": "Avg Speed"
+    },
+    "chat": {
+      "placeholder": "Ask about climbs, NP, or intensity...",
+      "welcome": "File analyzed successfully! What would you like to know about your workout?",
+      "error": "Error communicating with AI."
     }
   }
 }
