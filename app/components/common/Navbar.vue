@@ -18,10 +18,6 @@ const menuitems = [
     title: "nav.blog",
     path: "/blog",
   },
-  {
-    title: "nav.analysis",
-    path: "/analysis",
-  },
 ];
 
 const open = ref(false);
