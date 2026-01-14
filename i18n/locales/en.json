@@ -363,5 +363,146 @@
       "welcome": "File analyzed successfully! What would you like to know about your workout?",
       "error": "Error communicating with AI."
     }
+  },
+  "legalNotice": {
+    "title": "Legal Notice",
+    "serviceProvider": "Service Provider",
+    "contactDetails": "Contact Details",
+    "soleProprietorship": "Sole Proprietorship",
+    "soleProprietorshipText": "Felix Hermanutz is a sole proprietor operating under his own name.",
+    "responsibleContent": "Responsible for Content according to § 55 Abs. 2 RStV",
+    "businessInfo": "Business Information",
+    "businessStructure": "Business Structure",
+    "businessStructureText": "Sole proprietorship",
+    "tradeAuthority": "Trade Authority",
+    "tradeAuthorityText": "District Authority of Vöcklabruck",
+    "tradeRegulations": "Trade Regulations",
+    "tradeRegulationsLink": "www.ris.bka.gv.at",
+    "tradeRegulationsText": "(Legal Information System of the Republic of Austria)",
+    "vatNumber": "VAT Number",
+    "vatNumberText": "Exempt from VAT pursuant to § 6 (1) no. 27 of the Austrian VAT Act (small business regulation)"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "downloadPdf": "Download Privacy Policy as PDF",
+    "version": "Version",
+    "effectiveDate": "Effective Date",
+    "controller": "Data Controller",
+    "intro": "At YOUB, we are committed to protecting your privacy and ensuring the security of your personal data. This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our health app.",
+    "section1": {
+      "title": "1. Identity and Contact Details of the Data Controller",
+      "content": "The data controller for your personal data is Felix Hermanutz, operating as a sole proprietor. If you have any questions or concerns about this Privacy Policy or your personal data, please contact us at:"
+    },
+    "section2": {
+      "title": "2. Purpose of Data Processing",
+      "content": "YOUB processes your personal data (including health-related data) to provide personalized training and health insights. This includes analyzing metrics such as heart rate, sleep patterns, activity levels, and recovery indicators obtained from third-party wearable platforms, and combining them with your training plan and schedule to support training recommendations and planning."
+    },
+    "section3": {
+      "title": "3. Legal Bases for Processing",
+      "content": "We process your personal data based on the following legal grounds:",
+      "item1": "Article 6(1)(a) GDPR: Your explicit consent to process personal data for the purpose of providing personalized health insights and training planning features.",
+      "item2": "Article 9(2)(a) GDPR: Your explicit consent to process special categories of personal data, including health data."
+    },
+    "section4": {
+      "title": "4. Source and Categories of Personal Data",
+      "content": "We collect the following categories of personal data from third-party wearable platforms such as Garmin, Whoop, and Suunto (depending on what you connect and authorize):",
+      "items": [
+        "Heart rate",
+        "Activity data",
+        "Sleep patterns",
+        "Activity levels",
+        "Recovery indicators",
+        "Other health-related metrics provided by connected platforms"
+      ]
+    },
+    "section5": {
+      "title": "5. Google User Data (Google Calendar Integration – Full Scope)",
+      "content": "YOUB integrates with Google Calendar to support training planning and schedule synchronization. We use full calendar access (Google Calendar full scope) to provide the requested functionality. In compliance with the Google API Services User Data Policy, we are transparent about how we access, use, store, and share Google user data.",
+      "sub1": {
+        "title": "5.1 Data Accessed",
+        "content1": "If you explicitly connect your Google account, YOUB may access and manage Google Calendar data via the Google Calendar API full scope, limited to the minimum necessary to provide calendar synchronization. This may include:",
+        "items": [
+          "Calendar metadata (e.g., calendar ID and calendar name)",
+          "Calendar events (only event fields required for scheduling and synchronization), such as event title/summary, description, start time, end time, recurrence information (if applicable), and event updates"
+        ],
+        "content2": "YOUB does not access Google data such as emails, contacts, files/documents, or any other Google services unrelated to calendar scheduling."
+      },
+      "sub2": {
+        "title": "5.2 Data Usage",
+        "content": "We use Google Calendar data only for the following purposes:",
+        "items": [
+          "Export training sessions: Create or update planned training sessions from YOUB in your Google Calendar (so your training plan appears in your schedule).",
+          "Import schedule availability: Read existing calendar events to optimize training planning around your availability (e.g., work commitments, travel, appointments)."
+        ],
+        "content2": "We do not use Google Calendar data for advertising, profiling, market research, or resale."
+      },
+      "sub3": {
+        "title": "5.3 Data Storage, Retention, and Deletion",
+        "items": [
+          "Google Calendar data is processed securely and stored only as long as necessary to provide the calendar integration features.",
+          "You can disconnect Google Calendar at any time. After disconnection, YOUB no longer accesses your Google Calendar data.",
+          "Any stored Google Calendar-related data is deleted upon account disconnection or upon your request, unless legal retention obligations apply."
+        ]
+      },
+      "sub4": {
+        "title": "5.4 Data Sharing",
+        "content": "YOUB does not sell, rent, or share Google user data with third parties. Google user data may be processed by our infrastructure providers strictly as needed to operate the service (e.g., secure cloud hosting), and only under appropriate contractual safeguards (e.g., data processing agreements) and in compliance with applicable law."
+      },
+      "sub5": {
+        "title": "5.5 User Control",
+        "content": "You can control your Google Calendar connection in the following ways:",
+        "items": [
+          "Revoke access at any time via your Google Account settings (Third-party access / OAuth permissions).",
+          "Disconnect Google Calendar within YOUB (if available in-app).",
+          "Request deletion by contacting felix{'@'}youb.app."
+        ]
+      }
+    },
+    "section6": {
+      "title": "6. AI and Machine Learning",
+      "content1": "YOUB uses artificial intelligence and machine learning to provide personalized training insights and recommendations. This may include analyzing your connected wearable data, training history, and preferences to tailor guidance.",
+      "content2": "Important clarification: Google user data accessed via Google APIs (such as Google Calendar data) is not used to train, improve, or develop generalized AI or machine learning models. Google Calendar data is used only to provide the calendar synchronization and scheduling functionality for your account."
+    },
+    "section7": {
+      "title": "7. Use of External Processors",
+      "content": "YOUB uses Microsoft Azure (including Azure OpenAI Service) and related cloud infrastructure to process personal data and generate personalized insights. Microsoft acts as a data processor under GDPR-compliant agreements (e.g., Data Processing Agreement / DPA), ensuring that your data is processed securely and in compliance with GDPR.",
+      "content2": "We only use processors that provide appropriate technical and organizational measures to protect your data."
+    },
+    "section8": {
+      "title": "8. Data Retention Periods",
+      "content": "We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, including satisfying any legal, accounting, or reporting requirements. Typically, your data will be retained for as long as you use the app and for a reasonable period afterward in case you decide to use our services again. You may request deletion at any time (see Section 9)."
+    },
+    "section9": {
+      "title": "9. Data Subject Rights",
+      "content": "You have the following rights regarding your personal data:",
+      "items": [
+        "Right of Access: You can request access to your personal data.",
+        "Right to Erasure: You can request the deletion of your personal data.",
+        "Right to Rectification: You can request the correction of inaccurate or incomplete data.",
+        "Right to Object: You can object to the processing of your personal data.",
+        "Right to Restrict Processing: You can request the restriction of processing your personal data.",
+        "Right to Data Portability: You can request the transfer of your personal data to another controller."
+      ],
+      "contact": "To exercise any of these rights, please contact us at felix{'@'}youb.app."
+    },
+    "section10": {
+      "title": "10. International Data Transfers",
+      "content": "We store and process personal data on GDPR-compliant infrastructure. Where data is processed by service providers, we ensure appropriate safeguards are in place (e.g., contractual protections, DPAs, and where applicable, EU Standard Contractual Clauses). We do not transfer your personal data outside the EU unless such safeguards are implemented and required by law."
+    },
+    "section11": {
+      "title": "11. Security Measures and Safeguards",
+      "content": "We implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including encryption, access controls, least-privilege access, and regular security assessments."
+    },
+    "section12": {
+      "title": "12. Right to Lodge a Complaint",
+      "content": "If you believe that we have not complied with GDPR, you have the right to lodge a complaint with a supervisory authority, particularly in the Member State of your habitual residence, place of work, or place of the alleged infringement."
+    },
+    "section13": {
+      "title": "13. Contact for Privacy Inquiries",
+      "content": "If you have any questions or concerns about this Privacy Policy or your personal data, please contact us at:",
+      "address": "Felix Hermanutz"
+    },
+    "consent": "By using the YOUB app, you consent to the processing of your personal data as described in this Privacy Policy.",
+    "footer": "This Privacy Policy is designed to be clear and accessible. If there are any terms you do not understand or if you have any further questions, please do not hesitate to contact us."
   }
 }

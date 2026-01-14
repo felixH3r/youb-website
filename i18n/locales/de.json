@@ -363,5 +363,146 @@
       "welcome": "Datei erfolgreich analysiert! Was möchtest du über dein Training wissen?",
       "error": "Fehler bei der Kommunikation mit der KI."
     }
+  },
+  "legalNotice": {
+    "title": "Impressum",
+    "serviceProvider": "Dienstanbieter",
+    "contactDetails": "Kontaktdaten",
+    "soleProprietorship": "Einzelunternehmen",
+    "soleProprietorshipText": "Felix Hermanutz ist ein Einzelunternehmer, der unter seinem eigenen Namen operiert.",
+    "responsibleContent": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+    "businessInfo": "Unternehmensinformationen",
+    "businessStructure": "Rechtsform",
+    "businessStructureText": "Einzelunternehmen",
+    "tradeAuthority": "Aufsichtsbehörde",
+    "tradeAuthorityText": "Bezirkshauptmannschaft Vöcklabruck",
+    "tradeRegulations": "Gewerbeordnung",
+    "tradeRegulationsLink": "www.ris.bka.gv.at",
+    "tradeRegulationsText": "(Rechtsinformationssystem der Republik Österreich)",
+    "vatNumber": "UID-Nummer",
+    "vatNumberText": "Umsatzsteuerbefreit aufgrund der Kleinunternehmerregelung gemäß § 6 (1) Z 27 UStG"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "downloadPdf": "Datenschutzerklärung als PDF herunterladen",
+    "version": "Version",
+    "effectiveDate": "Inkrafttreten",
+    "controller": "Verantwortlicher",
+    "intro": "Bei YOUB verpflichten wir uns, Ihre Privatsphäre zu schützen und die Sicherheit Ihrer personenbezogenen Daten zu gewährleisten. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen erfassen, verwenden, speichern und schützen, wenn Sie unsere Health App nutzen.",
+    "section1": {
+      "title": "1. Identität und Kontaktdaten des Verantwortlichen",
+      "content": "Verantwortlicher für Ihre personenbezogenen Daten ist Felix Hermanutz, der als Einzelunternehmer tätig ist. Wenn Sie Fragen oder Bedenken bezüglich dieser Datenschutzerklärung oder Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:"
+    },
+    "section2": {
+      "title": "2. Zweck der Datenverarbeitung",
+      "content": "YOUB verarbeitet Ihre personenbezogenen Daten (einschließlich gesundheitsbezogener Daten), um personalisierte Trainings- und Gesundheitseinblicke bereitzustellen. Dies umfasst die Analyse von Metriken wie Herzfrequenz, Schlafverhalten, Aktivitätsniveau und Erholungsindikatoren, die von Wearable-Plattformen von Drittanbietern stammen, und deren Kombination mit Ihrem Trainingsplan und Terminkalender, um Trainingsempfehlungen und -planung zu unterstützen."
+    },
+    "section3": {
+      "title": "3. Rechtsgrundlagen für die Verarbeitung",
+      "content": "Wir verarbeiten Ihre personenbezogenen Daten auf Grundlage der folgenden Rechtsgrundlagen:",
+      "item1": "Art. 6 Abs. 1 lit. a DSGVO: Ihre ausdrückliche Einwilligung zur Verarbeitung personenbezogener Daten zum Zweck der Bereitstellung personalisierter Gesundheitseinblicke und Trainingsplanungsfunktionen.",
+      "item2": "Art. 9 Abs. 2 lit. a DSGVO: Ihre ausdrückliche Einwilligung zur Verarbeitung besonderer Kategorien personenbezogener Daten, einschließlich Gesundheitsdaten."
+    },
+    "section4": {
+      "title": "4. Quelle und Kategorien personenbezogener Daten",
+      "content": "Wir erfassen die folgenden Kategorien personenbezogener Daten von Wearable-Plattformen von Drittanbietern wie Garmin, Whoop und Suunto (abhängig davon, was Sie verbinden und autorisieren):",
+      "items": [
+        "Herzfrequenz",
+        "Aktivitätsdaten",
+        "Schlafmuster",
+        "Aktivitätsniveau",
+        "Erholungsindikatoren",
+        "Andere gesundheitsbezogene Metriken der verbundenen Plattformen"
+      ]
+    },
+    "section5": {
+      "title": "5. Google-Nutzerdaten (Google Calendar Integration – Voller Umfang)",
+      "content": "YOUB integriert sich in Google Calendar, um die Trainingsplanung und Termin-Synchronisierung zu unterstützen. Wir nutzen den vollen Kalenderzugriff (Google Calendar full scope), um die angeforderte Funktionalität bereitzustellen. In Übereinstimmung mit der Google API Services User Data Policy sind wir transparent darüber, wie wir auf Google-Nutzerdaten zugreifen, diese verwenden, speichern und teilen.",
+      "sub1": {
+        "title": "5.1 Zugegriffene Daten",
+        "content1": "Wenn Sie Ihr Google-Konto ausdrücklich verbinden, kann YOUB über den vollen Umfang der Google Calendar API auf Google Calendar-Daten zugreifen und diese verwalten, beschränkt auf das für die Kalender-Synchronisierung erforderliche Minimum. Dies kann umfassen:",
+        "items": [
+          "Kalender-Metadaten (z. B. Kalender-ID und Kalendername)",
+          "Kalenderereignisse (nur Ereignisfelder, die für die Planung und Synchronisierung erforderlich sind), wie Ereignis-Titel/Zusammenfassung, Beschreibung, Startzeit, Endzeit, Wiederholungsinformationen (falls zutreffend) und Ereignis-Updates"
+        ],
+        "content2": "YOUB greift nicht auf Google-Daten wie E-Mails, Kontakte, Dateien/Dokumente oder andere Google-Dienste zu, die nichts mit der Kalenderplanung zu tun haben."
+      },
+      "sub2": {
+        "title": "5.2 Datennutzung",
+        "content": "Wir verwenden Google Calendar-Daten nur für die folgenden Zwecke:",
+        "items": [
+          "Trainingseinheiten exportieren: Erstellen oder Aktualisieren geplanter Trainingseinheiten von YOUB in Ihrem Google-Kalender (damit Ihr Trainingsplan in Ihrem Zeitplan erscheint).",
+          "Verfügbarkeit importieren: Bestehende Kalenderereignisse lesen, um die Trainingsplanung um Ihre Verfügbarkeit herum zu optimieren (z. B. berufliche Verpflichtungen, Reisen, Termine)."
+        ],
+        "content2": "Wir verwenden Google Calendar-Daten nicht für Werbung, Profiling, Marktforschung oder Weiterverkauf."
+      },
+      "sub3": {
+        "title": "5.3 Datenspeicherung, Aufbewahrung und Löschung",
+        "items": [
+          "Google Calendar-Daten werden sicher verarbeitet und nur so lange gespeichert, wie es für die Bereitstellung der Kalenderintegrationsfunktionen erforderlich ist.",
+          "Sie können Google Calendar jederzeit trennen. Nach der Trennung greift YOUB nicht mehr auf Ihre Google Calendar-Daten zu.",
+          "Alle gespeicherten Google Calendar-bezogenen Daten werden bei Kontotrennung oder auf Ihre Anfrage gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen."
+        ]
+      },
+      "sub4": {
+        "title": "5.4 Datonweitergabe",
+        "content": "YOUB verkauft, vermietet oder teilt Google-Nutzerdaten nicht mit Dritten. Google-Nutzerdaten können von unseren Infrastrukturanbietern streng nach Bedarf verarbeitet werden, um den Dienst zu betreiben (z. B. sicheres Cloud-Hosting), und nur unter angemessenen vertraglichen Garantien (z. B. Datenverarbeitungsvereinbarungen) und in Übereinstimmung mit geltendem Recht."
+      },
+      "sub5": {
+        "title": "5.5 Nutzerkontrolle",
+        "content": "Sie können Ihre Google Calendar-Verbindung auf folgende Weise steuern:",
+        "items": [
+          "Widerruf des Zugriffs jederzeit über Ihre Google-Kontoeinstellungen (Drittanbieterzugriff / OAuth-Berechtigungen).",
+          "Trennen von Google Calendar innerhalb von YOUB (falls in der App verfügbar).",
+          "Löschung anfordern durch Kontaktierung von felix{'@'}youb.app."
+        ]
+      }
+    },
+    "section6": {
+      "title": "6. KI und maschinelles Lernen",
+      "content1": "YOUB nutzt künstliche Intelligenz und maschinelles Lernen, um personalisierte Trainingseinblicke und Empfehlungen bereitzustellen. Dies kann die Analyse Ihrer verbundenen Wearable-Daten, Ihrer Trainingshistorie und Ihrer Präferenzen umfassen, um die Anleitung individuell anzupassen.",
+      "content2": "Wichtige Klarstellung: Google-Nutzerdaten, auf die über Google-APIs zugegriffen wird (wie Google Calendar-Daten), werden nicht verwendet, um verallgemeinerte KI- oder maschinelle Lernmodelle zu trainieren, zu verbessern oder zu entwickeln. Google Calendar-Daten werden nur verwendet, um die Kalender-Synchronisierung und Planungsfunktionalität für Ihr Konto bereitzustellen."
+    },
+    "section7": {
+      "title": "7. Einsatz externer Auftragsverarbeiter",
+      "content": "YOUB nutzt Microsoft Azure (einschließlich Azure OpenAI Service) und die zugehörige Cloud-Infrastruktur zur Verarbeitung personenbezogener Daten und Erstellung personalisierter Einblicke. Microsoft fungiert als Auftragsverarbeiter gemäß DSGVO-konformen Vereinbarungen (z. B. Data Processing Agreement / DPA), um sicherzustellen, dass Ihre Daten sicher und in Übereinstimmung mit der DSGVO verarbeitet werden.",
+      "content2": "Wir setzen nur Auftragsverarbeiter ein, die angemessene technische und organisatorische Maßnahmen zum Schutz Ihrer Daten bieten."
+    },
+    "section8": {
+      "title": "8. Aufbewahrungsfristen",
+      "content": "Wir bewahren Ihre personenbezogenen Daten nur so lange auf, wie dies zur Erfüllung der Zwecke, für die sie erhoben wurden, erforderlich ist, einschließlich der Erfüllung gesetzlicher, buchhalterischer oder Berichterstattungspflichten. In der Regel werden Ihre Daten so lange aufbewahrt, wie Sie die App nutzen, und für einen angemessenen Zeitraum danach für den Fall, dass Sie sich entscheiden, unsere Dienste erneut zu nutzen. Sie können jederzeit die Löschung beantragen (siehe Abschnitt 9)."
+    },
+    "section9": {
+      "title": "9. Betroffenenrechte",
+      "content": "Sie haben folgende Rechte bezüglich Ihrer personenbezogenen Daten:",
+      "items": [
+        "Recht auf Auskunft: Sie können Auskunft über Ihre personenbezogenen Daten verlangen.",
+        "Recht auf Löschung: Sie können die Löschung Ihrer personenbezogenen Daten verlangen.",
+        "Recht auf Berichtigung: Sie können die Korrektur unrichtiger oder unvollständiger Daten verlangen.",
+        "Recht auf Widerspruch: Sie können der Verarbeitung Ihrer personenbezogenen Daten widersprechen.",
+        "Recht auf Einschränkung der Verarbeitung: Sie können die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen.",
+        "Recht auf Datenübertragbarkeit: Sie können die Übertragung Ihrer personenbezogenen Daten an einen anderen Verantwortlichen verlangen."
+      ],
+      "contact": "Um eines dieser Rechte auszuüben, kontaktieren Sie uns bitte unter felix{'@'}youb.app."
+    },
+    "section10": {
+      "title": "10. Internationale Datentransfers",
+      "content": "Wir speichern und verarbeiten personenbezogene Daten auf einer DSGVO-konformen Infrastruktur. Wo Daten von Dienstleistern verarbeitet werden, stellen wir sicher, dass angemessene Garantien vorhanden sind (z. B. vertraglicher Schutz, DPAs und, wo anwendbar, EU-Standardvertragsklauseln). Wir übertragen Ihre personenbezogenen Daten nicht außerhalb der EU, es sei denn, solche Garantien sind implementiert und gesetzlich vorgeschrieben."
+    },
+    "section11": {
+      "title": "11. Sicherheitsmaßnahmen und Garantien",
+      "content": "Wir implementieren angemessene technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten, einschließlich Verschlüsselung, Zugangskontrollen, Least-Privilege-Zugriff und regelmäßiger Sicherheitsbewertungen."
+    },
+    "section12": {
+      "title": "12. Beschwerderecht",
+      "content": "Wenn Sie glauben, dass wir die DSGVO nicht eingehalten haben, haben Sie das Recht, eine Beschwerde bei einer Aufsichtsbehörde einzureichen, insbesondere in dem Mitgliedstaat Ihres gewöhnlichen Aufenthaltsorts, Ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes."
+    },
+    "section13": {
+      "title": "13. Kontakt für Datenschutzanfragen",
+      "content": "Wenn Sie Fragen oder Bedenken bezüglich dieser Datenschutzerklärung oder Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:",
+      "address": "Felix Hermanutz"
+    },
+    "consent": "Durch die Nutzung der YOUB-App stimmen Sie der Verarbeitung Ihrer personenbezogenen Daten wie in dieser Datenschutzerklärung beschrieben zu.",
+    "footer": "Diese Datenschutzerklärung soll klar und zugänglich sein. Wenn es Begriffe gibt, die Sie nicht verstehen, oder wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren."
   }
 }
