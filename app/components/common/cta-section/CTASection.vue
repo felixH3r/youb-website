@@ -91,35 +91,11 @@
 
             <!-- Sport Dropdown -->
             <div class="space-y-2">
-              <div class="relative">
-                <select
-                  id="sport"
-                  v-model="form.sport"
-                  required
-                  class="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white appearance-none focus:outline-none focus:border-white/30 transition-all duration-300 cursor-pointer"
-                >
-                  <option value="" disabled selected>
-                    {{ $t("waitlist.form.sport.label") }}
-                  </option>
-                  <option value="triathlon">
-                    {{ $t("waitlist.form.sport.triathlon") }}
-                  </option>
-                  <option value="cycling">
-                    {{ $t("waitlist.form.sport.cycling") }}
-                  </option>
-                  <option value="running">
-                    {{ $t("waitlist.form.sport.running") }}
-                  </option>
-                  <option value="other">
-                    {{ $t("waitlist.form.sport.other") }}
-                  </option>
-                </select>
-                <div
-                  class="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-white/40"
-                >
-                  <Icon name="ph:caret-down-light" class="w-5 h-5" />
-                </div>
-              </div>
+              <CommonGlassDropdown
+                v-model="form.sport"
+                :options="sportOptions"
+                :placeholder="$t('waitlist.form.sport.label')"
+              />
             </div>
 
             <!-- Submit Button -->
@@ -172,6 +148,15 @@ const form = ref({
   email: "",
   sport: "",
 });
+
+const { t } = useI18n();
+
+const sportOptions = computed(() => [
+  { label: t("waitlist.form.sport.triathlon"), value: "triathlon" },
+  { label: t("waitlist.form.sport.cycling"), value: "cycling" },
+  { label: t("waitlist.form.sport.running"), value: "running" },
+  { label: t("waitlist.form.sport.other"), value: "other" },
+]);
 
 const loading = ref(false);
 const submitted = ref(false);
@@ -240,14 +225,7 @@ const handleSubmit = async () => {
 }
 
 /* Custom styles for select dropdown */
-select {
-  background-image: none;
-}
-
-select option {
-  background-color: #1a1a1a;
-  color: white;
-}
+/* Removed standard select styles as we now use GlassDropdown */
 
 /* Ensure backdrop blur works on safari */
 .backdrop-blur-3xl {

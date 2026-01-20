@@ -61,7 +61,7 @@
     "block3": {
       "tag": "Science Over Bro-Science",
       "title": "Science Instead of a Black Box",
-      "text": "Behind every recommendation is a clear decision-making path, built on sports science and the rules used by HYCYS in practice.\nWe use AI to make this decision path understandable, conversational, and suitable for everyday use not to generate training plans in a black box."
+      "text": "Behind every recommendation is a clear decision-making path, built on sports science and the rules used by sports scientists and doctors in practice.\nWe use AI to make this decision path understandable, conversational, and suitable for everyday use not to generate training plans in a black box."
     },
     "mockChat": {
       "msg1": "Hey, how was the ride just now?",
@@ -79,7 +79,7 @@
     "titleHighlight": "Backed by science.",
     "text": "YOUB combines athletic experience with scientific methodology. Built by athletes, developed with data – for decisions that work in everyday life.",
     "badges": {
-      "hycys": "In partnership with HYCYS",
+      "hycys": "science proofed",
       "gdpr": "GDPR compliant",
       "aiAct": "AI Act\nready"
     }
@@ -148,7 +148,7 @@
     },
     "principle": {
       "title": "Behind every dialogue is a decision path",
-      "subtitle": "Developed together with HYCYS from sports science and real coaching practice",
+      "subtitle": "Developed together with sport scientists and doctors from sports science and real coaching practice",
       "block1": {
         "title": "Training & Context",
         "items": ["Training units", "Feeling", "Everyday life"],
@@ -160,7 +160,7 @@
         "icon": "ph:layout-light"
       },
       "block3": {
-        "title": "Experience from real coaching (HYCYS)",
+        "title": "Experience from real coaching",
         "items": ["real athletes", "real decisions", "no simulation"],
         "icon": "ph:users-light"
       },
@@ -245,7 +245,7 @@
       "member3": {
         "name": "Markus Hertlein",
         "role": "Scientific Architect",
-        "text": "The brain behind the logic. Markus brings years of experience from diagnostics and high-performance coaching at Hycys to the system. He has learned how to lead professionals to victory – and now translates this knowledge for YOUB into an intelligence that helps every athlete reliably reach their potential."
+        "text": "The brain behind the logic. Markus brings years of experience from diagnostics and high-performance coaching to the system. He has learned how to lead professionals to victory – and now translates this knowledge for YOUB into an intelligence that helps every athlete reliably reach their potential."
       }
     },
     "values": {
@@ -315,7 +315,7 @@
         "items": {
           "overtraining": {
             "question": "Can the AI lead me into overtraining?",
-            "answer": "That's exactly what we prevent. Markus' logic (Hycys background) is programmed to counter immediately at signs of overload. YOUB is \"Safety First.\" However, that doesn't mean a session is skipped immediately; we try to intelligently adjust training and intensities."
+            "answer": "That's exactly what we prevent. Markus' logic (sports science background) is programmed to counter immediately at signs of overload. YOUB is \"Safety First.\" However, that doesn't mean a session is skipped immediately; we try to intelligently adjust training and intensities."
           },
           "wrongSuggestion": {
             "question": "What should I do if the AI makes a suggestion that feels wrong?",

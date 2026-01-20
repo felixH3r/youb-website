@@ -61,7 +61,7 @@
     "block3": {
       "tag": "Science over Bro-Science",
       "title": "Wissenschaft statt Blackbox",
-      "text": "Hinter jeder Empfehlung steht ein klarer Entscheidungsweg, aufgebaut aus Sportwissenschaft und den Regeln, die HYCYS in der Praxis nutzt.\nKI verwenden wir, um diesen Entscheidungsweg verständlich, dialogisch und alltagstauglich zu machen nicht um Trainingspläne in einer Blackbox zu erzeugen."
+      "text": "Hinter jeder Empfehlung steht ein klarer Entscheidungsweg, aufgebaut aus Sportwissenschaft und den Regeln, die Sportwissenschaftlern und Ärzten in der Praxis nutzen.\nKI verwenden wir, um diesen Entscheidungsweg verständlich, dialogisch und alltagstauglich zu machen nicht um Trainingspläne in einer Blackbox zu erzeugen."
     },
     "mockChat": {
       "msg1": "Hey, wie war die Radfahrt gerade?",
@@ -79,7 +79,7 @@
     "titleHighlight": "Gestützt auf Wissenschaft.",
     "text": "YOUB verbindet sportliche Erfahrung mit wissenschaftlicher Methodik. Gebaut von Athleten, entwickelt mit Daten – für Entscheidungen, die im Alltag funktionieren.",
     "badges": {
-      "hycys": "In Zusammenarbeit mit HYCYS",
+      "hycys": "science proofed",
       "gdpr": "DSGVO-konform",
       "aiAct": "AI Act\nready"
     }
@@ -148,7 +148,7 @@
     },
     "principle": {
       "title": "Hinter jedem Dialog steht ein Entscheidungsweg",
-      "subtitle": "Gemeinsam mit HYCYS aus Sportwissenschaft und realer Coaching-Praxis entwickelt",
+      "subtitle": "Gemeinsam mit Sportwissenschaftlern und Ärzten aus Sportwissenschaft und realer Coaching-Praxis entwickelt",
       "block1": {
         "title": "Training & Kontext",
         "items": ["Trainingseinheiten", "Gefühl", "Alltag"],
@@ -160,7 +160,7 @@
         "icon": "ph:layout-light"
       },
       "block3": {
-        "title": "Erfahrung aus echtem Coaching (HYCYS)",
+        "title": "Erfahrung aus echtem Coaching",
         "items": ["reale Athleten", "echte Entscheidungen", "keine Simulation"],
         "icon": "ph:users-light"
       },
@@ -245,7 +245,7 @@
       "member3": {
         "name": "Markus Hertlein",
         "role": "Wissenschaftlicher Architekt",
-        "text": "Das Hirn hinter der Logik. Markus bringt jahrelange Erfahrung aus der Diagnostik und dem High-Performance-Coaching bei Hycys mit in das System. Er hat gelernt, wie man Profis zu Siegen führt – und übersetzt dieses Wissen nun für YOUB in eine Intelligenz, die jedem Athleten hilft, sein Potenzial sicher zu erreichen."
+        "text": "Das Hirn hinter der Logik. Markus bringt jahrelange Erfahrung aus der Diagnostik und dem High-Performance-Coaching mit in das System. Er hat gelernt, wie man Profis zu Siegen führt – und übersetzt dieses Wissen nun für YOUB in eine Intelligenz, die jedem Athleten hilft, sein Potenzial sicher zu erreichen."
       }
     },
     "values": {
@@ -315,7 +315,7 @@
         "items": {
           "overtraining": {
             "question": "Kann die KI mich ins Übertraining führen?",
-            "answer": "Das ist genau das, was wir verhindern. Die Logik von Markus (Hycys-Hintergrund) ist darauf programmiert, bei Anzeichen von Überlastung sofort gegenzusteuern. YOUB ist „Safety First“. Das heißt aber nicht, dass sofort eine Einheit ausgelassen wird, wir versuchen intelligent Trainings und Intensitäten anzupassen."
+            "answer": "Das ist genau das, was wir verhindern. Die Logik von Markus (sportwissenschaftlicher Hintergrund) ist darauf programmiert, bei Anzeichen von Überlastung sofort gegenzusteuern. YOUB ist „Safety First“. Das heißt aber nicht, dass sofort eine Einheit ausgelassen wird, wir versuchen intelligent Trainings und Intensitäten anzupassen."
           },
           "wrongSuggestion": {
             "question": "Was mache ich, wenn die KI einen Vorschlag macht, der sich falsch anfühlt?",

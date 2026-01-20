@@ -21,20 +21,17 @@
 
         <!-- Badges Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6">
-          <!-- HYCYS -->
-          <a
-            href="https://hycys.de"
-            target="_blank"
-            rel="noopener noreferrer"
+          <!-- Science & Evidence -->
+          <div
             class="group flex flex-col items-center justify-center p-12 rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-xl transition-all duration-500 hover:bg-white/[0.08] hover:border-white/20 text-center animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500"
           >
             <div
               class="mb-8 group-hover:scale-110 transform transition-transform duration-500"
             >
               <img
-                src="/HycysLogo.avif"
-                alt="HYCYS Logo"
-                class="h-20 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                src="/ScienceMedicalLogo.png"
+                alt="Science & Medical Logo"
+                class="h-16 w-16 object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500"
               />
             </div>
             <span
@@ -42,7 +39,7 @@
             >
               {{ $t("trust.badges.hycys") }}
             </span>
-          </a>
+          </div>
 
           <!-- GDPR -->
           <div
