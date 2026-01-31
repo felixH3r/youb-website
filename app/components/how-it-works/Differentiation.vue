@@ -19,9 +19,9 @@
 
       <!-- Desktop: Horizontal Row | Mobile: Vertical Stack -->
       <div
-        class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300"
+        class="flex flex-col xl:flex-row items-center justify-center gap-6 xl:gap-12 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300"
       >
-        <p class="text-xl md:text-2xl font-light text-white/90">
+        <p class="text-xl xl:text-2xl font-light text-white/90">
           {{ $t("howItWorks.anti.item1") }}
         </p>
 
@@ -30,7 +30,7 @@
           class="h-px w-24 bg-gradient-to-r from-transparent via-white to-transparent"
         />
 
-        <p class="text-xl md:text-2xl font-light text-white/90">
+        <p class="text-xl xl:text-2xl font-light text-white/90">
           {{ $t("howItWorks.anti.item2") }}
         </p>
 
@@ -39,7 +39,7 @@
           class="h-px w-24 bg-gradient-to-r from-transparent via-white to-transparent"
         />
 
-        <p class="text-xl md:text-2xl font-light text-white/90">
+        <p class="text-xl xl:text-2xl font-light text-white/90">
           {{ $t("howItWorks.anti.item3") }}
         </p>
       </div>
