@@ -2,22 +2,28 @@
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import { useI18n } from "vue-i18n";
 
+const props = defineProps<{
+  lines?: string[];
+}>();
+
 const { t } = useI18n();
 
 const containerRef = ref<HTMLElement | null>(null);
 const progress = ref(0);
 
-// Get lines from translations
-const lines = computed(() => [
-  t("magicMoment.line1"),
-  t("magicMoment.line2"),
-  t("magicMoment.line3"),
-]);
+// Get lines from translations or props
+const displayLines = computed(() => {
+  if (props.lines) return props.lines;
+  return [
+    t("magicMoment.line1"),
+    t("magicMoment.line2"),
+    t("magicMoment.line3"),
+  ];
+});
 
 // Split lines into characters for granular control
-// We map each line to an array of characters
 const splitLines = computed(() => {
-  return lines.value.map((line) => line.split(""));
+  return displayLines.value.map((line) => line.split(""));
 });
 
 // Calculate total characters to normalize progress

@@ -24,15 +24,15 @@ const { t } = useI18n();
               “
             </div>
 
-            <p>{{ t("mission.story.p1") }}</p>
-            <p>{{ t("mission.story.p2") }}</p>
-            <p>{{ t("mission.story.p3") }}</p>
-            <p>{{ t("mission.story.p4") }}</p>
-            <p>{{ t("mission.story.p5") }}</p>
-            <p>{{ t("mission.story.p6") }}</p>
-            <p>{{ t("mission.story.p7") }}</p>
+            <p class="font-serif">{{ t("mission.story.p1") }}</p>
+            <p class="font-serif">{{ t("mission.story.p2") }}</p>
+            <p class="font-serif">{{ t("mission.story.p3") }}</p>
+            <p class="font-serif">{{ t("mission.story.p4") }}</p>
+            <p class="font-serif">{{ t("mission.story.p5") }}</p>
             <div class="space-y-4 pt-4">
-              <p class="font-bold text-white">{{ t("mission.story.p8") }}</p>
+              <p class="font-bold text-white font-serif">
+                {{ t("mission.story.p6") }}
+              </p>
               <p
                 class="text-sm md:text-base text-zinc-500 font-sans tracking-widest uppercase"
               >

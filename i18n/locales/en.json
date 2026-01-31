@@ -219,34 +219,27 @@
       }
     },
     "story": {
-      "headline": "Everyone deserves a Markus.",
-      "p1": "I was lucky. I had something most athletes lack: A coach who didn't just write training plans, but who was truly there.",
-      "p2": "Markus – the sports scientist who is the brain behind YOUB today – was more than just a coach to me. He was a friend and sparring partner. We exchanged ideas every day.",
-      "p3": "When I was tired, he didn't say \"push through,\" but \"rest.\" When I had doubts, he gave me security. I could consult him at any time. I never had to decide alone whether that twitch in my leg was serious or whether I should go through with the interval training despite stress at work. We found it out together.",
-      "p4": "This feeling – this absolute security that someone is thinking along and looking out for me – increased my performance more than any training plan before.",
-      "p5": "But I realized: Markus can't divide himself. He only has 24 hours a day. Only a few athletes have the privilege (or the budget) to experience such close 1:1 support.",
-      "p6": "I wanted to change that.",
-      "p7": "I founded YOUB to make \"my Markus\" available to everyone. We have translated Markus' logic, his empathy, and his sports science knowledge into an AI. So that you have exactly this daily consultation, this sensitive adjustment, and this security – 24/7, right in your pocket.",
-      "p8": "YOUB is the attempt to share this luck."
+      "headline": "The Vision: Everyone deserves a mentor.",
+      "p1": "I was lucky. I had something most athletes lack: A coach who didn't just write training plans, but who was truly there. A sparring partner who is now the sports science intelligence behind YOUB.",
+      "p2": "We exchanged ideas every day. When I was tired, it wasn't \"push through,\" but \"rest.\" When I had doubts, this expertise gave me security. I never had to decide alone whether a twitch in my leg was serious or whether interval training still made sense despite stress at work. We decided together.",
+      "p3": "This feeling – the absolute security that someone is thinking along and looking out for me – increased my performance more than any rigid training plan before.",
+      "p4": "But I realized: A human being cannot divide themselves. Only a few athletes have the privilege or the budget for such close 1:1 support. I wanted to change that.",
+      "p5": "I founded YOUB to make this individual support accessible to everyone. We have translated this logic, empathy, and sound knowledge into an AI. So that you have exactly this daily consultation and this security – 24/7, right in your pocket.",
+      "p6": "YOUB is the attempt to share this privilege with the world."
     },
     "team": {
-      "headline": "The team behind YOUB",
-      "subline": "Expertise from sports science, technology, and passion.",
-      "member1": {
-        "name": "Felix Hermanutz",
-        "role": "Founder",
-        "text": "Passionate cyclist and visionary. Felix combines his experience in competitive sports with the vision of making high-end coaching accessible to everyone."
+      "title": "Who we are",
+      "headline": "More than just an app – a team of experts.",
+      "connection": "At YOUB, we are the connection of two worlds:",
+      "world1": {
+        "label": "The Athletes & Coaches",
+        "text": "Who know how real training feels and what questions an athlete truly has."
       },
-      "member2": {
-        "name": "Thomas Grininger",
-        "role": "Technical Mastermind",
-        "text": "From the center court to the code. As a former professional table tennis player, Thomas knows that in the end, tiny nuances decide between victory and defeat. This uncompromising precision and the ability to make clear decisions under intense pressure are embedded in the architecture of YOUB today. He builds the technological foundation that is as responsive as a reflex – so that the AI understands your life in real-time."
+      "world2": {
+        "label": "The Visionaries & Engineers",
+        "text": "Who translate this human experience into intelligent, adaptive technology."
       },
-      "member3": {
-        "name": "Markus Hertlein",
-        "role": "Scientific Architect",
-        "text": "The brain behind the logic. Markus brings years of experience from diagnostics and high-performance coaching to the system. He has learned how to lead professionals to victory – and now translates this knowledge for YOUB into an intelligence that helps every athlete reliably reach their potential."
-      }
+      "shared_goal": "Together we have one goal: To bring the knowledge of the best from our Sports Lab directly into your pocket."
     },
     "values": {
       "title": "What drives us.",

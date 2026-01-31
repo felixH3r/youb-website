@@ -219,34 +219,27 @@
       }
     },
     "story": {
-      "headline": "Jeder verdient einen Markus.",
-      "p1": "Ich hatte Glück. Ich hatte etwas, das den meisten Athleten fehlt: Einen Coach, der nicht nur Trainingspläne schrieb, sondern der wirklich da war.",
-      "p2": "Markus – der Sportwissenschaftler, der heute das Hirn hinter YOUB ist – war für mich mehr als ein Trainer. Er war ein Freund und Sparringspartner. Wir haben uns jeden Tag ausgetauscht.",
-      "p3": "Wenn ich müde war, hat er nicht gesagt „Zieh durch“, sondern „Ruh dich aus“. Wenn ich Zweifel hatte, gab er mir Sicherheit. Ich konnte jederzeit Rücksprache halten. Ich musste nie allein entscheiden, ob das Zwicken im Bein schlimm ist oder ob ich das Intervalltraining trotz Stress im Job durchziehen soll. Wir haben es zusammen entschieden.",
-      "p4": "Dieses Gefühl – diese absolute Sicherheit, dass jemand mitdenkt und auf mich aufpasst – hat meine Leistung mehr gesteigert als jeder Trainingsplan zuvor.",
-      "p5": "Aber mir wurde klar: Markus kann sich nicht teilen. Er hat nur 24 Stunden am Tag. Nur wenige Athleten haben das Privileg (oder das Budget), eine solch enge 1:1-Betreuung zu erleben.",
-      "p6": "Das wollte ich ändern.",
-      "p7": "Ich habe YOUB gegründet, um „meinen Markus“ jedem zur Verfügung zu stellen. Wir haben Markus' Logik, seine Empathie und sein sportwissenschaftliches Wissen in eine KI übersetzt. Damit du genau diese tägliche Rücksprache, dieses feinfühlige Anpassen und diese Sicherheit hast – 24/7, direkt in deiner Tasche.",
-      "p8": "YOUB ist der Versuch, dieses Glück zu teilen."
+      "headline": "Die Vision: Jeder verdient einen Mentor.",
+      "p1": "Ich hatte Glück. Ich hatte etwas, das den meisten Athleten fehlt: Einen Coach, der nicht nur Trainingspläne schrieb, sondern der wirklich da war. Ein Sparringspartner, der heute die sportwissenschaftliche Intelligenz hinter YOUB ist.",
+      "p2": "Wir haben uns jeden Tag ausgetauscht. Wenn ich müde war, hieß es nicht „Zieh durch“, sondern „Ruh dich aus“. Wenn ich Zweifel hatte, gab mir diese Expertise Sicherheit. Ich musste nie allein entscheiden, ob ein Zwicken im Bein ernst ist oder ob das Intervalltraining trotz Stress im Job sinnvoll bleibt. Wir haben es gemeinsam entschieden.",
+      "p3": "Dieses Gefühl – die absolute Sicherheit, dass jemand mitdenkt und auf mich aufpasst – hat meine Leistung mehr gesteigert als jeder starre Trainingsplan zuvor.",
+      "p4": "Doch mir wurde klar: Ein Mensch kann sich nicht teilen. Nur wenige Athleten haben das Privileg oder das Budget für eine so enge 1:1-Betreuung. Das wollte ich ändern.",
+      "p5": "Ich habe YOUB gegründet, um diese individuelle Betreuung jedem zugänglich zu machen. Wir haben diese Logik, die Empathie und das fundierte Wissen in eine KI übersetzt. Damit du genau diese tägliche Rücksprache und diese Sicherheit hast – 24/7, direkt in deiner Tasche.",
+      "p6": "YOUB ist der Versuch, dieses Privileg mit der Welt zu teilen."
     },
     "team": {
-      "headline": "Das Team hinter YOUB",
-      "subline": "Expertise aus Sportwissenschaft, Technologie und Leidenschaft.",
-      "member1": {
-        "name": "Felix Hermanutz",
-        "role": "Founder",
-        "text": "Leidenschaftlicher Radsportler und Visionär. Felix verbindet seine Erfahrung aus dem Leistungssport mit der Vision, High-End Coaching für jeden zugänglich zu machen."
+      "title": "Wer wir sind",
+      "headline": "Mehr als nur eine App – ein Team aus Experten.",
+      "connection": "Wir bei YOUB sind die Verbindung aus zwei Welten:",
+      "world1": {
+        "label": "Die Athleten & Coaches",
+        "text": "Die wissen, wie sich echtes Training anfühlt und welche Fragen ein Sportler wirklich hat."
       },
-      "member2": {
-        "name": "Thomas Grininger",
-        "role": "Technisches Mastermind",
-        "text": "Vom Center Court in den Code. Als ehemaliger Tischtennis-Profi weiß Thomas, dass am Ende Nuancen über Sieg oder Niederlage entscheiden. Diese kompromisslose Präzision und die Fähigkeit, unter Höchstbelastung klare Entscheidungen zu treffen, stecken heute in der Architektur von YOUB. Er baut das technologische Fundament, das so reaktionsschnell ist wie ein Reflex – damit die KI dein Leben in Echtzeit versteht."
+      "world2": {
+        "label": "Die Visionäre & Engineers",
+        "text": "Die diese menschliche Erfahrung in intelligente, lernfähige Technologie übersetzen."
       },
-      "member3": {
-        "name": "Markus Hertlein",
-        "role": "Wissenschaftlicher Architekt",
-        "text": "Das Hirn hinter der Logik. Markus bringt jahrelange Erfahrung aus der Diagnostik und dem High-Performance-Coaching mit in das System. Er hat gelernt, wie man Profis zu Siegen führt – und übersetzt dieses Wissen nun für YOUB in eine Intelligenz, die jedem Athleten hilft, sein Potenzial sicher zu erreichen."
-      }
+      "shared_goal": "Gemeinsam haben wir ein Ziel: Das Wissen der Besten aus unserem Sports Lab direkt in deine Tasche zu bringen."
     },
     "values": {
       "title": "Was uns antreibt.",
