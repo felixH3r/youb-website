@@ -145,7 +145,7 @@ onMounted(() => {
               <div
                 class="w-8 h-8 rounded-full bg-white/10 border border-white/10 flex items-center justify-center flex-shrink-0 text-white"
               >
-                <span class="text-[9px] font-bold">AI</span>
+                <span class="text-[9px] font-bold">YB</span>
               </div>
               <div
                 class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white/5 backdrop-blur-xl border border-white/10 text-white text-xs text-left font-medium leading-relaxed shadow-xl shadow-black/20 overflow-hidden relative"
@@ -188,7 +188,7 @@ onMounted(() => {
               <div
                 class="w-8 h-8 rounded-full bg-white/10 border border-white/10 flex items-center justify-center flex-shrink-0 text-white"
               >
-                <span class="text-[9px] font-bold">AI</span>
+                <span class="text-[9px] font-bold">YB</span>
               </div>
               <div
                 class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white/5 backdrop-blur-xl border border-white/10 text-white text-xs text-left leading-relaxed shadow-xl shadow-black/20 overflow-hidden relative"
