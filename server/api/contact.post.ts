@@ -55,7 +55,7 @@ export default defineEventHandler(async (event) => {
 
     // 2. Create verification link
     const token = Buffer.from(JSON.stringify({ email, audienceId })).toString(
-      "base64"
+      "base64",
     );
     const verificationUrl = `${
       process.env.PUBLIC_URL || "https://youb.app"
@@ -67,14 +67,64 @@ export default defineEventHandler(async (event) => {
       to: email,
       subject: "Bestätige deine E-Mail Adresse bei YOUB",
       html: `
-        <h1>Willkommen bei YOUB, ${name}!</h1>
-        <p>Vielen Dank für dein Interesse. Bitte bestätige deine E-Mail Adresse, um deine Anfrage abzuschließen.</p>
-        <a href="${verificationUrl}" style="background-color: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; margin-top: 20px;">
-          E-Mail bestätigen
-        </a>
-        <p style="margin-top: 40px; font-size: 12px; color: #666;">
-          Wenn du dich nicht bei YOUB angemeldet hast, kannst du diese E-Mail einfach ignorieren.
-        </p>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <style>
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+    
+    /* Dark Mode Styles */
+    @media (prefers-color-scheme: dark) {
+      .body-bg {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+      }
+      .dark-button {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+      }
+      h1, p {
+        color: #ffffff !important;
+      }
+    }
+
+    /* Target specific clients like Apple Mail */
+    [data-ogsc] .body-bg { background-color: #000000 !important; color: #ffffff !important; }
+    [data-ogsc] .dark-button { background-color: #ffffff !important; color: #000000 !important; }
+  </style>
+</head>
+<body class="body-bg" style="margin: 0; padding: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #ffffff; color: #000000;">
+  <div style="max-width: 600px; margin: 0 auto;">
+    <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Willkommen bei YOUB, ${name}!</h1>
+    <p style="font-size: 16px; line-height: 1.5; margin-bottom: 10px;">Vielen Dank für dein Interesse. Bitte bestätige deine E-Mail Adresse, um deine Anfrage abzuschließen.</p>
+    <a href="${verificationUrl}" 
+       class="dark-button" 
+       style="background: #000000 !important;
+              background: linear-gradient(#000000, #000000) !important; 
+              color: #ffffff !important; 
+              padding: 12px 24px; 
+              text-decoration: none; 
+              border-radius: 4px; 
+              display: inline-block; 
+              margin-top: 20px;
+              font-weight: 600;
+              border: 1px solid #ffffff;
+              color-scheme: only light;">
+      <span style="color: #ffffff !important;">E-Mail bestätigen</span>
+    </a>
+    <p style="margin-top: 40px; font-size: 12px; color: #666;">
+      Wenn du dich nicht bei YOUB angemeldet hast, kannst du diese E-Mail einfach ignorieren.
+    </p>
+  </div>
+</body>
+</html>
       `,
     });
 
