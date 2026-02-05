@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import MarkdownIt from "markdown-it";
+
 const props = defineProps<{
   message: {
     role: "user" | "model" | "assistant";
@@ -6,9 +8,22 @@ const props = defineProps<{
   };
 }>();
 
+const md = new MarkdownIt({
+  html: true,
+  linkify: true,
+  typographer: true,
+});
+
 const isModel = computed(() =>
-  ["model", "assistant"].includes(props.message.role)
+  ["model", "assistant"].includes(props.message.role),
 );
+
+const renderedContent = computed(() => {
+  if (isModel.value) {
+    return md.render(props.message.content);
+  }
+  return props.message.content;
+});
 </script>
 
 <template>
@@ -28,7 +43,8 @@ const isModel = computed(() =>
         class="prose prose-sm"
         :class="isModel ? 'prose-black' : 'prose-invert'"
       >
-        <p class="whitespace-pre-wrap">{{ message.content }}</p>
+        <div v-if="isModel" v-html="renderedContent" class="markdown-content" />
+        <p v-else class="whitespace-pre-wrap">{{ message.content }}</p>
       </div>
     </div>
   </div>

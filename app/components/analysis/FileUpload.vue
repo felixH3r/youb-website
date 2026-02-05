@@ -18,7 +18,7 @@ const handleFileSelect = (e: Event) => {
 const handleDrop = (e: DragEvent) => {
   isDragging.value = false;
   const files = e.dataTransfer?.files;
-  if (files && files.length > 0) {
+  if (files && files.length > 0 && files[0]) {
     if (files[0].name.endsWith(".fit")) {
       emit("upload", files[0]);
     }

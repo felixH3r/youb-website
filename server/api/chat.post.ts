@@ -14,6 +14,13 @@ import {
   getRunningIntervalsAndPauses,
   getRunningMetricsForDuration,
 } from "@youbdev/sport-intelligence";
+import type { HRZoneConfig } from "@youbdev/sport-intelligence";
+
+const DEFAULT_HR_CONFIG: HRZoneConfig = {
+  maxHR: 190,
+  restHR: 60,
+  gender: "male",
+};
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
@@ -104,6 +111,10 @@ export default defineEventHandler(async (event) => {
                 description:
                   "Minimum duration of the interval in seconds. Default 30s.",
               },
+              smoothingWindow: {
+                type: "number",
+                description: "Smoothing window in seconds. Default 5s.",
+              },
             },
             required: ["hrThreshold"],
           },
@@ -152,6 +163,14 @@ export default defineEventHandler(async (event) => {
                 type: "number",
                 description: "Minimum duration in seconds. Default 30.",
               },
+              smoothingWindow: {
+                type: "number",
+                description: "Smoothing window in seconds. Default 5.",
+              },
+              powerThreshold: {
+                type: "number",
+                description: "Manual power threshold in Watts.",
+              },
             },
           },
         },
@@ -168,6 +187,10 @@ export default defineEventHandler(async (event) => {
               minDurationSec: {
                 type: "number",
                 description: "Minimum duration in seconds. Default 30.",
+              },
+              smoothingWindow: {
+                type: "number",
+                description: "Smoothing window in seconds. Default 5.",
               },
             },
             required: ["speedThreshold"],
@@ -220,24 +243,33 @@ export default defineEventHandler(async (event) => {
         {
           hrThreshold: args.hrThreshold,
           minDurationSec: args.minDurationSec || 30,
+          smoothingWindow: args.smoothingWindow || 5,
         },
-        {}
+        DEFAULT_HR_CONFIG,
       ),
     getMaxHRForDuration: (args: any) =>
       getMaxHRForDuration(analysis.records, args.durationSeconds),
     getMaxPowerForDuration: (args: any) =>
       getMaxPowerForDuration(analysis.records, args.durationSeconds),
-    getPowerIntervals: (args: any) =>
-      getIntervalsAndPauses(
+    getPowerIntervals: (args: any) => {
+      const ftp = args.ftp || 250;
+      const powerThreshold = args.powerThreshold || ftp * 0.9;
+      return getIntervalsAndPauses(
         analysis.records,
-        { minDurationSec: args.minDurationSec || 30 },
-        args.ftp || 250,
-        {}
-      ),
+        {
+          powerThreshold,
+          minDurationSec: args.minDurationSec || 30,
+          smoothingWindow: args.smoothingWindow || 5,
+        },
+        ftp,
+        DEFAULT_HR_CONFIG,
+      );
+    },
     getRunningIntervals: (args: any) =>
       getRunningIntervalsAndPauses(analysis.records, {
         speedThreshold: args.speedThreshold,
         minDurationSec: args.minDurationSec || 30,
+        smoothingWindow: args.smoothingWindow || 5,
       }),
     getMetricsForTimeRange: (args: any) => {
       if (analysis.sport === "cycling") {
@@ -246,20 +278,20 @@ export default defineEventHandler(async (event) => {
           new Date(args.startTime),
           new Date(args.endTime),
           args.ftp || 250,
-          {}
+          DEFAULT_HR_CONFIG,
         );
       } else if (analysis.sport === "running") {
         return getRunningMetricsForDuration(
           analysis.records,
           new Date(args.startTime),
-          new Date(args.endTime)
+          new Date(args.endTime),
         );
       } else {
         return getHRMetricsForDuration(
           analysis.records,
           new Date(args.startTime),
           new Date(args.endTime),
-          {}
+          DEFAULT_HR_CONFIG,
         );
       }
     },
@@ -280,12 +312,16 @@ Total duration: ${analysis.sessions?.[0]?.total_elapsed_time || 0}s.`;
   for (const m of messages.slice(0, -1)) {
     if (m.role === "user") foundFirstUser = true;
     if (foundFirstUser) {
+      // Normalize role names for Gemini
+      const role = m.role === "assistant" ? "model" : m.role;
       geminiHistory.push({
-        role: m.role === "user" ? "user" : "model",
-        parts: [{ text: m.content }],
+        role: role as "user" | "model",
+        parts: [{ text: m.content || "" }],
       });
     }
   }
+
+  console.log(`Starting chat with history length: ${geminiHistory.length}`);
 
   const chat = model.startChat({
     history: geminiHistory,
@@ -296,7 +332,18 @@ Total duration: ${analysis.sessions?.[0]?.total_elapsed_time || 0}s.`;
   });
 
   const userMessage = messages[messages.length - 1].content;
-  let result = await chat.sendMessage(userMessage);
+  console.log("Sending message to Gemini:", userMessage);
+
+  let result;
+  try {
+    result = await chat.sendMessage(userMessage);
+  } catch (e) {
+    console.error("Error in initial chat.sendMessage:", e);
+    throw createError({
+      statusCode: 500,
+      statusMessage: `AI Error: ${(e as Error).message}`,
+    });
+  }
   let response = result.response;
 
   // Handle function calls loop
@@ -306,12 +353,18 @@ Total duration: ${analysis.sessions?.[0]?.total_elapsed_time || 0}s.`;
   while (response.functionCalls()?.length && callCount < maxCalls) {
     callCount++;
     const functionCalls = response.functionCalls();
+    if (!functionCalls) break;
+
+    console.log(
+      `Iteration ${callCount}: Handling ${functionCalls.length} function calls`,
+    );
 
     const toolResults = await Promise.all(
       functionCalls.map(async (call) => {
         const fn = functions[call.name as keyof typeof functions];
         if (fn) {
           try {
+            console.log(`Executing tool: ${call.name}`, call.args);
             const toolResult = await fn(call.args);
             return {
               functionResponse: {
@@ -320,7 +373,7 @@ Total duration: ${analysis.sessions?.[0]?.total_elapsed_time || 0}s.`;
               },
             };
           } catch (e) {
-            console.error(`Error executing ${call.name}:`, e);
+            console.error(`Error executing tool ${call.name}:`, e);
             return {
               functionResponse: {
                 name: call.name,
@@ -329,24 +382,68 @@ Total duration: ${analysis.sessions?.[0]?.total_elapsed_time || 0}s.`;
             };
           }
         }
+        console.warn(`Tool not found: ${call.name}`);
         return {
           functionResponse: {
             name: call.name,
             response: { error: "Function not found" },
           },
         };
-      })
+      }),
     );
 
     if (toolResults.length > 0) {
-      result = await chat.sendMessage(toolResults as any);
-      response = result.response;
+      try {
+        result = await chat.sendMessage(toolResults as any);
+        response = result.response;
+      } catch (e) {
+        console.error("Error sending tool results to Gemini:", e);
+        // If it fails here, we should probably stop and return what we have or an error
+        break;
+      }
     } else {
       break;
     }
   }
 
+  if (callCount >= maxCalls) {
+    console.warn("Reached max tool call iterations (10)");
+  }
+
+  let text = "";
+  try {
+    text = response.text();
+  } catch (e) {
+    console.error("Error calling response.text():", e);
+  }
+
+  // If we have no text but had tool calls, or if text() failed, try to nudge the model for a summary
+  if (!text) {
+    console.log("No text response yet, nudging model for summary...");
+    try {
+      const nudgeResult = await chat.sendMessage(
+        "Please provide a concise summary based on the analysis results above.",
+      );
+      text = nudgeResult.response.text();
+      console.log("Successfully got nudged response text");
+    } catch (e) {
+      console.error("Error nudging model for summary:", e);
+      // Try to fall back to first candidate if text() still fails
+      const candidate = response.candidates?.[0];
+      if (candidate?.content?.parts?.[0]?.text) {
+        text = candidate.content.parts[0].text;
+      }
+    }
+  }
+
+  if (!text) {
+    console.warn("Gemini returned empty text response even after nudge");
+    return {
+      text: "I analyzed the data but couldn't generate a textual response. Please try asking in a different way or check the raw analysis logs.",
+    };
+  }
+
   return {
-    text: response.text(),
+    text: text,
   };
 });

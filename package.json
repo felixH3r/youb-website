@@ -7,13 +7,16 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
     "@nuxt/icon": "^2.1.1",
     "@nuxtjs/seo": "^3.3.0",
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/typography": "^0.5.15",
+    "@types/markdown-it": "^14.1.2",
     "autoprefixer": "^10.4.23",
     "nuxt": "^4.2.2",
     "postcss": "^8.5.6",
@@ -27,6 +30,7 @@
     "@storyblok/nuxt": "^8.2.3",
     "@vercel/analytics": "^1.6.1",
     "@youbdev/sport-intelligence": "^1.0.0",
+    "markdown-it": "^14.1.0",
     "resend": "^6.7.0"
   }
 }
