@@ -16,17 +16,16 @@
         <h1
           class="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-6"
         >
-          YOUB
+          {{ $t("blog.titleBrief") }}
           <span
             class="bg-gradient-to-r from-white/100 to-white/40 bg-clip-text text-transparent"
-            >Insights</span
+            >{{ $t("blog.titleHighlight") }}</span
           >
         </h1>
         <p
           class="text-xl md:text-2xl font-light text-white/60 max-w-2xl mx-auto"
         >
-          Deep dives into sports science, AI, and the evolution of personal
-          coaching.
+          {{ $t("blog.subtitle") }}
         </p>
       </div>
 
@@ -41,13 +40,13 @@
 
       <div v-else-if="error" class="text-center py-24">
         <p class="text-white/60 mb-8">
-          Failed to load articles. Please check your Storyblok configuration.
+          {{ $t("blog.errorLoading") }}
         </p>
         <button
           @click="refresh"
           class="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-all"
         >
-          Try Again
+          {{ $t("blog.tryAgain") }}
         </button>
       </div>
 
@@ -74,7 +73,7 @@
           name="ph:article-ny-times-light"
           class="w-16 h-16 text-white/20 mx-auto mb-6"
         />
-        <p class="text-xl text-white/40">No articles found yet.</p>
+        <p class="text-xl text-white/40">{{ $t("blog.noArticles") }}</p>
       </div>
     </div>
   </div>
@@ -82,7 +81,7 @@
 
 <script setup>
 const storyblokApi = useStoryblokApi();
-const { locale } = useI18n();
+const { locale, t } = useI18n();
 
 const {
   data: stories,
@@ -90,18 +89,19 @@ const {
   error,
   refresh,
 } = await useAsyncData(
-  "blog-posts",
+  `blog-posts-${locale.value}`,
   async () => {
     const { data } = await storyblokApi.get("cdn/stories", {
       version: "published", // or 'draft'
       starts_with: "blog/",
       is_startpage: false,
+      language: locale.value,
     });
     return data.stories;
   },
   {
     watch: [locale],
-  }
+  },
 );
 
 const formatDate = (dateString) => {
@@ -112,17 +112,16 @@ const formatDate = (dateString) => {
       day: "2-digit",
       month: "long",
       year: "numeric",
-    }
+    },
   );
 };
 
 useHead({
-  title: "Blog | YOUB Insights",
+  title: `${t("blog.title")} | YOUB`,
   meta: [
     {
       name: "description",
-      content:
-        "Explore the connection between sports science and artificial intelligence on the YOUB blog.",
+      content: t("blog.seoDescription"),
     },
   ],
 });

@@ -497,5 +497,26 @@
     },
     "consent": "By using the YOUB app, you consent to the processing of your personal data as described in this Privacy Policy.",
     "footer": "This Privacy Policy is designed to be clear and accessible. If there are any terms you do not understand or if you have any further questions, please do not hesitate to contact us."
+  },
+  "blog": {
+    "title": "YOUB Insights",
+    "titleBrief": "YOUB",
+    "titleHighlight": "Insights",
+    "subtitle": "Deep dives into sports science, AI, and the evolution of personal coaching.",
+    "errorLoading": "Failed to load articles. Please check your Storyblok configuration.",
+    "tryAgain": "Try Again",
+    "noArticles": "No articles found yet.",
+    "backToInsights": "Back to Insights",
+    "share": "Share this insight:",
+    "viewAll": "View all articles",
+    "notFound": "Article not found",
+    "notFoundText": "The story you're looking for was moved or deleted.",
+    "backToBlog": "Back to Blog",
+    "seoDescription": "Explore the connection between sports science and artificial intelligence on the YOUB blog.",
+    "readMore": "Read More",
+    "categoryArticle": "Article",
+    "categoryInsight": "Insight",
+    "untitledInsight": "Untitled Insight",
+    "excerptFallback": "Exploring the next frontier of sports intelligence and personalized coaching."
   }
 }

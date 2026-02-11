@@ -8,7 +8,7 @@
         <span
           class="px-3 py-1 rounded-full bg-white/10 border border-white/10 text-white/70"
         >
-          {{ blok.category || "Insight" }}
+          {{ blok.category || $t("blog.categoryInsight") }}
         </span>
         <span v-if="formattedDate" class="text-white/40">{{
           formattedDate
@@ -18,16 +18,13 @@
       <h1
         class="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-8 leading-[1.1]"
       >
-        {{ blok.title || "Untitled Insight" }}
+        {{ blok.title || $t("blog.untitledInsight") }}
       </h1>
 
       <p
         class="text-xl md:text-2xl font-light text-white/60 leading-relaxed max-w-3xl"
       >
-        {{
-          blok.excerpt ||
-          "Exploring the next frontier of sports intelligence and personalized coaching."
-        }}
+        {{ blok.excerpt || $t("blog.excerptFallback") }}
       </p>
     </header>
 

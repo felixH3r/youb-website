@@ -497,5 +497,26 @@
     },
     "consent": "Durch die Nutzung der YOUB-App stimmen Sie der Verarbeitung Ihrer personenbezogenen Daten wie in dieser Datenschutzerklärung beschrieben zu.",
     "footer": "Diese Datenschutzerklärung soll klar und zugänglich sein. Wenn es Begriffe gibt, die Sie nicht verstehen, oder wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren."
+  },
+  "blog": {
+    "title": "YOUB Insights",
+    "titleBrief": "YOUB",
+    "titleHighlight": "Insights",
+    "subtitle": "Tiefgreifende Einblicke in Sportwissenschaft, KI und die Evolution des persönlichen Coachings.",
+    "errorLoading": "Fehler beim Laden der Artikel. Bitte überprüfe deine Storyblok-Konfiguration.",
+    "tryAgain": "Erneut versuchen",
+    "noArticles": "Noch keine Artikel gefunden.",
+    "backToInsights": "Zurück zu Insights",
+    "share": "Diesen Artikel teilen:",
+    "viewAll": "Alle Artikel ansehen",
+    "notFound": "Artikel nicht gefunden",
+    "notFoundText": "Die Story, die du suchst, wurde verschoben oder gelöscht.",
+    "backToBlog": "Zurück zum Blog",
+    "seoDescription": "Entdecke die Verbindung zwischen Sportwissenschaft und künstlicher Intelligenz im YOUB Blog.",
+    "readMore": "Weiterlesen",
+    "categoryArticle": "Artikel",
+    "categoryInsight": "Insight",
+    "untitledInsight": "Unbenannter Insight",
+    "excerptFallback": "Erforschung der nächsten Grenze der Sportintelligenz und des personalisierten Coachings."
   }
 }

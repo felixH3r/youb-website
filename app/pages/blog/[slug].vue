@@ -21,7 +21,7 @@
           name="ph:arrow-left-light"
           class="mr-2 w-5 h-5 group-hover:-translate-x-1 transition-transform"
         />
-        Back to Insights
+        {{ $t("blog.backToInsights") }}
       </NuxtLink>
 
       <StoryblokComponent v-if="story" :blok="story.content" />
@@ -31,7 +31,7 @@
         class="mt-24 pt-12 border-t border-white/10 flex flex-wrap items-center justify-between gap-8"
       >
         <div class="flex items-center gap-6">
-          <span class="text-sm text-white/40">Share this insight:</span>
+          <span class="text-sm text-white/40">{{ $t("blog.share") }}</span>
           <div class="flex gap-4">
             <button class="text-white/40 hover:text-white transition-colors">
               <Icon name="ph:twitter-logo-light" class="w-6 h-6" />
@@ -49,7 +49,7 @@
           to="/blog"
           class="px-8 py-3 rounded-full border border-white/10 bg-white/5 text-white hover:bg-white/10 transition-all font-medium"
         >
-          View all articles
+          {{ $t("blog.viewAll") }}
         </NuxtLink>
       </footer>
     </div>
@@ -68,22 +68,24 @@
     v-else
     class="min-h-screen bg-black flex flex-col items-center justify-center px-4"
   >
-    <h1 class="text-4xl text-white font-bold mb-4">Article not found</h1>
+    <h1 class="text-4xl text-white font-bold mb-4">
+      {{ $t("blog.notFound") }}
+    </h1>
     <p class="text-white/60 mb-8">
-      The story you're looking for was moved or deleted.
+      {{ $t("blog.notFoundText") }}
     </p>
     <NuxtLink
       to="/blog"
       class="px-8 py-3 rounded-full bg-white text-black font-semibold"
     >
-      Back to Blog
+      {{ $t("blog.backToBlog") }}
     </NuxtLink>
   </div>
 </template>
 
 <script setup>
 const route = useRoute();
-const { locale } = useI18n();
+const { locale, t } = useI18n();
 
 const slug = route.params.slug;
 const actualSlug = Array.isArray(slug) ? slug.join("/") : slug || "";
@@ -99,9 +101,9 @@ const { data: story, error } = await useAsyncData(
       const { data } = await storyblokApi.get(
         `cdn/stories/blog/${actualSlug}`,
         {
-          version: "draft",
+          version: "published",
           language: locale.value,
-        }
+        },
       );
       return data.story;
     } catch (e) {
@@ -111,7 +113,7 @@ const { data: story, error } = await useAsyncData(
   },
   {
     watch: [locale],
-  }
+  },
 );
 
 // Enable Storyblok Bridge for live editing if we are in the browser
@@ -132,7 +134,7 @@ watchEffect(() => {
   const geo = content.geo || {};
 
   useHead({
-    title: seo.title || `${content.title || "Untitled"} | YOUB Insights`,
+    title: seo.title || `${content.title || t("blog.notFound")} | YOUB`,
     meta: [
       {
         name: "description",

@@ -25,7 +25,7 @@
         <span
           class="px-3 py-1 rounded-full bg-white/10 border border-white/10 text-xs font-medium text-white/70"
         >
-          {{ category || "Article" }}
+          {{ category || $t("blog.categoryArticle") }}
         </span>
         <span class="text-xs text-white/40">{{ date }}</span>
       </div>
@@ -45,7 +45,7 @@
       <div
         class="mt-auto flex items-center text-sm font-medium text-white/80 group-hover:translate-x-1 transition-transform"
       >
-        Read More
+        {{ $t("blog.readMore") }}
         <Icon name="ph:arrow-right-light" class="ml-2 w-4 h-4" />
       </div>
     </div>
