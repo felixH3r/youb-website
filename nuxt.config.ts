@@ -5,7 +5,13 @@ export default defineNuxtConfig({
     url: "https://youb.app",
     name: "YOUB",
   },
-  modules: ["@nuxt/icon", "@nuxtjs/i18n", "@nuxtjs/seo", "@storyblok/nuxt"],
+  modules: [
+    "@nuxt/icon",
+    "@nuxtjs/i18n",
+    "@nuxtjs/seo",
+    "@storyblok/nuxt",
+    "@nuxt/eslint",
+  ],
   i18n: {
     locales: [
       { code: "en", name: "English", file: "en.json" },
