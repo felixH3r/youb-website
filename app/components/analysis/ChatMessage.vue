@@ -43,7 +43,7 @@ const renderedContent = computed(() => {
         class="prose prose-sm"
         :class="isModel ? 'prose-black' : 'prose-invert'"
       >
-        <div v-if="isModel" v-html="renderedContent" class="markdown-content" />
+        <div v-if="isModel" class="markdown-content" v-html="renderedContent" />
         <p v-else class="whitespace-pre-wrap">{{ message.content }}</p>
       </div>
     </div>

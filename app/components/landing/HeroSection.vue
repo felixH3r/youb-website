@@ -58,7 +58,7 @@ onMounted(() => {
         ref="titleRef"
         class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white mb-8 leading-[0.9] text-balance animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 ease-out"
       >
-        {{ $t("hero.titlePrefix") }} <br />
+        {{ $t("hero.titlePrefix") }} <br >
         <span class="text-white/40 italic">{{
           $t("hero.titleHighlight")
         }}</span>

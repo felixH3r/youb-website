@@ -9,7 +9,7 @@
         src="/LoneCyclistMountain.png"
         alt="Cyclist in mountains"
         class="w-full h-full object-cover"
-      />
+      >
       <div class="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
       <div
         class="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black via-black/20 to-transparent"
@@ -57,14 +57,14 @@
               {{ $t("waitlist.success.message") }}
             </p>
             <button
-              @click="submitted = false"
               class="text-white/40 hover:text-white transition-colors text-sm font-medium"
+              @click="submitted = false"
             >
               {{ $t("waitlist.success.reset") }}
             </button>
           </div>
 
-          <form v-else @submit.prevent="handleSubmit" class="space-y-6">
+          <form v-else class="space-y-6" @submit.prevent="handleSubmit">
             <!-- Name Field -->
             <div class="space-y-2">
               <input
@@ -74,7 +74,7 @@
                 required
                 class="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-all duration-300"
                 :placeholder="$t('waitlist.form.name')"
-              />
+              >
             </div>
 
             <!-- Email Field -->
@@ -86,7 +86,7 @@
                 required
                 class="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-all duration-300"
                 :placeholder="$t('waitlist.form.email')"
-              />
+              >
             </div>
 
             <!-- Sport Dropdown -->
@@ -114,9 +114,9 @@
                   {{ $t("waitlist.form.submit") }}
                 </span>
                 <Icon
+                  v-if="!loading"
                   name="ph:arrow-right-bold"
                   class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
-                  v-if="!loading"
                 />
               </div>
             </button>

@@ -12,7 +12,7 @@
         playsinline
         class="w-full h-full object-cover opacity-40 grayscale"
       >
-        <source src="/problem-video.mp4" type="video/mp4" />
+        <source src="/problem-video.mp4" type="video/mp4" >
       </video>
       <!-- Dark Overlay Gradients -->
       <div

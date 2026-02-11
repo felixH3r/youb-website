@@ -79,21 +79,21 @@ onUnmounted(() => {
         </NuxtLink>
 
         <button
-          @click="open = !open"
           class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none"
+          @click="open = !open"
         >
           <div
             class="w-5 h-0.5 bg-white transition-all duration-300"
             :class="{ 'rotate-45 translate-y-2': open }"
-          ></div>
+          />
           <div
             class="w-5 h-0.5 bg-white transition-all duration-300"
             :class="{ 'opacity-0': open }"
-          ></div>
+          />
           <div
             class="w-5 h-0.5 bg-white transition-all duration-300"
             :class="{ '-rotate-45 -translate-y-2': open }"
-          ></div>
+          />
         </button>
       </div>
     </nav>

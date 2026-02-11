@@ -52,7 +52,7 @@ const { t } = useI18n();
               src="/KotlFinish.jpeg"
               alt="Founder Story"
               class="relative z-10 w-full rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 hover:scale-[1.02]"
-            />
+            >
           </div>
         </div>
       </div>

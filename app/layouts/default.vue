@@ -1,5 +1,5 @@
 <template>
-  <CommonNavbar></CommonNavbar>
-  <slot></slot>
-  <CommonFooter></CommonFooter>
+  <CommonNavbar/>
+  <slot/>
+  <CommonFooter/>
 </template>

@@ -33,7 +33,7 @@ const goalLines = computed(() => {
         </h2>
         <div
           class="w-24 h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent mx-auto mb-12 animate-in fade-in duration-1000 delay-300"
-        ></div>
+        />
         <p
           class="text-lg md:text-xl font-light text-white/50 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom duration-1000 delay-200"
         >
@@ -49,7 +49,7 @@ const goalLines = computed(() => {
         >
           <div
             class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-          ></div>
+          />
           <div class="relative p-8 md:p-12 h-full flex flex-col justify-center">
             <h3
               class="text-2xl md:text-3xl font-bold text-white mb-6 tracking-tight group-hover:scale-[1.02] transition-transform duration-500"
@@ -68,7 +68,7 @@ const goalLines = computed(() => {
         >
           <div
             class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-          ></div>
+          />
           <div class="relative p-8 md:p-12 h-full flex flex-col justify-center">
             <h3
               class="text-2xl md:text-3xl font-bold text-white mb-6 tracking-tight group-hover:scale-[1.02] transition-transform duration-500"

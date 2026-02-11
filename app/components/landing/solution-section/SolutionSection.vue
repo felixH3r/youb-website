@@ -125,7 +125,7 @@ onMounted(() => {
                 src="/SolutionScience.png"
                 alt="Intelligence"
                 class="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
-              />
+              >
             </div>
           </div>
 

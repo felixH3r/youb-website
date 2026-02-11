@@ -11,9 +11,9 @@
             {{ $t("legalNotice.serviceProvider") }}
           </h2>
           <p>
-            Felix Hermanutz<br />
-            Dr. Greilstraße 11 Top 3.09<br />
-            St. Georgen im Attergau, 4880<br />
+            Felix Hermanutz<br >
+            Dr. Greilstraße 11 Top 3.09<br >
+            St. Georgen im Attergau, 4880<br >
             AT - Austria
           </p>
 
@@ -26,7 +26,7 @@
               href="mailto:felix@youb.app"
               class="text-blue-400 hover:underline"
               >felix@youb.app</a
-            ><br />
+            ><br >
           </p>
 
           <h2 class="text-xl font-semibold">
@@ -40,9 +40,9 @@
             {{ $t("legalNotice.responsibleContent") }}
           </h2>
           <p>
-            Felix Hermanutz<br />
-            Dr. Greilstraße 11 Top 3.09<br />
-            St. Georgen im Attergau, 4880<br />
+            Felix Hermanutz<br >
+            Dr. Greilstraße 11 Top 3.09<br >
+            St. Georgen im Attergau, 4880<br >
             AT - Austria
           </p>
 

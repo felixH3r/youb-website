@@ -43,8 +43,8 @@
           {{ $t("blog.errorLoading") }}
         </p>
         <button
-          @click="refresh"
           class="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-all"
+          @click="refresh"
         >
           {{ $t("blog.tryAgain") }}
         </button>

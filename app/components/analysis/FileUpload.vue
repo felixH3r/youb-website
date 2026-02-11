@@ -69,12 +69,12 @@ const handleDrop = (e: DragEvent) => {
         accept=".fit"
         class="hidden"
         @change="handleFileSelect"
-      />
+      >
     </div>
 
     <!-- Background Glow -->
     <div
       class="absolute -z-10 inset-0 bg-gradient-to-tr from-white/10 to-transparent blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-    ></div>
+    />
   </div>
 </template>

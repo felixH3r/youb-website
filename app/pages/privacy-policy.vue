@@ -17,7 +17,7 @@
         <div class="space-y-6">
           <p>
             <strong>{{ $t("privacyPolicy.version") }}:</strong> 1.1 (December
-            2025)<br />
+            2025)<br >
             <strong>{{ $t("privacyPolicy.effectiveDate") }}:</strong> 1.
             December 2025
           </p>
@@ -27,10 +27,10 @@
               {{ $t("privacyPolicy.controller") }}:
             </h2>
             <p>
-              Felix Hermanutz<br />
-              Herrenstraße 2, Top 20<br />
-              4020 Linz<br />
-              AT - Austria<br />
+              Felix Hermanutz<br >
+              Herrenstraße 2, Top 20<br >
+              4020 Linz<br >
+              AT - Austria<br >
               <a
                 href="mailto:felix@youb.app"
                 class="text-blue-400 hover:underline"
@@ -48,8 +48,8 @@
               {{ $t("privacyPolicy.section1.title") }}
             </h2>
             <p>
-              {{ $t("privacyPolicy.section1.content") }}<br />
-              Felix Hermanutz<br />
+              {{ $t("privacyPolicy.section1.content") }}<br >
+              Felix Hermanutz<br >
               <a
                 href="mailto:felix@youb.app"
                 class="text-blue-400 hover:underline"
@@ -277,8 +277,8 @@
               {{ $t("privacyPolicy.section13.title") }}
             </h2>
             <p>
-              {{ $t("privacyPolicy.section13.content") }}<br />
-              {{ $t("privacyPolicy.section13.address") }}<br />
+              {{ $t("privacyPolicy.section13.content") }}<br >
+              {{ $t("privacyPolicy.section13.address") }}<br >
               <a
                 href="mailto:felix@youb.app"
                 class="text-blue-400 hover:underline"

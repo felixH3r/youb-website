@@ -10,7 +10,7 @@
         :src="image"
         :alt="title"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-      />
+      >
       <div
         v-else
         class="w-full h-full bg-white/5 flex items-center justify-center"

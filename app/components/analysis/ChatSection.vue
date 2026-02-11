@@ -68,26 +68,26 @@ onMounted(() => {
         v-if="loading"
         class="flex gap-2 p-4 bg-white/5 rounded-2xl w-fit animate-pulse"
       >
-        <div class="w-2 h-2 bg-white/40 rounded-full animate-bounce"></div>
+        <div class="w-2 h-2 bg-white/40 rounded-full animate-bounce"/>
         <div
           class="w-2 h-2 bg-white/40 rounded-full animate-bounce delay-75"
-        ></div>
+        />
         <div
           class="w-2 h-2 bg-white/40 rounded-full animate-bounce delay-150"
-        ></div>
+        />
       </div>
     </div>
 
     <!-- Input Area -->
     <div class="p-6 border-t border-white/10 bg-black/20">
-      <form @submit.prevent="sendMessage" class="flex gap-4">
+      <form class="flex gap-4" @submit.prevent="sendMessage">
         <input
           v-model="input"
           type="text"
           :placeholder="t('analysis.chat.placeholder')"
           class="flex-1 bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-white/40 transition-colors"
           :disabled="loading"
-        />
+        >
         <button
           type="submit"
           class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all disabled:opacity-50 disabled:scale-100"

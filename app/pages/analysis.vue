@@ -72,15 +72,15 @@ const handleUpload = async (file: File) => {
             enter-to-class="opacity-100 translate-y-0"
           >
             <div class="max-w-4xl mx-auto w-full">
-              <ChatSection :analysisId="analysisData.analysisId" />
+              <ChatSection :analysis-id="analysisData.analysisId" />
             </div>
           </Transition>
 
           <!-- Reset Button -->
           <div class="flex justify-center">
             <button
-              @click="analysisData = null"
               class="text-sm text-white/40 hover:text-white transition-colors flex items-center gap-2"
+              @click="analysisData = null"
             >
               <Icon name="ph:arrow-counter-clockwise" />
               Neue Analyse starten

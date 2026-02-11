@@ -1,11 +1,11 @@
 <template>
-  <div class="relative w-full" ref="containerRef">
+  <div ref="containerRef" class="relative w-full">
     <!-- Dropdown Trigger -->
     <button
       type="button"
-      @click="isOpen = !isOpen"
       class="w-full flex items-center justify-between px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-white/30 transition-all duration-300 cursor-pointer text-left"
       :class="{ 'border-white/30 ring-1 ring-white/10': isOpen }"
+      @click="isOpen = !isOpen"
     >
       <span v-if="selectedOption" class="truncate">{{
         selectedOption.label
@@ -35,9 +35,9 @@
         <div
           v-for="option in options"
           :key="option.value"
-          @click="selectOption(option)"
           class="px-6 py-3 text-white/70 hover:text-white hover:bg-white/5 transition-colors cursor-pointer flex items-center justify-between group"
           :class="{ 'bg-white/10 text-white': modelValue === option.value }"
+          @click="selectOption(option)"
         >
           <span class="font-light">{{ option.label }}</span>
           <Icon

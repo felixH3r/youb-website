@@ -32,7 +32,7 @@
                 src="/ScienceMedicalLogo.png"
                 alt="Science & Medical Logo"
                 class="h-16 w-16 object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-              />
+              >
             </div>
             <span
               class="text-xs uppercase tracking-[0.2em] text-white/70 font-bold leading-tight whitespace-pre-line"
@@ -52,7 +52,7 @@
                 :src="gdprBadgeSrc"
                 alt="GDPR/DSGVO Logo"
                 class="h-20 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-              />
+              >
             </div>
             <span
               class="text-xs uppercase tracking-[0.2em] text-white/70 font-bold leading-tight whitespace-pre-line"
@@ -72,7 +72,7 @@
                 src="/AIActReady.png"
                 alt="AI Act Logo"
                 class="h-20 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-              />
+              >
             </div>
             <span
               class="text-xs uppercase tracking-[0.2em] text-white/70 font-bold leading-tight whitespace-pre-line"
