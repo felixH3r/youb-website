@@ -1,4 +1,10 @@
 {
+  "cookie_banner": {
+    "title": "We value your privacy",
+    "description": "We use cookies and Google Analytics to enhance your experience and analyze website traffic. By clicking \"Accept all\", you consent to the use of these cookies.",
+    "accept": "Accept all",
+    "decline": "Necessary only"
+  },
   "nav": {
     "home": "Home",
     "howItWorks": "How it works",

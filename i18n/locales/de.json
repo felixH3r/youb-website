@@ -1,4 +1,10 @@
 {
+  "cookie_banner": {
+    "title": "Wir schätzen Ihre Privatsphäre",
+    "description": "Wir verwenden Cookies und Google Analytics, um Ihre Erfahrung zu verbessern und den Website-Verkehr zu analysieren. Durch Klicken auf \"Alle akzeptieren\" stimmen Sie der Verwendung dieser Cookies zu.",
+    "accept": "Alle akzeptieren",
+    "decline": "Nur notwendige"
+  },
   "nav": {
     "home": "Startseite",
     "howItWorks": "So funktioniert's",

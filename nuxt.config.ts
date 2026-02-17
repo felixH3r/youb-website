@@ -11,7 +11,12 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "@storyblok/nuxt",
     "@nuxt/eslint",
+    "nuxt-gtag",
   ],
+  gtag: {
+    id: process.env.NUXT_PUBLIC_GTAG_ID || "G-XXXXXXXXXX",
+    initMode: "manual",
+  },
   i18n: {
     locales: [
       { code: "en", name: "English", file: "en.json" },
