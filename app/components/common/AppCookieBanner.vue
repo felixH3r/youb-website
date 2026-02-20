@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { isConsentDefined, acceptAll, declineAll } = useCookieConsent();
 
-const show = ref(false);
+const show = ref(true);
 
 onMounted(() => {
   if (!isConsentDefined.value) {
