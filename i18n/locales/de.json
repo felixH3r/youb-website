@@ -464,12 +464,21 @@
     },
     "section7": {
       "title": "7. Einsatz externer Auftragsverarbeiter",
-      "content": "YOUB nutzt Microsoft Azure (einschließlich Azure OpenAI Service) und die zugehörige Cloud-Infrastruktur zur Verarbeitung personenbezogener Daten und Erstellung personalisierter Einblicke. Microsoft fungiert als Auftragsverarbeiter gemäß DSGVO-konformen Vereinbarungen (z. B. Data Processing Agreement / DPA), um sicherzustellen, dass Ihre Daten sicher und in Übereinstimmung mit der DSGVO verarbeitet werden.",
-      "content2": "Wir setzen nur Auftragsverarbeiter ein, die angemessene technische und organisatorische Maßnahmen zum Schutz Ihrer Daten bieten."
+      "content": "YOUB nutzt moderne Cloud-Infrastruktur und KI-Dienste, um seine Funktionalität bereitzustellen. Zu unseren Auftragsverarbeitern gehören:",
+      "items": [
+        "Google Cloud Platform / Google Gemini: Wir nutzen die KI-Modelle von Google, um personalisierte Trainingseinblicke zu generieren. Über Gemini verarbeitete Daten werden unter Enterprise-Datenschutzstandards behandelt und nicht zum Training globaler Modelle verwendet.",
+        "Heroku & Railway: Unsere Backend- und Frontend-Infrastruktur wird auf diesen Plattformen gehostet, wobei die gesamte Datenverarbeitung auf Servern innerhalb der Europäischen Union erfolgt (z. B. Frankfurt, Deutschland oder Dublin, Irland)."
+      ],
+      "content2": "Wir stellen sicher, dass alle Auftragsverarbeiter angemessene technische und organisatorische Maßnahmen (TOMs) bieten und unter DSGVO-konformen Auftragsverarbeitungsverträgen (DPAs) arbeiten."
     },
     "section8": {
-      "title": "8. Aufbewahrungsfristen",
-      "content": "Wir bewahren Ihre personenbezogenen Daten nur so lange auf, wie dies zur Erfüllung der Zwecke, für die sie erhoben wurden, erforderlich ist, einschließlich der Erfüllung gesetzlicher, buchhalterischer oder Berichterstattungspflichten. In der Regel werden Ihre Daten so lange aufbewahrt, wie Sie die App nutzen, und für einen angemessenen Zeitraum danach für den Fall, dass Sie sich entscheiden, unsere Dienste erneut zu nutzen. Sie können jederzeit die Löschung beantragen (siehe Abschnitt 9)."
+      "title": "8. Datenaufbewahrung & Kontolöschung (Apple-Anforderung)",
+      "content": "Wir bewahren Ihre personenbezogenen Daten nur so lange auf, wie Ihr Konto aktiv ist oder wie es zur Erbringung unserer Dienste für Sie erforderlich ist.",
+      "items": [
+        "In-App-Löschung: Sie können die Löschung Ihres Kontos und aller zugehörigen personenbezogenen Daten direkt in den Einstellungen der App beantragen.",
+        "Manuelle Anfrage: Alternativ können Sie eine E-Mail an felix{'@'}youb.app mit dem Betreff \"Data Deletion\" senden."
+      ],
+      "content2": "Sobald ein Löschantrag bearbeitet wurde, werden Ihre Daten innerhalb von 30 Tagen dauerhaft aus unseren aktiven Datenbanken entfernt, sofern keine gesetzlichen Aufbewahrungspflichten (z. B. Steuergesetze) bestehen."
     },
     "section9": {
       "title": "9. Betroffenenrechte",

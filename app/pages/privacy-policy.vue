@@ -17,7 +17,7 @@
         <div class="space-y-6">
           <p>
             <strong>{{ $t("privacyPolicy.version") }}:</strong> 1.1 (December
-            2025)<br >
+            2025)<br />
             <strong>{{ $t("privacyPolicy.effectiveDate") }}:</strong> 1.
             December 2025
           </p>
@@ -27,10 +27,10 @@
               {{ $t("privacyPolicy.controller") }}:
             </h2>
             <p>
-              Felix Hermanutz<br >
-              Herrenstraße 2, Top 20<br >
-              4020 Linz<br >
-              AT - Austria<br >
+              Felix Hermanutz<br />
+              Herrenstraße 2, Top 20<br />
+              4020 Linz<br />
+              AT - Austria<br />
               <a
                 href="mailto:felix@youb.app"
                 class="text-blue-400 hover:underline"
@@ -48,8 +48,8 @@
               {{ $t("privacyPolicy.section1.title") }}
             </h2>
             <p>
-              {{ $t("privacyPolicy.section1.content") }}<br >
-              Felix Hermanutz<br >
+              {{ $t("privacyPolicy.section1.content") }}<br />
+              Felix Hermanutz<br />
               <a
                 href="mailto:felix@youb.app"
                 class="text-blue-400 hover:underline"
@@ -120,7 +120,7 @@
             <ul class="list-disc pl-6">
               <li
                 v-for="(item, index) in $tm(
-                  'privacyPolicy.section5.sub1.items'
+                  'privacyPolicy.section5.sub1.items',
                 )"
                 :key="index"
               >
@@ -138,7 +138,7 @@
             <ul class="list-disc pl-6">
               <li
                 v-for="(item, index) in $tm(
-                  'privacyPolicy.section5.sub2.items'
+                  'privacyPolicy.section5.sub2.items',
                 )"
                 :key="index"
               >
@@ -155,7 +155,7 @@
             <ul class="list-disc pl-6">
               <li
                 v-for="(item, index) in $tm(
-                  'privacyPolicy.section5.sub3.items'
+                  'privacyPolicy.section5.sub3.items',
                 )"
                 :key="index"
               >
@@ -179,7 +179,7 @@
             <ul class="list-disc pl-6">
               <li
                 v-for="(item, index) in $tm(
-                  'privacyPolicy.section5.sub5.items'
+                  'privacyPolicy.section5.sub5.items',
                 )"
                 :key="index"
               >
@@ -208,7 +208,18 @@
             <p>
               {{ $t("privacyPolicy.section7.content") }}
             </p>
-            <p>
+            <ul
+              v-if="$tm('privacyPolicy.section7.items')"
+              class="list-disc pl-6"
+            >
+              <li
+                v-for="(item, index) in $tm('privacyPolicy.section7.items')"
+                :key="index"
+              >
+                {{ $rt(item) }}
+              </li>
+            </ul>
+            <p v-if="$t('privacyPolicy.section7.content2')">
               {{ $t("privacyPolicy.section7.content2") }}
             </p>
           </div>
@@ -219,6 +230,20 @@
             </h2>
             <p>
               {{ $t("privacyPolicy.section8.content") }}
+            </p>
+            <ul
+              v-if="$tm('privacyPolicy.section8.items')"
+              class="list-disc pl-6"
+            >
+              <li
+                v-for="(item, index) in $tm('privacyPolicy.section8.items')"
+                :key="index"
+              >
+                {{ $rt(item) }}
+              </li>
+            </ul>
+            <p v-if="$t('privacyPolicy.section8.content2')">
+              {{ $t("privacyPolicy.section8.content2") }}
             </p>
           </div>
 
@@ -277,8 +302,8 @@
               {{ $t("privacyPolicy.section13.title") }}
             </h2>
             <p>
-              {{ $t("privacyPolicy.section13.content") }}<br >
-              {{ $t("privacyPolicy.section13.address") }}<br >
+              {{ $t("privacyPolicy.section13.content") }}<br />
+              {{ $t("privacyPolicy.section13.address") }}<br />
               <a
                 href="mailto:felix@youb.app"
                 class="text-blue-400 hover:underline"

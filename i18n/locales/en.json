@@ -464,12 +464,21 @@
     },
     "section7": {
       "title": "7. Use of External Processors",
-      "content": "YOUB uses Microsoft Azure (including Azure OpenAI Service) and related cloud infrastructure to process personal data and generate personalized insights. Microsoft acts as a data processor under GDPR-compliant agreements (e.g., Data Processing Agreement / DPA), ensuring that your data is processed securely and in compliance with GDPR.",
-      "content2": "We only use processors that provide appropriate technical and organizational measures to protect your data."
+      "content": "YOUB uses modern cloud infrastructure and AI services to provide its functionality. Our processors include:",
+      "items": [
+        "Google Cloud Platform / Google Gemini: We use Google’s AI models to generate personalized training insights. Data processed via Gemini is handled under enterprise-grade privacy standards and is not used to train global models.",
+        "Heroku & Railway: Our backend and frontend infrastructure are hosted on these platforms, with all data processing occurring on servers located within the European Union (e.g., Frankfurt, Germany or Dublin, Ireland)."
+      ],
+      "content2": "We ensure that all processors provide appropriate technical and organizational measures (TOMs) and operate under GDPR-compliant Data Processing Agreements (DPAs)."
     },
     "section8": {
-      "title": "8. Data Retention Periods",
-      "content": "We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, including satisfying any legal, accounting, or reporting requirements. Typically, your data will be retained for as long as you use the app and for a reasonable period afterward in case you decide to use our services again. You may request deletion at any time (see Section 9)."
+      "title": "8. Data Retention & Account Deletion (Apple Requirement)",
+      "content": "We retain your personal data only as long as your account is active or as needed to provide you with our services.",
+      "items": [
+        "In-App Deletion: You can request the deletion of your account and all associated personal data directly within the app's settings.",
+        "Manual Request: Alternatively, you can send an email to felix{'@'}youb.app with the subject \"Data Deletion\"."
+      ],
+      "content2": "Once a deletion request is processed, your data will be permanently removed from our active databases within 30 days, unless legal retention obligations (e.g., tax laws) apply."
     },
     "section9": {
       "title": "9. Data Subject Rights",
