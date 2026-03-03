@@ -8,11 +8,7 @@ const props = defineProps<{
   messages?: Message[];
 }>();
 
-// Fallback messages (original landing page messages)
-const defaultMessages: Message[] = [
-  { text: "solution.mockChat.msg1", sender: "ai" },
-  { text: "solution.mockChat.msg1", sender: "ai" }, // This was a mistake in my thought, let me use the i18n keys
-];
+// Fallback messages (original landing page messages handled in template)
 </script>
 
 <template>

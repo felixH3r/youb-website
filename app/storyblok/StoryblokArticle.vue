@@ -45,6 +45,7 @@
 
     <!-- Content -->
     <div class="max-w-3xl mx-auto">
+      <!-- eslint-disable-next-line vue/no-v-html -->
       <div
         v-if="blok.content"
         class="prose prose-invert prose-lg md:prose-xl max-w-none text-white/70 prose-headings:font-bold prose-headings:tracking-tighter prose-headings:text-white prose-p:text-white/70 prose-p:leading-[1.8] prose-p:font-light prose-strong:text-white prose-strong:font-semibold prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline prose-img:rounded-2xl prose-img:border prose-img:border-white/10 prose-blockquote:border-l-4 prose-blockquote:border-white/20 prose-blockquote:font-light prose-blockquote:italic prose-blockquote:text-white/60"
@@ -56,7 +57,10 @@
 
 <script setup>
 const props = defineProps({
-  blok: Object,
+  blok: {
+    type: Object,
+    default: () => ({}),
+  },
 });
 
 const { locale } = useI18n();

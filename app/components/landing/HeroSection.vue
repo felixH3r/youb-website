@@ -2,7 +2,6 @@
 import { onMounted, ref } from "vue";
 
 const heroRef = ref<HTMLElement | null>(null);
-const badgeRef = ref<HTMLElement | null>(null);
 const titleRef = ref<HTMLElement | null>(null);
 const subRef = ref<HTMLElement | null>(null);
 const actionsRef = ref<HTMLElement | null>(null);

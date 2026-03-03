@@ -37,7 +37,8 @@ const sendMessage = async () => {
     });
 
     if (data.value) {
-      messages.value.push({ role: "model", content: (data.value as any).text });
+      const chatResponse = data.value as { text: string };
+      messages.value.push({ role: "model", content: chatResponse.text });
     }
   } catch (e) {
     console.error("Chat error:", e);
@@ -68,10 +69,8 @@ onMounted(() => {
         v-if="loading"
         class="flex gap-2 p-4 bg-white/5 rounded-2xl w-fit animate-pulse"
       >
-        <div class="w-2 h-2 bg-white/40 rounded-full animate-bounce"/>
-        <div
-          class="w-2 h-2 bg-white/40 rounded-full animate-bounce delay-75"
-        />
+        <div class="w-2 h-2 bg-white/40 rounded-full animate-bounce" />
+        <div class="w-2 h-2 bg-white/40 rounded-full animate-bounce delay-75" />
         <div
           class="w-2 h-2 bg-white/40 rounded-full animate-bounce delay-150"
         />

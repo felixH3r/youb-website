@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
-const props = defineProps<{
+defineProps<{
   summary: {
     sport: string;
     startTime?: string;
@@ -28,11 +28,7 @@ const formatDistance = (m?: number) => {
   return (m / 1000).toFixed(2) + " km";
 };
 
-const formatSpeed = (ms?: number) => {
-  if (!ms) return "0.0 km/h";
-  // If unit is already km/h (depending on parser config)
-  return ms.toFixed(1) + " km/h";
-};
+// formatSpeed removed as it was unused
 </script>
 
 <template>

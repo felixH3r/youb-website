@@ -173,10 +173,12 @@ const handleSubmit = async () => {
     });
     submitted.value = true;
     form.value = { name: "", email: "", sport: "" };
-  } catch (err: any) {
+  } catch (err: unknown) {
+    const errorData = err as { data?: { statusMessage?: string } };
     console.error("Submission Error:", err);
     error.value =
-      err.data?.statusMessage || "Something went wrong. Please try again.";
+      errorData.data?.statusMessage ||
+      "Something went wrong. Please try again.";
   } finally {
     loading.value = false;
   }

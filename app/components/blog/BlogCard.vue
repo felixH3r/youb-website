@@ -54,11 +54,11 @@
 
 <script setup>
 defineProps({
-  title: String,
-  excerpt: String,
-  image: String,
-  slug: String,
-  date: String,
-  category: String,
+  title: { type: String, default: "" },
+  excerpt: { type: String, default: "" },
+  image: { type: String, default: "" },
+  slug: { type: String, default: "" },
+  date: { type: String, default: "" },
+  category: { type: String, default: "" },
 });
 </script>

@@ -1,9 +1,5 @@
 <script setup lang="ts">
-const { locale, locales, setLocale } = useI18n();
-
-const currentLocale = computed(() =>
-  locales.value.find((l) => l.code === locale.value)
-);
+const { locale, setLocale } = useI18n();
 
 const toggleLanguage = () => {
   const nextLocale = locale.value === "de" ? "en" : "de";
