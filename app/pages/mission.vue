@@ -18,10 +18,12 @@ definePageMeta({});
 </script>
 
 <template>
-  <MissionHero />
-  <MissionPrinciples />
-  <MissionFoundersStory />
-  <MissionTeamSection />
-  <MissionValues />
-  <CommonCTASection />
+  <div>
+    <MissionHero />
+    <MissionPrinciples />
+    <MissionFoundersStory />
+    <MissionTeamSection />
+    <MissionValues />
+    <CommonCTASection />
+  </div>
 </template>

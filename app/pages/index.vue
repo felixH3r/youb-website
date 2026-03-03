@@ -18,11 +18,13 @@ definePageMeta({});
 </script>
 
 <template>
-  <LandingHeroSection />
-  <LandingProblemSection />
-  <LandingSolutionSection />
-  <LandingMagicMoment />
-  <LandingTrustSection />
-  <LandingTargetGroupSection />
-  <CommonCTASection />
+  <div>
+    <LandingHeroSection />
+    <LandingProblemSection />
+    <LandingSolutionSection />
+    <LandingMagicMoment />
+    <LandingTrustSection />
+    <LandingTargetGroupSection />
+    <CommonCTASection />
+  </div>
 </template>

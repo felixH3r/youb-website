@@ -6,7 +6,10 @@ import ChatSection from "~/components/analysis/ChatSection.vue";
 const { t } = useI18n();
 
 const loading = ref(false);
-const analysisData = ref<{ analysisId: string; summary: any } | null>(null);
+const analysisData = ref<{
+  analysisId: string;
+  summary: { sport: string } & Record<string, unknown>;
+} | null>(null);
 
 const handleUpload = async (file: File) => {
   loading.value = true;
@@ -20,9 +23,12 @@ const handleUpload = async (file: File) => {
     });
 
     if (data.value) {
-      analysisData.value = data.value as any;
+      analysisData.value = data.value as {
+        analysisId: string;
+        summary: { sport: string } & Record<string, unknown>;
+      };
     }
-  } catch (e) {
+  } catch (e: unknown) {
     console.error("Upload failed:", e);
   } finally {
     loading.value = false;
@@ -61,7 +67,10 @@ const handleUpload = async (file: File) => {
             enter-from-class="opacity-0 translate-y-8"
             enter-to-class="opacity-100 translate-y-0"
           >
-            <AnalysisDashboard :summary="analysisData.summary" />
+            <AnalysisDashboard
+              v-if="analysisData.summary"
+              :summary="analysisData.summary"
+            />
           </Transition>
 
           <!-- Chat Section -->
