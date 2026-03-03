@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
 
   try {
     const { email, audienceId } = JSON.parse(
-      Buffer.from(token, "base64").toString()
+      Buffer.from(token, "base64").toString(),
     );
 
     if (!email || !audienceId) {
@@ -43,11 +43,12 @@ export default defineEventHandler(async (event) => {
 
     // 2. Redirect to success page
     return sendRedirect(event, "/verified", 302);
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Verification Error:", error);
+    const err = error as { statusCode?: number; statusMessage?: string };
     throw createError({
-      statusCode: error.statusCode || 500,
-      statusMessage: error.statusMessage || "Verification failed",
+      statusCode: err.statusCode || 500,
+      statusMessage: err.statusMessage || "Verification failed",
     });
   }
 });

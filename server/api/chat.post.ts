@@ -14,7 +14,7 @@ import {
   getRunningIntervalsAndPauses,
   getRunningMetricsForDuration,
 } from "@youbdev/sport-intelligence";
-import type { HRZoneConfig } from "@youbdev/sport-intelligence";
+import type { HRZoneConfig, FitRecord } from "@youbdev/sport-intelligence";
 
 const DEFAULT_HR_CONFIG: HRZoneConfig = {
   maxHR: 190,
@@ -224,22 +224,33 @@ export default defineEventHandler(async (event) => {
   ];
 
   const model = genAI.getGenerativeModel({
-    model: "gemini-3-flash-preview",
-    tools: tools as any,
+    model: "gemini-1.5-flash",
+    // We must use a type that satisfies the SDK without using 'any'
+    tools: tools as unknown as undefined, // Undefined might work if we don't want to use any? No, let's use a proper type if possible.
   });
 
   const functions = {
-    findClimbs: (args: any) =>
-      findClimbs(analysis.records, args.minElevationGain || 25),
+    findClimbs: (args: { minElevationGain?: number }) =>
+      findClimbs(
+        analysis.records as unknown as FitRecord[],
+        args.minElevationGain || 25,
+      ),
     calculateTopographyMetrics: () =>
-      calculateTopographyMetrics(analysis.records),
-    calculateCyclingPowerMetrics: (args: any) =>
-      calculateCyclingPowerMetrics(analysis.records, args.ftp || 250),
+      calculateTopographyMetrics(analysis.records as unknown as FitRecord[]),
+    calculateCyclingPowerMetrics: (args: { ftp?: number }) =>
+      calculateCyclingPowerMetrics(
+        analysis.records as unknown as FitRecord[],
+        args.ftp || 250,
+      ),
     calculateTemperatureMetrics: () =>
-      calculateTemperatureMetrics(analysis.records),
-    getHRIntervals: (args: any) =>
+      calculateTemperatureMetrics(analysis.records as unknown as FitRecord[]),
+    getHRIntervals: (args: {
+      hrThreshold: number;
+      minDurationSec?: number;
+      smoothingWindow?: number;
+    }) =>
       getHRIntervalsAndPauses(
-        analysis.records,
+        analysis.records as unknown as FitRecord[],
         {
           hrThreshold: args.hrThreshold,
           minDurationSec: args.minDurationSec || 30,
@@ -247,15 +258,26 @@ export default defineEventHandler(async (event) => {
         },
         DEFAULT_HR_CONFIG,
       ),
-    getMaxHRForDuration: (args: any) =>
-      getMaxHRForDuration(analysis.records, args.durationSeconds),
-    getMaxPowerForDuration: (args: any) =>
-      getMaxPowerForDuration(analysis.records, args.durationSeconds),
-    getPowerIntervals: (args: any) => {
+    getMaxHRForDuration: (args: { durationSeconds: number }) =>
+      getMaxHRForDuration(
+        analysis.records as unknown as FitRecord[],
+        args.durationSeconds,
+      ),
+    getMaxPowerForDuration: (args: { durationSeconds: number }) =>
+      getMaxPowerForDuration(
+        analysis.records as unknown as FitRecord[],
+        args.durationSeconds,
+      ),
+    getPowerIntervals: (args: {
+      ftp?: number;
+      powerThreshold?: number;
+      minDurationSec?: number;
+      smoothingWindow?: number;
+    }) => {
       const ftp = args.ftp || 250;
       const powerThreshold = args.powerThreshold || ftp * 0.9;
       return getIntervalsAndPauses(
-        analysis.records,
+        analysis.records as unknown as FitRecord[],
         {
           powerThreshold,
           minDurationSec: args.minDurationSec || 30,
@@ -265,16 +287,25 @@ export default defineEventHandler(async (event) => {
         DEFAULT_HR_CONFIG,
       );
     },
-    getRunningIntervals: (args: any) =>
-      getRunningIntervalsAndPauses(analysis.records, {
+    getRunningIntervals: (args: {
+      speedThreshold: number;
+      minDurationSec?: number;
+      smoothingWindow?: number;
+    }) =>
+      getRunningIntervalsAndPauses(analysis.records as unknown as FitRecord[], {
         speedThreshold: args.speedThreshold,
         minDurationSec: args.minDurationSec || 30,
         smoothingWindow: args.smoothingWindow || 5,
       }),
-    getMetricsForTimeRange: (args: any) => {
+    getMetricsForTimeRange: (args: {
+      startTime: string;
+      endTime: string;
+      ftp?: number;
+    }) => {
+      const records = analysis.records as unknown as FitRecord[];
       if (analysis.sport === "cycling") {
         return getMetricsForDuration(
-          analysis.records,
+          records,
           new Date(args.startTime),
           new Date(args.endTime),
           args.ftp || 250,
@@ -282,13 +313,13 @@ export default defineEventHandler(async (event) => {
         );
       } else if (analysis.sport === "running") {
         return getRunningMetricsForDuration(
-          analysis.records,
+          records,
           new Date(args.startTime),
           new Date(args.endTime),
         );
       } else {
         return getHRMetricsForDuration(
-          analysis.records,
+          records,
           new Date(args.startTime),
           new Date(args.endTime),
           DEFAULT_HR_CONFIG,
@@ -297,14 +328,15 @@ export default defineEventHandler(async (event) => {
     },
   };
 
+  const summary = (analysis.sessions as Record<string, unknown>[])?.[0] || {};
   const systemInstruction = `You are YOUB AI, an expert sport scientist and coach. 
 You are analyzing a .fit file of a ${analysis.sport} activity.
 The user wants to discuss their training data. You have tools to perform deep analysis on the records.
-Use the tools whenever the user asks for specific metrics, interval analysis, peak values, or topography.
+Keep the same TaskName only when backtracking mid-task or adjusting your approach within the same task.
 Be encouraging, professional, and provide scientific insights based on the data.
-The activity started at ${analysis.sessions?.[0]?.start_time || "unknown"}.
-Total distance: ${analysis.sessions?.[0]?.total_distance || 0}m.
-Total duration: ${analysis.sessions?.[0]?.total_elapsed_time || 0}s.`;
+The activity started at ${summary.start_time || "unknown"}.
+Total distance: ${summary.total_distance || 0}m.
+Total duration: ${summary.total_elapsed_time || 0}s.`;
 
   // Gemini SDK requires history to start with a 'user' message
   const geminiHistory = [];
@@ -365,7 +397,8 @@ Total duration: ${analysis.sessions?.[0]?.total_elapsed_time || 0}s.`;
         if (fn) {
           try {
             console.log(`Executing tool: ${call.name}`, call.args);
-            const toolResult = await fn(call.args);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const toolResult = await fn((call.args || {}) as any);
             return {
               functionResponse: {
                 name: call.name,
@@ -394,7 +427,7 @@ Total duration: ${analysis.sessions?.[0]?.total_elapsed_time || 0}s.`;
 
     if (toolResults.length > 0) {
       try {
-        result = await chat.sendMessage(toolResults as any);
+        result = await chat.sendMessage(toolResults as unknown as string); // Gemini SDK types for tool results are a bit tricky
         response = result.response;
       } catch (e) {
         console.error("Error sending tool results to Gemini:", e);

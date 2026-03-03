@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Redundant initialization removed to fix shadowing and unused var error
 
 const AUDIENCE_MAP: Record<string, string> = {
   running: "6bd10acb-533c-477e-b344-a237990b61c8",
@@ -11,7 +11,7 @@ const AUDIENCE_MAP: Record<string, string> = {
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
-  const { name, email, message, sport } = body;
+  const { name, email, _message, sport } = body;
 
   const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -34,7 +34,7 @@ export default defineEventHandler(async (event) => {
     console.log("Processing submission for:", email);
 
     // 1. Add to Resend Audience as Unsubscribed (Pending)
-    const { data: contactData, error: contactError } =
+    const { data: _contactData, error: contactError } =
       await resend.contacts.create({
         email,
         firstName: name,
@@ -137,12 +137,17 @@ export default defineEventHandler(async (event) => {
     }
 
     return { message: "Verification email sent", id: emailData?.id };
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Endpoint Error:", error);
+    const err = error as {
+      statusCode?: number;
+      statusMessage?: string;
+      message?: string;
+    };
     throw createError({
-      statusCode: error.statusCode || 500,
+      statusCode: err.statusCode || 500,
       statusMessage:
-        error.statusMessage || error.message || "Internal Server Error",
+        err.statusMessage || err.message || "Internal Server Error",
     });
   }
 });
