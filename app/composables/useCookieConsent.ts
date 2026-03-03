@@ -8,34 +8,16 @@ export const useCookieConsent = () => {
     },
   );
 
-  const isConsentGiven = computed(() => consent.value === "accepted");
-  const isConsentDefined = computed(
-    () => consent.value === "accepted" || consent.value === "declined",
-  );
+  const isConsentGiven = computed(() => true);
+  const isConsentDefined = computed(() => true);
 
   const acceptAll = () => {
     consent.value = "accepted";
-    if (import.meta.client) {
-      const { initialize, enableAnalytics } = useGtag();
-      initialize();
-      enableAnalytics();
-    }
   };
 
   const declineAll = () => {
     consent.value = "declined";
-    if (import.meta.client) {
-      const { disableAnalytics } = useGtag();
-      disableAnalytics();
-    }
   };
-
-  // Initialize consent on client-side if already accepted
-  if (import.meta.client && isConsentGiven.value) {
-    const { initialize, enableAnalytics } = useGtag();
-    initialize();
-    enableAnalytics();
-  }
 
   return {
     consent,

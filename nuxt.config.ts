@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   ],
   gtag: {
     id: process.env.NUXT_PUBLIC_GTAG_ID || "G-XXXXXXXXXX",
-    initMode: "manual",
+    initMode: "auto",
   },
   i18n: {
     locales: [
