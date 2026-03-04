@@ -27,6 +27,7 @@ const renderedContent = computed(() => {
 </script>
 
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <div
     class="flex flex-col mb-4"
     :class="isModel ? 'items-start' : 'items-end'"
@@ -44,11 +45,7 @@ const renderedContent = computed(() => {
         :class="isModel ? 'prose-black' : 'prose-invert'"
       >
         <!-- eslint-disable-next-line vue/no-v-html -->
-        <div
-          v-if="isModel"
-          class="markdown-content"
-          v-html="renderedContent"
-        />
+        <div v-if="isModel" class="markdown-content" v-html="renderedContent" />
         <p v-else class="whitespace-pre-wrap">{{ message.content }}</p>
       </div>
     </div>

@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable vue/html-self-closing -->
   <NuxtLink
     :to="`/blog/${slug}`"
     class="group relative flex flex-col h-full p-6 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl hover:bg-white/[0.06] transition-all duration-500 overflow-hidden"
@@ -7,10 +8,10 @@
     <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-6">
       <img
         v-if="image"
-        :src="image"
+        :src="optimizedImage"
         :alt="title"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-      >
+      />
       <div
         v-else
         class="w-full h-full bg-white/5 flex items-center justify-center"
@@ -53,12 +54,17 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   title: { type: String, default: "" },
   excerpt: { type: String, default: "" },
   image: { type: String, default: "" },
   slug: { type: String, default: "" },
   date: { type: String, default: "" },
   category: { type: String, default: "" },
+});
+
+const optimizedImage = computed(() => {
+  if (!props.image) return "";
+  return props.image.replace("a.storyblok.com", "a2.storyblok.com");
 });
 </script>

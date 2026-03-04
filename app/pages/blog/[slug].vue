@@ -158,7 +158,13 @@ watchEffect(() => {
         property: "og:description",
         content: seo.description || content.excerpt || "",
       },
-      { property: "og:image", content: content.image?.filename },
+      {
+        property: "og:image",
+        content: content.image?.filename?.replace(
+          "a.storyblok.com",
+          "a2.storyblok.com",
+        ),
+      },
       { property: "og:type", content: "article" },
       {
         property: "article:published_time",

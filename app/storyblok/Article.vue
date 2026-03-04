@@ -1,4 +1,7 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
+  <!-- eslint-disable vue/no-v-html -->
+  <!-- eslint-disable vue/html-self-closing -->
   <div v-editable="blok" class="max-w-4xl mx-auto px-4 relative z-10">
     <!-- Back Button (Optional: depends if you want it inside the blok or page) -->
 
@@ -30,21 +33,21 @@
 
     <!-- Main Image -->
     <div
-      v-if="blok.image?.filename"
+      v-if="optimizedImage"
       class="relative aspect-video rounded-3xl overflow-hidden mb-16 border border-white/10 shadow-2xl"
     >
       <img
-        :src="blok.image.filename"
+        :src="optimizedImage"
         :alt="blok.title"
         class="w-full h-full object-cover"
-      >
+      />
       <div
         class="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"
       />
     </div>
 
     <!-- Content -->
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-4xl mx-auto">
       <!-- eslint-disable-next-line vue/no-v-html -->
       <div
         v-if="blok.content"
@@ -76,9 +79,18 @@ const formattedDate = computed(() => {
   });
 });
 
+const optimizedImage = computed(() => {
+  if (!props.blok.image?.filename) return "";
+  return props.blok.image.filename.replace(
+    "a.storyblok.com",
+    "a2.storyblok.com",
+  );
+});
+
 const resolvedRichText = computed(() => {
   if (!props.blok.content) return "";
-  return renderRichText(props.blok.content);
+  const html = renderRichText(props.blok.content);
+  return html ? html.replace(/a\.storyblok\.com/g, "a2.storyblok.com") : "";
 });
 </script>
 
