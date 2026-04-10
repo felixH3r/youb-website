@@ -117,7 +117,7 @@ const formatDate = (dateString) => {
 };
 
 useHead({
-  title: `${t("blog.title")} | YOUB`,
+  title: t("blog.title"),
   meta: [
     {
       name: "description",

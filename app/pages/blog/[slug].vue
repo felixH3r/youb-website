@@ -134,7 +134,7 @@ watchEffect(() => {
   const geo = content.geo || {};
 
   useHead({
-    title: seo.title || `${content.title || t("blog.notFound")} | YOUB`,
+    title: seo.title || (content.title || t("blog.notFound")),
     meta: [
       {
         name: "description",

@@ -2,11 +2,11 @@
 const { t } = useI18n();
 
 useHead({
-  title: () => t("howItWorks.hero.title") + " | YOUB",
+  title: () => t("howItWorks.hero.title"),
 });
 
 useSeoMeta({
-  ogTitle: () => t("howItWorks.hero.title") + " | YOUB",
+  ogTitle: () => t("howItWorks.hero.title"),
   description: () => t("howItWorks.hero.subtitle"),
   ogDescription: () => t("howItWorks.hero.subtitle"),
 });
