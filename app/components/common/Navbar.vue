@@ -52,8 +52,10 @@ onUnmounted(() => {
     >
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center gap-2 group">
-        <span class="text-xl font-bold tracking-tighter text-white"
-          >YOU<span class="font-normal opacity-50">B</span></span
+        <img
+          src="/youb-logo-white-on-transparent-512x512.png"
+          alt="YOUB Logo"
+          class="h-12 md:h-12 w-auto"
         >
       </NuxtLink>
 

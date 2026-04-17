@@ -32,12 +32,18 @@ useHead({
     <div class="relative w-24 h-24 mb-8 flex items-center justify-center">
       <div class="absolute inset-0 border-4 border-white/10 rounded-full" />
       <div class="absolute inset-0 border-4 border-white rounded-full border-t-transparent animate-spin" />
-      <div class="text-3xl font-black tracking-tighter italic">YB</div>
+      <img
+        src="/youb-icon-white-on-transparent-512x512.png"
+        alt="YOUB Icon"
+        class="w-8 h-8 relative z-10"
+      >
     </div>
     
-    <h1 class="text-2xl font-bold mb-2 tracking-wide uppercase">
-      YOUB
-    </h1>
+    <img
+      src="/youb-logo-white-on-transparent-512x512.png"
+      alt="YOUB Logo"
+      class="h-8 w-auto mb-6"
+    >
     
     <p class="text-white/60 text-lg">
       <span class="font-medium text-white">{{ type.charAt(0).toUpperCase() + type.slice(1) }}</span> scan detected...

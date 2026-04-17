@@ -109,9 +109,10 @@ onMounted(() => {
             <div class="w-3 h-3 rounded-full bg-white/20" />
           </div>
           <div class="flex-1 text-center">
-            <span
-              class="text-[10px] uppercase tracking-widest font-bold text-white/40"
-              >YOUB Chat</span
+            <img
+              src="/youb-logo-white-on-transparent-512x512.png"
+              alt="YOUB Logo"
+              class="h-2.5 w-auto"
             >
           </div>
           <div class="w-16 md:w-32 h-2 rounded-full bg-white/10" />
@@ -144,7 +145,11 @@ onMounted(() => {
               <div
                 class="w-8 h-8 rounded-full bg-white/10 border border-white/10 flex items-center justify-center flex-shrink-0 text-white"
               >
-                <span class="text-[9px] font-bold">YB</span>
+                <img
+                  src="/youb-icon-white-on-transparent-512x512.png"
+                  alt="YOUB Icon"
+                  class="w-4 h-4"
+                >
               </div>
               <div
                 class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white/5 backdrop-blur-xl border border-white/10 text-white text-xs text-left font-medium leading-relaxed shadow-xl shadow-black/20 overflow-hidden relative"
@@ -187,7 +192,11 @@ onMounted(() => {
               <div
                 class="w-8 h-8 rounded-full bg-white/10 border border-white/10 flex items-center justify-center flex-shrink-0 text-white"
               >
-                <span class="text-[9px] font-bold">YB</span>
+                <img
+                  src="/youb-icon-white-on-transparent-512x512.png"
+                  alt="YOUB Icon"
+                  class="w-4 h-4"
+                >
               </div>
               <div
                 class="px-5 py-3 rounded-3xl rounded-bl-lg bg-white/5 backdrop-blur-xl border border-white/10 text-white text-xs text-left leading-relaxed shadow-xl shadow-black/20 overflow-hidden relative"

@@ -19,9 +19,11 @@ const toggleLanguage = () => {
       >
         <!-- Logo matching Navbar -->
         <NuxtLink to="/" class="flex items-center gap-2 group">
-          <span class="text-2xl font-bold tracking-tighter text-white">
-            YOU<span class="font-normal opacity-50">B</span>
-          </span>
+          <img
+            src="/youb-logo-white-on-transparent-512x512.png"
+            alt="YOUB Logo"
+            class="h-14 w-auto"
+          >
         </NuxtLink>
         <p class="text-sm text-white/40 max-w-xs">
           {{ $t("footer.rights") }}
