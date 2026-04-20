@@ -23,8 +23,9 @@ export default defineNuxtConfig({
       { code: "de", name: "Deutsch", file: "de.json" },
     ],
     defaultLocale: "de",
-    langDir: "locales",
+    langDir: "../i18n/locales",
     strategy: "prefix_except_default",
+    vueI18n: "./i18n.config.ts",
   },
   storyblok: {
     accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
