@@ -176,6 +176,39 @@ watchEffect(() => {
     ],
   });
 });
+
+useSchemaOrg([
+  defineBreadcrumb(computed(() => {
+    if (!story.value?.content) return { itemListElement: [] };
+    const content = story.value.content;
+    const seo = content.seo || {};
+    return {
+      itemListElement: [
+        { name: 'Home', item: '/' },
+        { name: t('blog.title'), item: '/blog' },
+        { name: seo.title || content.title || 'Article' }
+      ]
+    };
+  })),
+  defineArticle(computed(() => {
+    if (!story.value?.content) return {};
+    const content = story.value.content;
+    const seo = content.seo || {};
+    return {
+      headline: seo.title || content.title,
+      description: seo.description || content.excerpt,
+      image: content.image?.filename?.replace("a.storyblok.com", "a2.storyblok.com"),
+      datePublished: story.value.published_at || story.value.created_at,
+      dateModified: story.value.published_at || story.value.created_at,
+      author: [
+        {
+          name: content.author || 'YOUB Team',
+          url: 'https://youb.app'
+        }
+      ]
+    };
+  }))
+]);
 </script>
 
 <style scoped>

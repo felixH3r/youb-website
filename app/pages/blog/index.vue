@@ -125,6 +125,20 @@ useHead({
     },
   ],
 });
+
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'CollectionPage',
+    name: t("blog.title"),
+    description: t("blog.seoDescription"),
+  }),
+  defineBreadcrumb({
+    itemListElement: [
+      { name: 'Home', item: '/' },
+      { name: t("blog.title"), item: '/blog' }
+    ]
+  })
+]);
 </script>
 
 <style scoped>
