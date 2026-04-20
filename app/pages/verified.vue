@@ -34,7 +34,7 @@ definePageMeta({
       </p>
 
       <NuxtLink
-        to="/"
+        :to="$localePath('/')"
         class="inline-block w-full px-8 py-5 rounded-2xl bg-white text-black font-semibold text-lg hover:bg-white/90 active:scale-[0.98] transition-all duration-300 shadow-xl"
       >
         Zurück zur Startseite

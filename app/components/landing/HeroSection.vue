@@ -77,13 +77,13 @@ onMounted(() => {
         class="flex items-center gap-4 mb-10 md:mb-20 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 ease-out"
       >
         <NuxtLink
-          to="#waitlist"
+          :to="$localePath('#waitlist')"
           class="px-6 md:px-8 py-4 rounded-full bg-white text-black font-semibold text-sm md:text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-white/10"
         >
           {{ $t("hero.ctaPrimary") }}
         </NuxtLink>
         <NuxtLink
-          to="/mission"
+          :to="$localePath('/mission')"
           class="px-6 md:px-8 py-4 rounded-full bg-black text-white font-semibold text-sm md:text-lg border border-white/10 hover:bg-white/5 hover:scale-105 active:scale-95 transition-all duration-300"
         >
           {{ $t("hero.ctaSecondary") }}

@@ -14,7 +14,7 @@
     <div class="max-w-4xl mx-auto px-4 relative z-10">
       <!-- Back Button -->
       <NuxtLink
-        to="/blog"
+        :to="$localePath('/blog')"
         class="inline-flex items-center text-white/40 hover:text-white transition-colors mb-12 group"
       >
         <Icon
@@ -46,7 +46,7 @@
         </div>
 
         <NuxtLink
-          to="/blog"
+          :to="$localePath('/blog')"
           class="px-8 py-3 rounded-full border border-white/10 bg-white/5 text-white hover:bg-white/10 transition-all font-medium"
         >
           {{ $t("blog.viewAll") }}
@@ -75,7 +75,7 @@
       {{ $t("blog.notFoundText") }}
     </p>
     <NuxtLink
-      to="/blog"
+      :to="$localePath('/blog')"
       class="px-8 py-3 rounded-full bg-white text-black font-semibold"
     >
       {{ $t("blog.backToBlog") }}

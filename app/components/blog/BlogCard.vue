@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable vue/html-self-closing -->
   <NuxtLink
-    :to="`/blog/${slug}`"
+    :to="$localePath(`/blog/${slug}`)"
     class="group relative flex flex-col h-full p-6 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl hover:bg-white/[0.06] transition-all duration-500 overflow-hidden"
   >
     <!-- Image -->

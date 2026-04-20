@@ -51,7 +51,7 @@ onUnmounted(() => {
       ]"
     >
       <!-- Logo -->
-      <NuxtLink to="/" class="flex items-center gap-2 group">
+      <NuxtLink :to="$localePath('/')" class="flex items-center gap-2 group">
         <img
           src="/youb-logo-white-on-transparent-512x512.png"
           alt="YOUB Logo"
@@ -63,7 +63,7 @@ onUnmounted(() => {
       <ul class="hidden md:flex items-center gap-8">
         <li v-for="item in menuitems" :key="item.title">
           <NuxtLink
-            :to="item.path"
+            :to="$localePath(item.path)"
             class="text-sm font-medium text-white hover:text-black transition-colors"
           >
             {{ t(item.title) }}
@@ -74,7 +74,7 @@ onUnmounted(() => {
       <!-- CTA & Mobile Toggle -->
       <div class="flex items-center gap-4">
         <NuxtLink
-          to="/#waitlist"
+          :to="$localePath('/#waitlist')"
           class="hidden md:block bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-black/80 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-black/10"
         >
           {{ t("nav.contact") }}
@@ -116,7 +116,7 @@ onUnmounted(() => {
         <ul class="flex flex-col gap-4">
           <li v-for="item in menuitems" :key="item.title">
             <NuxtLink
-              :to="item.path"
+              :to="$localePath(item.path)"
               class="text-lg font-semibold text-black/80 hover:text-black block py-2 border-b border-black/5"
               @click="open = false"
             >
@@ -125,7 +125,7 @@ onUnmounted(() => {
           </li>
           <li>
             <NuxtLink
-              to="/#waitlist"
+              :to="$localePath('/#waitlist')"
               class="mt-4 w-full bg-black text-white py-4 rounded-2xl flex items-center justify-center text-lg font-bold shadow-xl shadow-black/20"
               @click="open = false"
             >

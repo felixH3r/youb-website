@@ -18,7 +18,7 @@ const toggleLanguage = () => {
         class="flex flex-col gap-6 items-center md:items-start text-center md:text-left"
       >
         <!-- Logo matching Navbar -->
-        <NuxtLink to="/" class="flex items-center gap-2 group">
+        <NuxtLink :to="$localePath('/')" class="flex items-center gap-2 group">
           <img
             src="/youb-logo-white-on-transparent-512x512.png"
             alt="YOUB Logo"
@@ -33,13 +33,13 @@ const toggleLanguage = () => {
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <nav class="flex gap-6">
           <NuxtLink
-            to="/privacy-policy"
+            :to="$localePath('/privacy-policy')"
             class="text-xs font-medium text-white/40 hover:text-white transition-colors"
           >
             {{ $t("privacyPolicy.title") }}
           </NuxtLink>
           <NuxtLink
-            to="/legal-notice"
+            :to="$localePath('/legal-notice')"
             class="text-xs font-medium text-white/40 hover:text-white transition-colors"
           >
             {{ $t("legalNotice.title") }}

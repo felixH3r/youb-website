@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="flex flex-col lg:flex-row justify-center items-center my-5 ">
       <div class="flex w-full justify-between items-center max-w-screen-xl">
-        <NuxtLink to="/" class="flex items-center">
+        <NuxtLink :to="$localePath('/')" class="flex items-center">
           <img
             src="/youb-logo-black-on-transparent-512x512.png"
             alt="YOUB Logo"
@@ -24,7 +24,7 @@
       </p>
 
       <!-- Back to site button -->
-      <NuxtLink to="/" class="bg-black text-white hover:bg-gray-900 px-6 py-3 rounded-full text-sm font-medium transition">
+      <NuxtLink :to="$localePath('/')" class="bg-black text-white hover:bg-gray-900 px-6 py-3 rounded-full text-sm font-medium transition">
         Back to home
       </NuxtLink>
     </main>
