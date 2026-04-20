@@ -3,6 +3,24 @@ const { t } = useI18n();
 
 useHead({
   title: () => t("seo.title"),
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "YOUB",
+        "operatingSystem": "iOS, Android, Web",
+        "applicationCategory": "HealthAndFitnessApplication",
+        "description": "YOUB ist dein intelligenter KI-Coach für Triathlon, Radsport und Laufen.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      })
+    }
+  ]
 });
 
 useSeoMeta({

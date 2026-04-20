@@ -23,6 +23,42 @@ const categories = computed(() => {
   }
   return data;
 });
+
+useHead(() => {
+  const mainEntity = [];
+  const cats = categories.value;
+  if (cats) {
+    Object.values(cats).forEach((category) => {
+      if (category.items) {
+        Object.values(category.items).forEach((item) => {
+          if (item.question && item.answer) {
+            mainEntity.push({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+              },
+            });
+          }
+        });
+      }
+    });
+  }
+
+  return {
+    script: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity,
+        }),
+      },
+    ],
+  };
+});
 </script>
 
 <template>
