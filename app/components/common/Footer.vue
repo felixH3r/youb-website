@@ -33,6 +33,12 @@ const toggleLanguage = () => {
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <nav class="flex gap-6">
           <NuxtLink
+            :to="$localePath('/support')"
+            class="text-xs font-medium text-white/40 hover:text-white transition-colors"
+          >
+            {{ $t("support.title") }}
+          </NuxtLink>
+          <NuxtLink
             :to="$localePath('/privacy-policy')"
             class="text-xs font-medium text-white/40 hover:text-white transition-colors"
           >

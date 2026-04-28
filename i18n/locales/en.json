@@ -533,5 +533,42 @@
     "categoryInsight": "Insight",
     "untitledInsight": "Untitled Insight",
     "excerptFallback": "Exploring the next frontier of sports intelligence and personalized coaching."
+  },
+  "support": {
+    "title": "Help Center",
+    "subtitle": "We're here to support you in your training journey.",
+    "searchPlaceholder": "How can we help?",
+    "categories": {
+      "account": {
+        "title": "My Account",
+        "description": "Profile, settings, and synchronization."
+      },
+      "technical": {
+        "title": "Technical",
+        "description": "App usage, troubleshooting, and updates."
+      },
+      "training": {
+        "title": "Training",
+        "description": "Plans, analytics, and AI feedback."
+      },
+      "privacy": {
+        "title": "Privacy",
+        "description": "Your data and how we protect it."
+      }
+    },
+    "quickActions": {
+      "faq": "View all FAQs",
+      "contact": "Direct Support"
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "How can we help?",
+      "submit": "Send Request",
+      "sending": "Sending...",
+      "successTitle": "Message Sent!",
+      "successMessage": "Thank you for your message. We'll get back to you as soon as possible.",
+      "reset": "Send another message"
+    }
   }
 }

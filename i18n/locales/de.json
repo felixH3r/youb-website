@@ -533,5 +533,42 @@
     "categoryInsight": "Insight",
     "untitledInsight": "Unbenannter Insight",
     "excerptFallback": "Erforschung der nächsten Grenze der Sportintelligenz und des personalisierten Coachings."
+  },
+  "support": {
+    "title": "Hilfe-Center",
+    "subtitle": "Wir sind hier, um dich bei deinem Training zu unterstützen.",
+    "searchPlaceholder": "Wie können wir helfen?",
+    "categories": {
+      "account": {
+        "title": "Mein Account",
+        "description": "Profil, Einstellungen und Synchronisierung."
+      },
+      "technical": {
+        "title": "Technik",
+        "description": "App-Nutzung, Fehlerbehebung und Updates."
+      },
+      "training": {
+        "title": "Training",
+        "description": "Pläne, Analysen und KI-Feedback."
+      },
+      "privacy": {
+        "title": "Datenschutz",
+        "description": "Deine Daten und wie wir sie schützen."
+      }
+    },
+    "quickActions": {
+      "faq": "Alle FAQs ansehen",
+      "contact": "Direkter Support"
+    },
+    "form": {
+      "name": "Dein Name",
+      "email": "Deine E-Mail",
+      "message": "Wie können wir helfen?",
+      "submit": "Anfrage senden",
+      "sending": "Wird gesendet...",
+      "successTitle": "Nachricht gesendet!",
+      "successMessage": "Vielen Dank für deine Nachricht. Wir melden uns so schnell wie möglich bei dir.",
+      "reset": "Weitere Nachricht senden"
+    }
   }
 }
