@@ -224,7 +224,7 @@
             </p>
           </div>
 
-          <div class="space-y-4">
+          <div id="account-deletion" class="space-y-4 scroll-mt-32">
             <h2 class="text-xl font-semibold">
               {{ $t("privacyPolicy.section8.title") }}
             </h2>
