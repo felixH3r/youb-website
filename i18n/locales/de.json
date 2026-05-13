@@ -20,11 +20,12 @@
   },
   "hero": {
     "badge": "Neue Ära des Monitorings",
-    "titlePrefix": "Ein Coach, mit dem du reden kannst.",
-    "titleHighlight": "Nicht ein Dashboard, das du verstehen musst.",
-    "subtitle": "YOUB kennt deine Daten, aber auch deinen Alltag. Training entsteht im Dialog – gemeinsam mit dir.",
+    "titlePrefix": "Das Gefühl, wenn sich Fortschritt plötzlich leicht anfühlt.",
+    "titleHighlight": "",
+    "subtitle": "Ein Coach, der sich meldet, die richtigen Fragen stellt und dir jeden Tag zeigt, was dich wirklich weiterbringt.",
     "ctaPrimary": "App herunterladen",
-    "ctaSecondary": "Mission"
+    "ctaSecondary": "Mission",
+    "integrations": "Kompatibel mit deinem Wearable"
   },
   "chat": {
     "title": "Analytics Chat",
@@ -58,12 +59,12 @@
     "block1": {
       "tag": "Deep Data Profiling",
       "title": "Adaptivität in Echtzeit",
-      "text": "YOUB plant nicht nur stur voraus. Unsere KI analysiert kontinuierlich deine Daten von Garmin, HRV und Schlaf. Wenn dein Körper Ruhe braucht, erkennt YOUB das, bevor du ins Übertraining rutschst. Wir ersetzen statische Pläne durch dynamische Intelligenz."
+      "text": "YOUB plant nicht nur stur voraus. Unsere KI erkennt, wenn du schlecht geschlafen hast oder deine HRV sinkt, und schlägt dir die Planänderung vor, bevor du ins Übertraining rutschst. Wir ersetzen statische Pläne durch dynamische Intelligenz."
     },
     "block2": {
       "tag": "Proactive Interaction",
       "title": "Ein Coach, der mit dir spricht",
-      "text": "Keine Lust auf komplexe Dashboards? YOUB meldet sich proaktiv bei dir – via WhatsApp oder App. Wie ein echter Trainer gibt dir YOUB Feedback, motiviert dich oder bremst dich, wenn es nötig ist. Einfach, menschlich, direkt."
+      "text": "Keine Lust auf komplexe Dashboards? YOUB meldet sich proaktiv bei dir – via WhatsApp oder App. Wenn dein Körper Pause braucht, kriegst du eine Nachricht, wie von einem echten Trainer. Einfach, menschlich, direkt."
     },
     "block3": {
       "tag": "Science over Bro-Science",
@@ -143,8 +144,8 @@
     "microcopy": "Den Web Login findest du jederzeit oben im Menü."
   },
   "seo": {
-    "title": "Training, das sich an dein Leben anpasst",
-    "description": "YOUB ist dein intelligenter KI-Coach für Triathlon, Radsport und Laufen. Wir verbinden Sportwissenschaft mit Echtzeit-Datenanalyse für dein optimales Training."
+    "title": "YOUB - AI Endurance Coach für Laufen, Radsport und Triathlon",
+    "description": "YOUB ist ein chat-first AI Endurance Coach für Läufer:innen, Radfahrer:innen und Triathlet:innen. Wearable-Daten, Google Calendar und Sportwissenschaft passen dein Training an den Alltag an."
   },
   "howItWorks": {
     "hero": {
@@ -278,72 +279,153 @@
   "faq": {
     "title": "Häufig gestellte Fragen",
     "categories": {
-      "trust": {
-        "title": "1. Das YOUB Prinzip",
+      "product": {
+        "title": "1. Produkt & Positionierung",
         "items": {
-          "isOnlyApp": {
-            "question": "Ist YOUB nur eine weitere Trainingsplan-App?",
-            "answer": "Nein. YOUB ist eine Everyday Training Intelligence. Während Apps nur Pläne abspulen, passt YOUB dein Training täglich an deinen echten Stresslevel, deinen Schlaf und dein Feedback an – genau wie ein menschlicher Coach (unser „Markus-Prinzip“)."
+          "whatIsYoub": {
+            "question": "Was ist YOUB?",
+            "answer": "YOUB ist ein chat-first digitaler Endurance Coach für Läufer:innen, Radfahrer:innen und Triathlet:innen. YOUB analysiert Trainings-, Recovery-, Schlaf-, Wearable- und Kalenderdaten und passt dein Training im Dialog an deinen echten Alltag an."
           },
-          "dataUsage": {
-            "question": "Werden meine Daten für die KI-Entwicklung genutzt?",
-            "answer": "Nein, dein Feedback unterstützt uns bei der Entwicklung von YOUB als Produkt, aber wir trainieren kein KI-Modell mit deinen Daten. Datenschutz und Transparenz stehen bei uns an vorderster Stelle."
+          "whoFor": {
+            "question": "Für wen ist YOUB gedacht?",
+            "answer": "YOUB ist für ambitionierte Amateur-Ausdauerathlet:innen, die strukturiert trainieren, Wearable-Daten sammeln und Leistung mit Arbeit, Familie und Alltag vereinbaren müssen."
+          },
+          "staticPlan": {
+            "question": "Wie unterscheidet sich YOUB von einem statischen Trainingsplan?",
+            "answer": "Ein statischer Plan erwartet perfekte Wochen. YOUB reagiert auf Schlaf, Recovery, Trainingshistorie, Kalender, Feedback und Stress und schlägt passende Anpassungen vor."
+          },
+          "chatFirst": {
+            "question": "Was bedeutet chat-first Coaching?",
+            "answer": "YOUB erklärt Trainingsentscheidungen im Gespräch. Du bekommst nicht nur Zahlen oder Planblöcke, sondern Rückfragen, Feedback und konkrete Empfehlungen wie von einem Coach."
+          },
+          "blackBox": {
+            "question": "Ist YOUB ein Blackbox-KI-Trainingsgenerator?",
+            "answer": "Nein. YOUB nutzt KI primär als Kommunikationslayer. Die Trainingslogik basiert auf einem sportwissenschaftlichen Entscheidungsmodell und soll nachvollziehbar erklärt werden."
           }
         }
       },
-      "tech": {
-        "title": "2. Technik & Synchronisation",
+      "integrations": {
+        "title": "2. Integrationen & Datenquellen",
         "items": {
-          "devices": {
-            "question": "Welche Geräte werden unterstützt?",
-            "answer": "Zum Live-Start unterstützen wir die nahtlose Integration von Garmin. Suunto, Whoop, Wahoo, Zwift, Rouvy und Apple Health kommen in Kürze."
+          "supportedPlatforms": {
+            "question": "Welche Plattformen unterstützt YOUB?",
+            "answer": "YOUB ist auf Endurance-Daten aus Garmin, Strava, WHOOP, Oura, Polar, Suunto und Wahoo ausgelegt. COROS ist als kommende Integration geplant."
           },
-          "manualUpload": {
-            "question": "Muss ich meine Daten manuell hochladen?",
-            "answer": "Nein. Sobald dein Account verbunden ist, fließen deine Daten automatisch zu YOUB. Die Kommunikation und dein Feedback erfolgen bequem über WhatsApp oder Web-Interface."
+          "garmin": {
+            "question": "Funktioniert YOUB mit Garmin?",
+            "answer": "Ja. Garmin-Daten können YOUB helfen, Aktivitätsverlauf, Belastung, Herzfrequenz, Schlaf und Recovery-Kontext für Lauf-, Rad- und Triathlontraining einzuordnen."
+          },
+          "strava": {
+            "question": "Funktioniert YOUB mit Strava?",
+            "answer": "YOUB kann Strava-Aktivitätsdaten nutzen, um abgeschlossene Einheiten, Sportarten, Dauer, Distanz, Höhenmeter und Belastungsmuster in Coaching-Entscheidungen einzubeziehen."
+          },
+          "whoopOura": {
+            "question": "Kann YOUB WHOOP oder Oura Recovery-Daten nutzen?",
+            "answer": "Ja. Recovery-, Schlaf-, HRV- und Readiness-Signale aus Systemen wie WHOOP oder Oura können helfen, harte Einheiten, Ruhetage und Planänderungen besser zu begründen."
+          },
+          "coros": {
+            "question": "Unterstützt YOUB COROS?",
+            "answer": "COROS ist als kommende Integration geplant. Bis sie live ist, wird COROS nicht als aktive Integration kommuniziert."
           }
         }
       },
-      "app": {
-        "title": "3. App & Zugang",
+      "sports": {
+        "title": "3. Sportarten & Ziele",
         "items": {
-          "free": {
-            "question": "Wie starte ich mit YOUB?",
-            "answer": "Lade YOUB im App Store oder bei Google Play herunter. Wenn du lieber am Desktop arbeitest, kannst du dich auch über my.youb.app einloggen."
+          "running": {
+            "question": "Ist YOUB ein AI Running Coach?",
+            "answer": "Ja. YOUB unterstützt Läufer:innen mit datenbasiertem Coaching für Grundlagenläufe, Intervalle, lange Läufe, Recovery und realistische Wochenplanung."
           },
-          "webAccess": {
-            "question": "Kann ich YOUB auch im Browser nutzen?",
-            "answer": "Ja. Der Web-Login unter my.youb.app ist für bestehende Accounts verfügbar und ergänzt die iOS- und Android-Apps."
+          "cycling": {
+            "question": "Ist YOUB ein AI Cycling Coach?",
+            "answer": "Ja. YOUB kann Radtraining anhand von Leistung, Herzfrequenz, Dauer, Intensität, Recovery und Kalenderkontext einordnen."
           },
-          "feedbackAmount": {
-            "question": "Wo bekomme ich die Apps?",
-            "answer": "Die iOS-App findest du im App Store, die Android-App bei Google Play. Die Download-Links stehen direkt auf dieser Website."
+          "triathlon": {
+            "question": "Ist YOUB ein AI Triathlon Coach?",
+            "answer": "Ja. YOUB ist für Triathlet:innen geeignet, die Belastung über mehrere Disziplinen hinweg mit Recovery und Alltag abstimmen wollen."
+          },
+          "ironman": {
+            "question": "Kann YOUB bei Ironman Training helfen?",
+            "answer": "Ja. YOUB kann lange Vorbereitungen unterstützen, weil Kalenderkontext, Ermüdung, Erholung und nachhaltige Belastungssteuerung besonders wichtig sind."
+          },
+          "beginner": {
+            "question": "Ist YOUB für komplette Einsteiger:innen geeignet?",
+            "answer": "YOUB passt am besten für Athlet:innen, die bereits strukturiert trainieren oder Wearable-Daten nutzen. Für komplette Einsteiger:innen kann YOUB später sinnvoll sein, ist aber nicht die primäre Zielgruppe."
           }
         }
       },
-      "safety": {
-        "title": "4. Wissenschaft & Sicherheit",
+      "science": {
+        "title": "4. Sportwissenschaft & Sicherheit",
         "items": {
+          "hycys": {
+            "question": "Welche Rolle spielt HYCYS bei YOUB?",
+            "answer": "YOUB basiert auf einem sportwissenschaftlichen Entscheidungsmodell, das gemeinsam mit HYCYS entwickelt wurde. Ziel ist nachvollziehbare Trainingslogik statt generischer KI-Antworten."
+          },
           "overtraining": {
-            "question": "Kann die KI mich ins Übertraining führen?",
-            "answer": "Das ist genau das, was wir verhindern. Die Logik von Markus (sportwissenschaftlicher Hintergrund) ist darauf programmiert, bei Anzeichen von Überlastung sofort gegenzusteuern. YOUB ist „Safety First“. Das heißt aber nicht, dass sofort eine Einheit ausgelassen wird, wir versuchen intelligent Trainings und Intensitäten anzupassen."
+            "question": "Kann YOUB helfen, Übertraining zu vermeiden?",
+            "answer": "YOUB ist darauf ausgelegt, Warnsignale wie schlechte Erholung, Schlafmangel, hohe Ermüdung oder zu dichte Wochen früh zu erkennen und bessere Belastungsentscheidungen vorzuschlagen."
           },
-          "wrongSuggestion": {
-            "question": "Was mache ich, wenn die KI einen Vorschlag macht, der sich falsch anfühlt?",
-            "answer": "Dein Körpergefühl schlägt immer die KI. Du kannst dem System jederzeit sagen: „Ich fühle mich heute nicht gut“, und YOUB passt den Plan sofort an."
+          "wrongFeeling": {
+            "question": "Was mache ich, wenn ein Vorschlag sich falsch anfühlt?",
+            "answer": "Du kannst YOUB jederzeit sagen, wie du dich fühlst. Dein Feedback ist ein wichtiger Teil der Entscheidung und kann eine Plananpassung auslösen."
+          },
+          "notMedical": {
+            "question": "Ist YOUB medizinische Beratung?",
+            "answer": "Nein. YOUB ersetzt keine medizinische Beratung. Bei Schmerzen, Krankheit, Verletzungen oder medizinischen Fragen solltest du ärztlichen Rat einholen."
+          },
+          "explainWhy": {
+            "question": "Erklärt YOUB, warum Training angepasst wird?",
+            "answer": "Ja. Ein Kernversprechen von YOUB ist, Entscheidungen im Dialog nachvollziehbar zu machen, statt Training still und ohne Begründung zu verändern."
           }
         }
       },
-      "feedback": {
-        "title": "5. Dialog & Feedback",
+      "calendarPrivacy": {
+        "title": "5. Kalender, Datenschutz & Zugang",
         "items": {
-          "howToFeedback": {
-            "question": "Wie kann ich Feedback geben oder Fehler melden?",
-            "answer": "Du kannst uns jederzeit über WhatsApp oder per E-Mail an feedback{'@'}youb.app erreichen. Dein Input fließt direkt in die Weiterentwicklung ein."
+          "calendar": {
+            "question": "Warum integriert YOUB Google Calendar?",
+            "answer": "Google Calendar hilft YOUB zu verstehen, wann Training realistisch ist. So können harte Einheiten auf Tage mit mehr Luft gelegt und volle Tage früh erkannt werden."
           },
-          "voiceMessages": {
-            "question": "Kann ich auch Sprachnachrichten schicken?",
-            "answer": "Ja, unbedingt! Wir lieben Sprachnachrichten, da sie oft am besten beschreiben, wie sich dein Training angefühlt hat. Unsere KI versteht den Kontext deiner Nachricht."
+          "calendarTraining": {
+            "question": "Werden Google Calendar Daten für KI-Training genutzt?",
+            "answer": "Nein. Google Calendar Daten werden nur genutzt, um Kalender- und Trainingsplanungsfunktionen für deinen Account bereitzustellen."
+          },
+          "gdpr": {
+            "question": "Ist YOUB DSGVO-konform?",
+            "answer": "YOUB verarbeitet Gesundheits- und Trainingsdaten auf Basis deiner Einwilligung und beschreibt Zweck, Datenquellen, Rechte und Löschmöglichkeiten transparent in der Datenschutzerklärung."
+          },
+          "deleteData": {
+            "question": "Kann ich meine Daten löschen lassen?",
+            "answer": "Ja. Du kannst die Löschung deines Accounts und deiner personenbezogenen Daten anfordern, unter anderem über die App-Einstellungen oder per E-Mail."
+          },
+          "pricing": {
+            "question": "Was kostet YOUB?",
+            "answer": "YOUB befindet sich aktuell im Beta- beziehungsweise Early-Access-Modus. Die finalen Preise werden transparent veröffentlicht, sobald das kommerzielle Angebot startet."
+          }
+        }
+      },
+      "comparisons": {
+        "title": "6. Vergleiche & Alternativen",
+        "items": {
+          "join": {
+            "question": "Ist YOUB eine Join Cycling Alternative?",
+            "answer": "YOUB kann eine Alternative sein, wenn du chat-first Coaching, Kalenderkontext und Endurance Coaching über Laufen, Radsport und Triathlon hinweg suchst."
+          },
+          "humango": {
+            "question": "Ist YOUB eine Humango Alternative?",
+            "answer": "YOUB positioniert sich mit Fokus auf Coaching im Dialog, alltagsnahe Anpassung, Wearable-Daten und sportwissenschaftliche Entscheidungslogik."
+          },
+          "tridot": {
+            "question": "Ist YOUB eine TriDot Alternative?",
+            "answer": "YOUB kann für Triathlet:innen interessant sein, die adaptive Trainingsentscheidungen, Kalenderkontext und chat-first Erklärungen in den Mittelpunkt stellen."
+          },
+          "humanCoach": {
+            "question": "Ersetzt YOUB einen menschlichen Coach?",
+            "answer": "YOUB macht hochwertige tägliche Coaching-Logik digital zugänglicher. Bei medizinischen Themen, Verletzungen oder sehr individuellen Hochleistungsanforderungen kann ein menschlicher Coach weiterhin sinnvoll sein."
+          },
+          "feedback": {
+            "question": "Wie kann ich Feedback geben oder Fehler melden?",
+            "answer": "Du kannst uns über WhatsApp oder per E-Mail an feedback{'@'}youb.app erreichen. Dein Input fließt direkt in die Weiterentwicklung ein."
           }
         }
       }

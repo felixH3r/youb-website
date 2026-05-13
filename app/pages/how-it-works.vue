@@ -19,8 +19,6 @@ useSeoMeta({
     <HowItWorksPrinciple />
     <HowItWorksDifferentiation />
     <CommonCTASection />
-
-    <CommonFooter />
   </main>
 </template>
 

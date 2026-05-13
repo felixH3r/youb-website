@@ -59,10 +59,13 @@ onMounted(() => {
         ref="titleRef"
         class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white mb-8 leading-[0.9] text-balance animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 ease-out"
       >
-        {{ $t("hero.titlePrefix") }} <br >
-        <span class="text-white/40 italic">{{
-          $t("hero.titleHighlight")
-        }}</span>
+        {{ $t("hero.titlePrefix") }}
+        <template v-if="$t('hero.titleHighlight')">
+          <br >
+          <span class="text-white/40 italic">{{
+            $t("hero.titleHighlight")
+          }}</span>
+        </template>
       </h1>
 
       <!-- Sub-heading -->
@@ -76,7 +79,7 @@ onMounted(() => {
       <!-- CTA Actions -->
       <div
         ref="actionsRef"
-        class="flex items-center gap-4 mb-10 md:mb-20 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 ease-out"
+        class="flex items-center gap-4 mb-10 md:mb-16 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 ease-out"
       >
         <a
           :href="appDownloadUrl.startsWith('http') ? appDownloadUrl : $localePath('/#download')"
@@ -92,6 +95,36 @@ onMounted(() => {
         >
           {{ $t("hero.ctaSecondary") }}
         </NuxtLink>
+      </div>
+
+      <!-- Supported Platforms Marquee-like -->
+      <div class="w-full max-w-4xl mb-12 md:mb-20 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-700 ease-out overflow-hidden">
+        <p class="text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/30 mb-6 font-medium">
+          {{ $t("hero.integrations") }}
+        </p>
+        <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 md:gap-x-12 opacity-40 hover:opacity-100 transition-opacity duration-700">
+          <div class="flex items-center gap-2 group cursor-default">
+            <span class="text-white font-bold tracking-tighter text-sm md:text-base">GARMIN</span>
+          </div>
+          <div class="flex items-center gap-2 group cursor-default">
+            <span class="text-white font-bold tracking-tighter text-sm md:text-base">STRAVA</span>
+          </div>
+          <div class="flex items-center gap-2 group cursor-default">
+            <span class="text-white font-bold tracking-tighter text-sm md:text-base">WAHOO</span>
+          </div>
+          <div class="flex items-center gap-2 group cursor-default">
+            <span class="text-white font-bold tracking-tighter text-sm md:text-base">SUUNTO</span>
+          </div>
+          <div class="flex items-center gap-2 group cursor-default">
+            <span class="text-white font-bold tracking-tighter text-sm md:text-base">POLAR</span>
+          </div>
+          <div class="flex items-center gap-2 group cursor-default">
+            <span class="text-white font-black tracking-tighter text-sm md:text-base">WHOOP</span>
+          </div>
+          <div class="flex items-center gap-2 group cursor-default">
+            <span class="text-white font-bold tracking-tighter text-sm md:text-base">OURA</span>
+          </div>
+        </div>
       </div>
 
       <!-- Hero Graphic -->

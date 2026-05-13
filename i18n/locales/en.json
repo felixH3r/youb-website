@@ -20,11 +20,12 @@
   },
   "hero": {
     "badge": "New Era of Monitoring",
-    "titlePrefix": "A coach you can talk to.",
-    "titleHighlight": "Not a dashboard you have to figure out.",
-    "subtitle": "YOUB knows your data, but also your daily life. Training is created through dialogue – together with you.",
+    "titlePrefix": "That feeling when progress suddenly feels easy.",
+    "titleHighlight": "",
+    "subtitle": "A coach who reaches out, asks the right questions, and shows you every day what truly moves you forward.",
     "ctaPrimary": "Download App",
-    "ctaSecondary": "Mission"
+    "ctaSecondary": "Mission",
+    "integrations": "Compatible with your wearable"
   },
   "chat": {
     "title": "Analytics Chat",
@@ -58,12 +59,12 @@
     "block1": {
       "tag": "Deep Data Profiling",
       "title": "Real-time Adaptivity",
-      "text": "YOUB doesn't just stubbornly plan ahead. Our AI continuously analyzes your data from Garmin, HRV and sleep. When your body needs rest, YOUB detects it before you slip into overtraining. We replace static plans with dynamic intelligence."
+      "text": "YOUB doesn't just stubbornly plan ahead. Our AI detects when you've slept poorly or your HRV drops, and suggests plan changes before you slip into overtraining. We replace static plans with dynamic intelligence."
     },
     "block2": {
       "tag": "Proactive Interaction",
       "title": "A Coach That Speaks to You",
-      "text": "Don't feel like navigating complex dashboards? YOUB proactively reaches out to you – via WhatsApp or app. Like a real trainer, YOUB gives you feedback, motivates you, or slows you down when necessary. Simple, human, direct."
+      "text": "Don't feel like navigating complex dashboards? YOUB proactively reaches out to you – via WhatsApp or app. When your body needs rest, you get a message, just like from a real trainer. Simple, human, direct."
     },
     "block3": {
       "tag": "Science Over Bro-Science",
@@ -296,7 +297,7 @@
         "items": {
           "devices": {
             "question": "Which devices are supported?",
-            "answer": "At live launch, we support seamless Garmin integration. Suunto, Whoop, Wahoo, Zwift, Rouvy, and Apple Health are coming soon."
+            "answer": "We support seamless integration with Garmin, Suunto, Polar, Whoop, Oura, and Wahoo. Additional platforms like Zwift and Rouvy will follow soon."
           },
           "manualUpload": {
             "question": "Do I have to upload my data manually?",
