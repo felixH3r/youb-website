@@ -134,7 +134,7 @@ const handleSubmit = async () => {
                 :placeholder="t('support.form.name')"
                 required
                 class="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-all duration-300"
-              />
+              >
             </div>
             <div class="space-y-2">
               <input
@@ -143,7 +143,7 @@ const handleSubmit = async () => {
                 :placeholder="t('support.form.email')"
                 required
                 class="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-all duration-300"
-              />
+              >
             </div>
             <div class="space-y-2">
               <textarea

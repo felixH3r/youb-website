@@ -20,7 +20,7 @@ useSeoMeta({
     <HowItWorksDifferentiation />
     <CommonCTASection />
 
-    <LandingFooter />
+    <CommonFooter />
   </main>
 </template>
 
