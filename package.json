@@ -12,6 +12,7 @@
     "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
+    "@iconify-json/ph": "^1.2.2",
     "@nuxt/eslint": "^1.15.1",
     "@nuxt/icon": "^2.1.1",
     "@nuxtjs/seo": "^3.3.0",
