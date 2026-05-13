@@ -3,17 +3,14 @@ const ANDROID_APP_URL = "https://play.google.com/store/apps/details?id=my.youb.a
 const WEB_LOGIN_URL = "https://my.youb.app";
 
 export const useAppLinks = () => {
-  const appDownloadUrl = ref("/#download");
+  const appDownloadUrl = ref(WEB_LOGIN_URL);
 
   onMounted(() => {
     const userAgent = window.navigator.userAgent.toLowerCase();
 
     if (/android/.test(userAgent)) {
       appDownloadUrl.value = ANDROID_APP_URL;
-      return;
-    }
-
-    if (/iphone|ipad|ipod/.test(userAgent)) {
+    } else if (/iphone|ipad|ipod/.test(userAgent)) {
       appDownloadUrl.value = IOS_APP_URL;
     }
   });

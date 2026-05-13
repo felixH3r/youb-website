@@ -82,9 +82,9 @@ onMounted(() => {
         class="flex items-center gap-4 mb-10 md:mb-16 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 ease-out"
       >
         <a
-          :href="appDownloadUrl.startsWith('http') ? appDownloadUrl : $localePath('/#download')"
-          :target="appDownloadUrl.startsWith('http') ? '_blank' : undefined"
-          :rel="appDownloadUrl.startsWith('http') ? 'noopener noreferrer' : undefined"
+          :href="appDownloadUrl"
+          target="_blank"
+          rel="noopener noreferrer"
           class="px-6 md:px-8 py-4 rounded-full bg-white text-black font-semibold text-sm md:text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-white/10"
         >
           {{ $t("hero.ctaPrimary") }}

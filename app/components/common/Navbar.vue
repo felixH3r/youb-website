@@ -8,6 +8,10 @@ const menuitems = [
     path: "/how-it-works",
   },
   {
+    title: "nav.pricing",
+    path: "/pricing",
+  },
+  {
     title: "nav.mission",
     path: "/mission",
   },
@@ -46,7 +50,7 @@ onUnmounted(() => {
       class="w-full transition-all duration-500 ease-in-out bg-white/10 backdrop-blur-md border-white/20 shadow-2xl flex items-center justify-between"
       :class="[
         isScrolled
-          ? 'max-w-3xl px-6 py-2 bg-black/5'
+          ? 'max-w-5xl px-6 py-2 bg-black/5'
           : 'max-w-6xl px-8 py-4 bg-black/0',
         'rounded-b-3xl md:rounded-full border-b md:border',
       ]"
@@ -61,7 +65,7 @@ onUnmounted(() => {
       </NuxtLink>
 
       <!-- Desktop Menu -->
-      <ul class="hidden md:flex items-center gap-8">
+      <ul class="hidden md:flex items-center gap-5 lg:gap-8">
         <li v-for="item in menuitems" :key="item.title" class="flex-shrink-0">
           <NuxtLink
             :to="$localePath(item.path)"
@@ -75,9 +79,9 @@ onUnmounted(() => {
       <!-- CTA & Mobile Toggle -->
       <div class="flex items-center gap-3">
         <a
-          :href="appDownloadUrl.startsWith('http') ? appDownloadUrl : $localePath('/#download')"
-          :target="appDownloadUrl.startsWith('http') ? '_blank' : undefined"
-          :rel="appDownloadUrl.startsWith('http') ? 'noopener noreferrer' : undefined"
+          :href="appDownloadUrl"
+          target="_blank"
+          rel="noopener noreferrer"
           class="hidden md:flex items-center gap-2 bg-white text-black px-4 lg:px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 active:scale-95 transition-all shadow-lg shadow-white/20 whitespace-nowrap"
         >
           <Icon name="ph:download-simple-bold" class="w-4 h-4" />
@@ -151,9 +155,9 @@ onUnmounted(() => {
           </li>
           <li>
             <a
-              :href="appDownloadUrl.startsWith('http') ? appDownloadUrl : $localePath('/#download')"
-              :target="appDownloadUrl.startsWith('http') ? '_blank' : undefined"
-              :rel="appDownloadUrl.startsWith('http') ? 'noopener noreferrer' : undefined"
+              :href="appDownloadUrl"
+              target="_blank"
+              rel="noopener noreferrer"
               class="w-full bg-black text-white py-4 rounded-2xl flex items-center justify-center gap-3 text-lg font-bold shadow-xl shadow-black/20"
               @click="open = false"
             >

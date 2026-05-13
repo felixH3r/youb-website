@@ -19,6 +19,7 @@ const footerSectionsByLocale: Record<string, FooterSection[]> = {
       links: [
         { label: "KI-Ausdauercoach", href: "/" },
         { label: "Coaching per Chat", href: "/how-it-works" },
+        { label: "Preise", href: "/pricing" },
         { label: "Adaptive Trainingsplanung", href: "/google-calendar-training" },
         { label: "Häufige Fragen", href: "/faq" },
       ],
@@ -90,6 +91,7 @@ const footerSectionsByLocale: Record<string, FooterSection[]> = {
       links: [
         { label: "AI Endurance Coach", href: "/" },
         { label: "Chat-first Coaching", href: "/how-it-works" },
+        { label: "Pricing", href: "/pricing" },
         { label: "Adaptive Training Planning", href: "/google-calendar-training" },
         { label: "FAQ", href: "/faq" },
       ],
