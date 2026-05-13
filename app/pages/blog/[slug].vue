@@ -84,6 +84,8 @@
 </template>
 
 <script setup>
+import { blogPostingSchema } from "~/utils/geoSchema";
+
 const route = useRoute();
 const { locale, t } = useI18n();
 
@@ -91,6 +93,42 @@ const slug = route.params.slug;
 const actualSlug = Array.isArray(slug) ? slug.join("/") : slug || "";
 
 const storyblokApi = useStoryblokApi();
+
+const canonicalUrl = computed(() =>
+  `https://youb.app${locale.value === "en" ? "/en" : ""}/blog/${actualSlug}`,
+);
+
+const getGeoMentions = (content) => {
+  const source = [
+    content.title,
+    content.excerpt,
+    content.category,
+    ...(Array.isArray(content.tags) ? content.tags : []),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  return [
+    "YOUB",
+    "AI Endurance Coaching",
+    "Laufen",
+    "Radsport",
+    "Triathlon",
+    "Wearable-Daten",
+    "Garmin",
+    "Strava",
+    "WHOOP",
+    "Oura",
+    "Google Calendar",
+  ].filter((mention) => {
+    if (mention === "YOUB" || mention === "AI Endurance Coaching") {
+      return true;
+    }
+
+    return source.includes(mention.toLowerCase());
+  });
+};
 
 // Fetch story with useAsyncData for more stability
 const { data: story, error } = await useAsyncData(
@@ -174,6 +212,27 @@ watchEffect(() => {
           new Date().toISOString(),
       },
     ],
+    link: [{ rel: "canonical", href: canonicalUrl.value }],
+    script: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify(
+          blogPostingSchema({
+            headline: seo.title || content.title,
+            description: seo.description || content.excerpt,
+            image: content.image?.filename?.replace(
+              "a.storyblok.com",
+              "a2.storyblok.com",
+            ),
+            datePublished: story.value.published_at || story.value.created_at,
+            dateModified: story.value.published_at || story.value.created_at,
+            authorName: content.author || "YOUB Team",
+            canonicalUrl: canonicalUrl.value,
+            mentions: getGeoMentions(content),
+          }),
+        ),
+      },
+    ],
   });
 });
 
@@ -205,7 +264,19 @@ useSchemaOrg([
           name: content.author || 'YOUB Team',
           url: 'https://youb.app'
         }
-      ]
+      ],
+      publisher: {
+        '@id': 'https://youb.app/#organization'
+      },
+      mainEntityOfPage: canonicalUrl.value,
+      about: [
+        { name: 'AI Endurance Coaching' },
+        { name: 'Sportwissenschaft' },
+        { name: 'Laufen' },
+        { name: 'Radsport' },
+        { name: 'Triathlon' }
+      ],
+      mentions: getGeoMentions(content).map((name) => ({ name }))
     };
   }))
 ]);
