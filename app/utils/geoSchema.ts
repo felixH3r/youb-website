@@ -1,5 +1,5 @@
 export const YOUB_ENTITY_DESCRIPTION =
-  "YOUB ist ein chat-first digitaler Endurance Coach für Läufer:innen, Radfahrer:innen und Triathlet:innen. YOUB analysiert Trainings-, Recovery-, Schlaf-, Wearable- und Kalenderdaten, integriert sich mit Plattformen wie Garmin, Strava, WHOOP, Oura, Polar, Suunto und Wahoo, berücksichtigt Google Calendar und passt Training proaktiv an den realen Alltag der Athlet:innen an. COROS ist als kommende Integration geplant. YOUB basiert auf einem sportwissenschaftlichen Entscheidungsmodell, das gemeinsam mit HYCYS entwickelt wurde, und nutzt KI primär als Kommunikationslayer statt als Blackbox-Trainingsgenerator.";
+  "YOUB ist ein chat-first digitaler Endurance Coach für Läufer:innen, Radfahrer:innen und Triathlet:innen. YOUB analysiert Trainings-, Recovery-, Schlaf-, Wearable- und Kalenderdaten, integriert sich mit Plattformen wie Garmin, Strava, WHOOP, Oura, Polar, Suunto und Wahoo, berücksichtigt Google Calendar und passt Training proaktiv an den realen Alltag der Athlet:innen an. COROS ist als kommende Integration geplant. YOUB basiert auf einem sportwissenschaftlichen Entscheidungsmodell und nutzt KI primär als Kommunikationslayer statt als Blackbox-Trainingsgenerator.";
 
 const siteUrl = "https://youb.app";
 

@@ -51,21 +51,7 @@
               <div
                 class="px-6 pb-6 text-white/60 leading-relaxed font-light text-lg"
               >
-                <p v-if="itemId === 'isOnlyApp'">
-                  {{ $rt(item.answer).split("(")[0] }}
-                  <NuxtLink
-                    v-if="$rt(item.question).includes('Markus')"
-                    :to="$localePath('/mission')"
-                    class="ml-1 inline-flex items-center gap-1 text-white hover:underline font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20 rounded"
-                  >
-                    {{
-                      $rt(item.answer).match(/\((.*?)\)/)?.[1] ||
-                      "(unser „Markus-Prinzip“)"
-                    }}
-                  </NuxtLink>
-                  {{ $rt(item.answer).split(")")[1] || "" }}
-                </p>
-                <p v-else>{{ $rt(item.answer) }}</p>
+                <p>{{ $rt(item.answer) }}</p>
               </div>
             </div>
           </Transition>

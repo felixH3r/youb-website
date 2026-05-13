@@ -88,7 +88,7 @@
     "titleHighlight": "Gestützt auf Wissenschaft.",
     "text": "YOUB verbindet sportliche Erfahrung mit wissenschaftlicher Methodik. Gebaut von Athleten, entwickelt mit Daten – für Entscheidungen, die im Alltag funktionieren.",
     "badges": {
-      "hycys": "science proofed",
+      "science": "science proofed",
       "gdpr": "DSGVO-konform",
       "aiAct": "AI Act\nready"
     }
@@ -399,10 +399,7 @@
       "science": {
         "title": "4. Sportwissenschaft & Sicherheit",
         "items": {
-          "hycys": {
-            "question": "Welche Rolle spielt HYCYS bei YOUB?",
-            "answer": "YOUB basiert auf einem sportwissenschaftlichen Entscheidungsmodell, das gemeinsam mit HYCYS entwickelt wurde. Ziel ist nachvollziehbare Trainingslogik statt generischer KI-Antworten."
-          },
+
           "overtraining": {
             "question": "Kann YOUB helfen, Übertraining zu vermeiden?",
             "answer": "YOUB ist darauf ausgelegt, Warnsignale wie schlechte Erholung, Schlafmangel, hohe Ermüdung oder zu dichte Wochen früh zu erkennen und bessere Belastungsentscheidungen vorzuschlagen."

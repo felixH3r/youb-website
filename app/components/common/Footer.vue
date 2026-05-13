@@ -71,7 +71,6 @@ const footerSectionsByLocale: Record<string, FooterSection[]> = {
       links: [
         { label: "DSGVO-konform", href: "/privacy-policy" },
         { label: "EU AI Act vorbereitet", href: "/privacy-policy" },
-        { label: "HYCYS Sportwissenschaft", href: "/how-it-works" },
         { label: "Datenschutz", href: "/privacy-policy" },
       ],
     },
@@ -143,7 +142,6 @@ const footerSectionsByLocale: Record<string, FooterSection[]> = {
       links: [
         { label: "GDPR compliant", href: "/privacy-policy" },
         { label: "AI Act ready", href: "/privacy-policy" },
-        { label: "HYCYS sports science", href: "/how-it-works" },
         { label: "Privacy", href: "/privacy-policy" },
       ],
     },

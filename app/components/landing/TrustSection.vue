@@ -37,7 +37,7 @@
             <span
               class="text-xs uppercase tracking-[0.2em] text-white/70 font-bold leading-tight whitespace-pre-line"
             >
-              {{ $t("trust.badges.hycys") }}
+              {{ $t("trust.badges.science") }}
             </span>
           </div>
 

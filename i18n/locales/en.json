@@ -88,7 +88,7 @@
     "titleHighlight": "Backed by science.",
     "text": "YOUB combines athletic experience with scientific methodology. Built by athletes, developed with data – for decisions that work in everyday life.",
     "badges": {
-      "hycys": "science proofed",
+      "science": "science proofed",
       "gdpr": "GDPR compliant",
       "aiAct": "AI Act\nready"
     }
@@ -326,7 +326,7 @@
         "items": {
           "isOnlyApp": {
             "question": "Is YOUB just another training plan app?",
-            "answer": "No. YOUB is an Everyday Training Intelligence. While apps just run through plans, YOUB adapts your training daily to your real stress levels, your sleep, and your feedback – just like a human coach (our \"Markus Principle\")."
+            "answer": "No. YOUB is an Everyday Training Intelligence. While apps just run through plans, YOUB adapts your training daily to your real stress levels, your sleep, and your feedback – just like a human coach."
           },
           "dataUsage": {
             "question": "Will my data be used for AI development?",
@@ -369,7 +369,7 @@
         "items": {
           "overtraining": {
             "question": "Can the AI lead me into overtraining?",
-            "answer": "That's exactly what we prevent. Markus' logic (sports science background) is programmed to counter immediately at signs of overload. YOUB is \"Safety First.\" However, that doesn't mean a session is skipped immediately; we try to intelligently adjust training and intensities."
+            "answer": "That's exactly what we prevent. Our logic (sports science background) is programmed to counter immediately at signs of overload. YOUB is \"Safety First.\" However, that doesn't mean a session is skipped immediately; we try to intelligently adjust training and intensities."
           },
           "wrongSuggestion": {
             "question": "What should I do if the AI makes a suggestion that feels wrong?",
