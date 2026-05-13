@@ -10,7 +10,8 @@
     "howItWorks": "So funktioniert's",
     "mission": "Mission",
     "blog": "Blog",
-    "contact": "Beta vormerken",
+    "contact": "App laden",
+    "webLogin": "Login",
     "demo": "Demo ansehen",
     "getStarted": "Jetzt starten",
     "comingSoon": "coming soon",
@@ -22,7 +23,7 @@
     "titlePrefix": "Ein Coach, mit dem du reden kannst.",
     "titleHighlight": "Nicht ein Dashboard, das du verstehen musst.",
     "subtitle": "YOUB kennt deine Daten, aber auch deinen Alltag. Training entsteht im Dialog – gemeinsam mit dir.",
-    "ctaPrimary": "Beta vormerken",
+    "ctaPrimary": "App herunterladen",
     "ctaSecondary": "Mission"
   },
   "chat": {
@@ -108,27 +109,38 @@
       "item3": "du bewusst ohne Struktur trainieren möchtest"
     }
   },
-  "waitlist": {
-    "title": "Sichere dir deinen Platz in der ersten Beta.",
-    "subtitle": "Wir starten mit einer begrenzten Beta-Phase. Trage dich ein und erhalte Zugang, sobald ein Platz frei wird.",
-    "form": {
-      "name": "Name",
-      "email": "E-Mail",
-      "sport": {
-        "label": "Hauptsportart",
-        "triathlon": "Triathlon",
-        "cycling": "Radsport",
-        "running": "Laufen",
-        "other": "Sonstiges"
+  "download": {
+    "titlePrefix": "In wenigen Schritten zu deinem",
+    "titleHighlight": "ersten Plan.",
+    "subtitle": "YOUB braucht nur deine App, deine Trainingsdaten und ein paar kurze Angaben. Danach entsteht dein Plan im Gespräch mit Ben.",
+    "steps": {
+      "download": {
+        "title": "App herunterladen und anmelden"
       },
-      "submit": "Early Access anfragen"
+      "connect": {
+        "title": "Garmin verbinden",
+        "text": "Deine Trainingsdaten fließen automatisch ein, sobald dein Account verbunden ist."
+      },
+      "questions": {
+        "title": "Kurze Startfragen beantworten",
+        "text": "YOUB nutzt ein paar Basiswerte, um dich sauber einzuordnen.",
+        "examples": "Max. Herzfrequenz, Alter, Gewicht, Größe"
+      },
+      "plan": {
+        "title": "Trainingsplan im Dialog mit Ben erstellen",
+        "text": "Schreib mit ihm über Ziel, verfügbare Zeit und aktuelles Level."
+      }
     },
-    "microcopy": "Keine Kreditkarte erforderlich. DSGVO-konform. Benachrichtigung bei verfügbarem Platz.",
-    "success": {
-      "title": "Fast geschafft!",
-      "message": "Wir haben dir eine E-Mail zur Bestätigung gesendet. Bitte schau in dein Postfach (und ggf. Spam-Ordner).",
-      "reset": "Noch eine Anmeldung?"
-    }
+    "ios": {
+      "label": "App Store"
+    },
+    "android": {
+      "label": "Google Play"
+    },
+    "web": {
+      "label": "Zum Web Login"
+    },
+    "microcopy": "Den Web Login findest du jederzeit oben im Menü."
   },
   "seo": {
     "title": "Training, das sich an dein Leben anpasst",
@@ -189,7 +201,7 @@
     },
     "cta": {
       "text": "YOUB begleitet dich im Dialog – angepasst an dein Leben, nicht an einen Plan.",
-      "button": "Zur Beta anmelden"
+      "button": "App herunterladen"
     },
     "feeling": {
       "tag": "Experience",
@@ -284,7 +296,7 @@
         "items": {
           "devices": {
             "question": "Welche Geräte werden unterstützt?",
-            "answer": "In der aktuellen Beta-Phase konzentrieren wir uns auf die nahtlose Integration von Garmin. Suunto, Whoop, Wahoo, Zwift, Rouvy und Apple Health kommen in Kürze."
+            "answer": "Zum Live-Start unterstützen wir die nahtlose Integration von Garmin. Suunto, Whoop, Wahoo, Zwift, Rouvy und Apple Health kommen in Kürze."
           },
           "manualUpload": {
             "question": "Muss ich meine Daten manuell hochladen?",
@@ -292,20 +304,20 @@
           }
         }
       },
-      "beta": {
-        "title": "3. Dein Beta-Zugang",
+      "app": {
+        "title": "3. App & Zugang",
         "items": {
           "free": {
-            "question": "Ist die Beta-Teilnahme kostenlos?",
-            "answer": "Ja. Als Dankeschön für dein Feedback ist die Nutzung während der Beta-Phase komplett kostenlos."
+            "question": "Wie starte ich mit YOUB?",
+            "answer": "Lade YOUB im App Store oder bei Google Play herunter. Wenn du lieber am Desktop arbeitest, kannst du dich auch über my.youb.app einloggen."
           },
-          "afterBeta": {
-            "question": "Was passiert nach der Beta-Phase mit meinem Account?",
-            "answer": "Du behältst deinen Status als „Early Bird“. Wir garantieren dir einen lebenslangen Sonderpreis (Founder-Offer), wenn YOUB offiziell startet."
+          "webAccess": {
+            "question": "Kann ich YOUB auch im Browser nutzen?",
+            "answer": "Ja. Der Web-Login unter my.youb.app ist für bestehende Accounts verfügbar und ergänzt die iOS- und Android-Apps."
           },
           "feedbackAmount": {
-            "question": "Wie viel Feedback muss ich geben?",
-            "answer": "Gerne so viel wie du willst, jeder Hinweis hilft uns YOUB ein Stück besser zu machen. Als Beta-Tester steht dir ein direkter Kommunikationskanal zum Team von YOUB zur Verfügung."
+            "question": "Wo bekomme ich die Apps?",
+            "answer": "Die iOS-App findest du im App Store, die Android-App bei Google Play. Die Download-Links stehen direkt auf dieser Website."
           }
         }
       },
@@ -327,7 +339,7 @@
         "items": {
           "howToFeedback": {
             "question": "Wie kann ich Feedback geben oder Fehler melden?",
-            "answer": "Während der Beta-Phase hast du einen direkten Draht zu uns. Du kannst uns jederzeit über WhatsApp oder per E-Mail an feedback{'@'}youb.app erreichen. Dein Input fließt direkt in die Weiterentwicklung ein."
+            "answer": "Du kannst uns jederzeit über WhatsApp oder per E-Mail an feedback{'@'}youb.app erreichen. Dein Input fließt direkt in die Weiterentwicklung ein."
           },
           "voiceMessages": {
             "question": "Kann ich auch Sprachnachrichten schicken?",
@@ -337,7 +349,7 @@
       }
     },
     "founderQuote": {
-      "text": "Hast du eine Frage, die hier nicht steht? Schreib uns direkt. In der Beta-Phase hast du direkten Draht zum Team.",
+      "text": "Hast du eine Frage, die hier nicht steht? Schreib uns direkt. Du hast direkten Draht zum Team.",
       "author": "Felix Hermanutz — Founder"
     }
   },

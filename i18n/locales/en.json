@@ -10,7 +10,8 @@
     "howItWorks": "How it works",
     "mission": "Mission",
     "blog": "Blog",
-    "contact": "Join Beta",
+    "contact": "Get App",
+    "webLogin": "Login",
     "demo": "View Demo",
     "getStarted": "Get Started",
     "comingSoon": "coming soon",
@@ -22,7 +23,7 @@
     "titlePrefix": "A coach you can talk to.",
     "titleHighlight": "Not a dashboard you have to figure out.",
     "subtitle": "YOUB knows your data, but also your daily life. Training is created through dialogue – together with you.",
-    "ctaPrimary": "Join Beta",
+    "ctaPrimary": "Download App",
     "ctaSecondary": "Mission"
   },
   "chat": {
@@ -108,27 +109,38 @@
       "item3": "you consciously want to train without structure"
     }
   },
-  "waitlist": {
-    "title": "Secure your spot in the first beta.",
-    "subtitle": "We are starting with a limited beta phase. Sign up and get access as soon as a spot becomes available.",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "sport": {
-        "label": "Main Sport",
-        "triathlon": "Triathlon",
-        "cycling": "Cycling",
-        "running": "Running",
-        "other": "Other"
+  "download": {
+    "titlePrefix": "Your first plan in a",
+    "titleHighlight": "few steps.",
+    "subtitle": "YOUB only needs the app, your training data, and a few short answers. After that, your plan is created through dialogue with Ben.",
+    "steps": {
+      "download": {
+        "title": "Download the app and sign in"
       },
-      "submit": "Request Early Access"
+      "connect": {
+        "title": "Connect Garmin",
+        "text": "Your training data flows in automatically once your account is connected."
+      },
+      "questions": {
+        "title": "Answer a few start questions",
+        "text": "YOUB uses a few basic values to understand your starting point.",
+        "examples": "Max heart rate, age, weight, height"
+      },
+      "plan": {
+        "title": "Create your training plan in dialogue with Ben",
+        "text": "Write with him about your goal, available time, and current level."
+      }
     },
-    "microcopy": "No credit card required. GDPR compliant. Notification when a spot is available.",
-    "success": {
-      "title": "Almost there!",
-      "message": "We've sent you a confirmation email. Please check your inbox (and spam folder if necessary).",
-      "reset": "Another registration?"
-    }
+    "ios": {
+      "label": "App Store"
+    },
+    "android": {
+      "label": "Google Play"
+    },
+    "web": {
+      "label": "Go to Web Login"
+    },
+    "microcopy": "The Web Login is always available in the top menu."
   },
   "seo": {
     "title": "YOUB - Training That Adapts to Your Life",
@@ -189,7 +201,7 @@
     },
     "cta": {
       "text": "YOUB accompanies you through dialogue – adapted to your life, not to a plan.",
-      "button": "Join the Beta"
+      "button": "Download App"
     },
     "feeling": {
       "tag": "Experience",
@@ -284,7 +296,7 @@
         "items": {
           "devices": {
             "question": "Which devices are supported?",
-            "answer": "In the current beta phase, we are focusing on seamless Garmin integration. Suunto, Whoop, Wahoo, Zwift, Rouvy, and Apple Health are coming soon."
+            "answer": "At live launch, we support seamless Garmin integration. Suunto, Whoop, Wahoo, Zwift, Rouvy, and Apple Health are coming soon."
           },
           "manualUpload": {
             "question": "Do I have to upload my data manually?",
@@ -292,20 +304,20 @@
           }
         }
       },
-      "beta": {
-        "title": "3. Your Beta Access",
+      "app": {
+        "title": "3. App & Access",
         "items": {
           "free": {
-            "question": "Is participating in the beta free?",
-            "answer": "Yes. As a thank you for your feedback, use during the beta phase is completely free."
+            "question": "How do I start with YOUB?",
+            "answer": "Download YOUB from the App Store or Google Play. If you prefer desktop, you can also log in at my.youb.app."
           },
-          "afterBeta": {
-            "question": "What happens to my account after the beta phase?",
-            "answer": "You keep your \"Early Bird\" status. We guarantee you a lifelong special price (Founder Offer) when YOUB officially launches."
+          "webAccess": {
+            "question": "Can I use YOUB in the browser too?",
+            "answer": "Yes. The web login at my.youb.app is available for existing accounts and complements the iOS and Android apps."
           },
           "feedbackAmount": {
-            "question": "How much feedback do I need to give?",
-            "answer": "As much as you like; every bit of feedback helps us make YOUB a little better. As a beta tester, you have a direct communication channel to the YOUB team."
+            "question": "Where do I get the apps?",
+            "answer": "The iOS app is available in the App Store, and the Android app is available on Google Play. The download links are directly on this website."
           }
         }
       },
@@ -327,7 +339,7 @@
         "items": {
           "howToFeedback": {
             "question": "How can I give feedback or report bugs?",
-            "answer": "During the beta phase, you have a direct line to us. You can reach us anytime via WhatsApp or by email at feedback{'@'}youb.app. Your input flows directly into further development."
+            "answer": "You can reach us anytime via WhatsApp or by email at feedback{'@'}youb.app. Your input flows directly into further development."
           },
           "voiceMessages": {
             "question": "Can I also send voice messages?",
@@ -337,7 +349,7 @@
       }
     },
     "founderQuote": {
-      "text": "Do you have a question that isn't listed here? Write to us directly. During the beta phase, you have a direct line to the team.",
+      "text": "Do you have a question that isn't listed here? Write to us directly. You have a direct line to the team.",
       "author": "Felix Hermanutz — Founder"
     }
   },
