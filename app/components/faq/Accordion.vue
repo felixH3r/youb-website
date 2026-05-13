@@ -54,7 +54,7 @@
                 <p v-if="itemId === 'isOnlyApp'">
                   {{ $rt(item.answer).split("(")[0] }}
                   <NuxtLink
-                    v-if="item.question.includes('Markus')"
+                    v-if="$rt(item.question).includes('Markus')"
                     :to="$localePath('/mission')"
                     class="ml-1 inline-flex items-center gap-1 text-white hover:underline font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20 rounded"
                   >

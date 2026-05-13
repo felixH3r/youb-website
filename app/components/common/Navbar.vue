@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
+const { appDownloadUrl, webLoginUrl } = useAppLinks();
 
 const menuitems = [
   {
@@ -55,16 +56,16 @@ onUnmounted(() => {
         <img
           src="/youb-logo-white-on-transparent-512x512.png"
           alt="YOUB Logo"
-          class="h-12 md:h-12 w-auto"
+          class="h-10 md:h-12 w-auto flex-shrink-0"
         >
       </NuxtLink>
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex items-center gap-8">
-        <li v-for="item in menuitems" :key="item.title">
+        <li v-for="item in menuitems" :key="item.title" class="flex-shrink-0">
           <NuxtLink
             :to="$localePath(item.path)"
-            class="text-sm font-medium text-white hover:text-black transition-colors"
+            class="text-sm font-medium text-white hover:text-black transition-colors whitespace-nowrap"
           >
             {{ t(item.title) }}
           </NuxtLink>
@@ -72,13 +73,25 @@ onUnmounted(() => {
       </ul>
 
       <!-- CTA & Mobile Toggle -->
-      <div class="flex items-center gap-4">
-        <NuxtLink
-          :to="$localePath('/#waitlist')"
-          class="hidden md:block bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-black/80 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-black/10"
+      <div class="flex items-center gap-3">
+        <a
+          :href="appDownloadUrl.startsWith('http') ? appDownloadUrl : $localePath('/#download')"
+          :target="appDownloadUrl.startsWith('http') ? '_blank' : undefined"
+          :rel="appDownloadUrl.startsWith('http') ? 'noopener noreferrer' : undefined"
+          class="hidden md:flex items-center gap-2 bg-white text-black px-4 lg:px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 active:scale-95 transition-all shadow-lg shadow-white/20 whitespace-nowrap"
         >
-          {{ t("nav.contact") }}
-        </NuxtLink>
+          <Icon name="ph:download-simple-bold" class="w-4 h-4" />
+          <span class="hidden lg:inline">{{ t("nav.contact") }}</span>
+        </a>
+        <a
+          :href="webLoginUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden md:flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-all bg-white/5 border border-white/10 px-3 lg:px-4 py-2 rounded-full hover:bg-white/10 whitespace-nowrap"
+        >
+          <Icon name="ph:user-bold" class="w-4 h-4" />
+          <span class="hidden lg:inline">{{ t("nav.webLogin") }}</span>
+        </a>
 
         <button
           class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none"
@@ -99,6 +112,7 @@ onUnmounted(() => {
         </button>
       </div>
     </nav>
+
 
     <!-- Mobile Menu Overlay -->
     <Transition
@@ -124,13 +138,28 @@ onUnmounted(() => {
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink
-              :to="$localePath('/#waitlist')"
-              class="mt-4 w-full bg-black text-white py-4 rounded-2xl flex items-center justify-center text-lg font-bold shadow-xl shadow-black/20"
+            <a
+              :href="webLoginUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-4 w-full bg-black/5 border border-black/10 text-black py-4 rounded-2xl flex items-center justify-center gap-3 text-lg font-bold"
               @click="open = false"
             >
+              <Icon name="ph:user-bold" class="w-5 h-5" />
+              {{ t("nav.webLogin") }}
+            </a>
+          </li>
+          <li>
+            <a
+              :href="appDownloadUrl.startsWith('http') ? appDownloadUrl : $localePath('/#download')"
+              :target="appDownloadUrl.startsWith('http') ? '_blank' : undefined"
+              :rel="appDownloadUrl.startsWith('http') ? 'noopener noreferrer' : undefined"
+              class="w-full bg-black text-white py-4 rounded-2xl flex items-center justify-center gap-3 text-lg font-bold shadow-xl shadow-black/20"
+              @click="open = false"
+            >
+              <Icon name="ph:download-simple-bold" class="w-5 h-5" />
               {{ t("nav.contact") }}
-            </NuxtLink>
+            </a>
           </li>
         </ul>
       </div>

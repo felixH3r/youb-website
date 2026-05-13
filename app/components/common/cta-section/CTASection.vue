@@ -1,6 +1,6 @@
 <template>
   <section
-    id="waitlist"
+    id="download"
     class="relative w-full py-24 md:py-32 px-4 overflow-hidden min-h-[800px] flex items-center"
   >
     <!-- Background Image with Overlay -->
@@ -20,122 +20,87 @@
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto w-full">
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+      <div class="grid lg:grid-cols-[0.82fr_1.18fr] gap-12 lg:gap-20 items-center">
         <!-- Text Content -->
         <div
           class="text-center lg:text-left animate-in fade-in slide-in-from-bottom-8 duration-1000"
         >
           <h2
-            class="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-6 leading-[1.1]"
+            class="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-6 leading-[1.08] text-balance"
           >
-            {{ $t("waitlist.title") }}
+            {{ $t("download.titlePrefix") }} <br class="hidden md:block" >
+            <span class="text-white/40 italic">{{ $t("download.titleHighlight") }}</span>
           </h2>
           <p
-            class="text-lg md:text-xl text-white/70 leading-relaxed font-light max-w-xl mx-auto lg:mx-0"
+            class="text-lg md:text-xl text-white/60 leading-relaxed font-light max-w-xl mx-auto lg:mx-0"
           >
-            {{ $t("waitlist.subtitle") }}
+            {{ $t("download.subtitle") }}
           </p>
         </div>
 
-        <!-- Waitlist Form -->
+        <!-- Onboarding Steps -->
         <div
-          class="w-full max-w-md mx-auto lg:ml-auto lg:mr-0 p-8 md:p-10 rounded-[2.5rem] border border-white/10 bg-white/[0.02] backdrop-blur-3xl animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300 shadow-2xl overflow-hidden"
+          class="w-full max-w-2xl mx-auto lg:ml-auto lg:mr-0 p-4 md:p-8 rounded-[2.5rem] border border-white/10 bg-black/25 backdrop-blur-3xl animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300 shadow-2xl overflow-hidden"
         >
-          <div
-            v-if="submitted"
-            class="text-center py-8 animate-in fade-in duration-500"
-          >
-            <div
-              class="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 text-white"
+          <ol class="space-y-3 md:space-y-4">
+            <li
+              v-for="(step, index) in stepKeys"
+              :key="step"
+              class="grid grid-cols-[2rem_1fr] md:grid-cols-[3rem_1fr] gap-3 md:gap-4 rounded-3xl border border-white/10 bg-white/[0.04] p-4 md:p-6 text-left transition-colors duration-300 hover:bg-white/[0.06]"
             >
-              <Icon name="ph:check-bold" class="w-10 h-10" />
-            </div>
-            <h3 class="text-2xl font-bold text-white mb-4">
-              {{ $t("waitlist.success.title") }}
-            </h3>
-            <p class="text-white/60 leading-relaxed italic mb-8">
-              {{ $t("waitlist.success.message") }}
-            </p>
-            <button
-              class="text-white/40 hover:text-white transition-colors text-sm font-medium"
-              @click="submitted = false"
-            >
-              {{ $t("waitlist.success.reset") }}
-            </button>
-          </div>
+              <span class="pt-0.5 text-2xl md:text-3xl font-light text-white/20 tabular-nums">
+                {{ index + 1 }}
+              </span>
+              <div>
+                <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">
+                  {{ $t(`download.steps.${step}.title`) }}
+                </h3>
+                <p
+                  v-if="$te(`download.steps.${step}.text`)"
+                  class="mt-2 max-w-lg text-sm md:text-base leading-relaxed text-white/50 font-light"
+                >
+                  {{ $t(`download.steps.${step}.text`) }}
+                </p>
+                <div v-if="step === 'download'" class="mt-6 grid gap-4 sm:grid-cols-2">
+                  <a
+                    :href="iosAppUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group flex items-center justify-center gap-3 rounded-full bg-white px-6 py-4 text-black transition-all duration-300 hover:bg-white/90 hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    <Icon name="ph:apple-logo-fill" class="h-6 w-6" />
+                    <span class="text-lg font-semibold leading-none">
+                      {{ $t("download.ios.label") }}
+                    </span>
+                  </a>
 
-          <form v-else class="space-y-6" @submit.prevent="handleSubmit">
-            <!-- Name Field -->
-            <div class="space-y-2">
-              <input
-                id="name"
-                v-model="form.name"
-                type="text"
-                required
-                class="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-all duration-300"
-                :placeholder="$t('waitlist.form.name')"
-              >
-            </div>
-
-            <!-- Email Field -->
-            <div class="space-y-2">
-              <input
-                id="email"
-                v-model="form.email"
-                type="email"
-                required
-                class="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-all duration-300"
-                :placeholder="$t('waitlist.form.email')"
-              >
-            </div>
-
-            <!-- Sport Dropdown -->
-            <div class="space-y-2">
-              <CommonGlassDropdown
-                v-model="form.sport"
-                :options="sportOptions"
-                :placeholder="$t('waitlist.form.sport.label')"
-              />
-            </div>
-
-            <!-- Submit Button -->
-            <button
-              type="submit"
-              :disabled="loading"
-              class="w-full group relative px-8 py-5 rounded-2xl bg-white text-black font-semibold text-lg hover:bg-white/90 active:scale-[0.98] transition-all duration-300 disabled:opacity-50 disabled:hover:scale-100 overflow-hidden cursor-pointer"
-            >
-              <div class="relative z-10 flex items-center justify-center gap-2">
-                <span v-if="!loading">{{ $t("waitlist.form.submit") }}</span>
-                <span v-else class="flex items-center gap-2">
-                  <Icon
-                    name="ph:circle-notch-bold"
-                    class="w-5 h-5 animate-spin"
-                  />
-                  {{ $t("waitlist.form.submit") }}
+                  <a
+                    :href="androidAppUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group flex items-center justify-center gap-3 rounded-full bg-white px-6 py-4 text-black transition-all duration-300 hover:bg-white/90 hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    <Icon name="ph:android-logo-fill" class="h-6 w-6" />
+                    <span class="text-lg font-semibold leading-none">
+                      {{ $t("download.android.label") }}
+                    </span>
+                  </a>
+                </div>
+                <span
+                  v-if="step === 'questions'"
+                  class="mt-4 block text-sm leading-relaxed text-white/35 font-light italic"
+                >
+                  {{ $t("download.steps.questions.examples") }}
                 </span>
-                <Icon
-                  v-if="!loading"
-                  name="ph:arrow-right-bold"
-                  class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
-                />
               </div>
-            </button>
+            </li>
+          </ol>
 
-            <!-- Error Message -->
-            <p
-              v-if="error"
-              class="text-red-400 text-sm text-center animate-in fade-in duration-300"
-            >
-              {{ error }}
-            </p>
-
-            <!-- Microcopy -->
-            <p
-              class="mt-8 text-center text-sm text-white/40 leading-relaxed max-w-[280px] mx-auto"
-            >
-              {{ $t("waitlist.microcopy") }}
-            </p>
-          </form>
+          <p
+            class="mt-8 text-center text-sm text-white/40 leading-relaxed max-w-[420px] mx-auto font-light"
+          >
+            {{ $t("download.microcopy") }}
+          </p>
         </div>
       </div>
     </div>
@@ -143,46 +108,9 @@
 </template>
 
 <script setup lang="ts">
-const form = ref({
-  name: "",
-  email: "",
-  sport: "",
-});
+const { androidAppUrl, iosAppUrl } = useAppLinks();
 
-const { t } = useI18n();
-
-const sportOptions = computed(() => [
-  { label: t("waitlist.form.sport.triathlon"), value: "triathlon" },
-  { label: t("waitlist.form.sport.cycling"), value: "cycling" },
-  { label: t("waitlist.form.sport.running"), value: "running" },
-  { label: t("waitlist.form.sport.other"), value: "other" },
-]);
-
-const loading = ref(false);
-const submitted = ref(false);
-const error = ref("");
-
-const handleSubmit = async () => {
-  loading.value = true;
-  error.value = "";
-
-  try {
-    await $fetch("/api/contact", {
-      method: "POST",
-      body: form.value,
-    });
-    submitted.value = true;
-    form.value = { name: "", email: "", sport: "" };
-  } catch (err: unknown) {
-    const errorData = err as { data?: { statusMessage?: string } };
-    console.error("Submission Error:", err);
-    error.value =
-      errorData.data?.statusMessage ||
-      "Something went wrong. Please try again.";
-  } finally {
-    loading.value = false;
-  }
-};
+const stepKeys = ["download", "connect", "questions", "plan"];
 </script>
 
 <style scoped>
@@ -225,9 +153,6 @@ const handleSubmit = async () => {
 .delay-300 {
   animation-delay: 300ms;
 }
-
-/* Custom styles for select dropdown */
-/* Removed standard select styles as we now use GlassDropdown */
 
 /* Ensure backdrop blur works on safari */
 .backdrop-blur-3xl {

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 
+const { appDownloadUrl } = useAppLinks();
+
 const heroRef = ref<HTMLElement | null>(null);
 const titleRef = ref<HTMLElement | null>(null);
 const subRef = ref<HTMLElement | null>(null);
@@ -76,12 +78,14 @@ onMounted(() => {
         ref="actionsRef"
         class="flex items-center gap-4 mb-10 md:mb-20 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 ease-out"
       >
-        <NuxtLink
-          :to="$localePath('/#waitlist')"
+        <a
+          :href="appDownloadUrl.startsWith('http') ? appDownloadUrl : $localePath('/#download')"
+          :target="appDownloadUrl.startsWith('http') ? '_blank' : undefined"
+          :rel="appDownloadUrl.startsWith('http') ? 'noopener noreferrer' : undefined"
           class="px-6 md:px-8 py-4 rounded-full bg-white text-black font-semibold text-sm md:text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-white/10"
         >
           {{ $t("hero.ctaPrimary") }}
-        </NuxtLink>
+        </a>
         <NuxtLink
           :to="$localePath('/mission')"
           class="px-6 md:px-8 py-4 rounded-full bg-black text-white font-semibold text-sm md:text-lg border border-white/10 hover:bg-white/5 hover:scale-105 active:scale-95 transition-all duration-300"
