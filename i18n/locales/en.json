@@ -9,6 +9,7 @@
     "home": "Home",
     "howItWorks": "How it works",
     "mission": "Mission",
+    "pricing": "Pricing",
     "blog": "Blog",
     "contact": "Get App",
     "webLogin": "Login",
@@ -146,6 +147,47 @@
   "seo": {
     "title": "YOUB - Training That Adapts to Your Life",
     "description": "YOUB is your intelligent AI coach for triathlon, cycling, and running. We combine sports science with real-time data analysis for your optimal training."
+  },
+  "pricing": {
+    "seoTitle": "Pricing - YOUB",
+    "seoDescription": "Start YOUB with a two-week free trial, then choose monthly billing for 35€ per month or yearly billing for 29€ per month.",
+    "badge": "Simple pricing",
+    "title": "That feeling when progress suddenly feels easy.",
+    "subtitle": "Try YOUB for two weeks with full access. After the trial, choose the plan that fits how you want to train.",
+    "cta": "Start free trial",
+    "trialNote": "Two weeks free.",
+    "perMonth": "per month",
+    "planCta": "Start two-week trial",
+    "includedEyebrow": "Included",
+    "includedTitle": "One subscription. The full YOUB coaching experience.",
+    "fairTitle": "Clear after the trial",
+    "fairText": "Your first two weeks are free. After that, YOUB continues on the monthly or yearly plan you choose.",
+    "plans": {
+      "yearly": {
+        "label": "Best value",
+        "title": "Yearly",
+        "description": "For athletes who want YOUB as a steady part of their training year.",
+        "price": "29€",
+        "billing": "Billed yearly after the free trial."
+      },
+      "monthly": {
+        "title": "Monthly",
+        "description": "For flexible training blocks, race preparation, or testing YOUB month by month.",
+        "price": "35€",
+        "billing": "Billed monthly after the free trial."
+      }
+    },
+    "proofPoints": [
+      "Try it free for 14 days",
+      "Then pay monthly or save with yearly billing",
+      "Unlimited messages with Ben"
+    ],
+    "includedItems": [
+      "Unlimited messages with Ben",
+      "Adaptive training planning",
+      "Wearable and training data in context",
+      "Explainable recommendations instead of a black box"
+    ]
   },
   "howItWorks": {
     "hero": {

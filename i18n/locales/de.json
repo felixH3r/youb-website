@@ -9,6 +9,7 @@
     "home": "Startseite",
     "howItWorks": "So funktioniert's",
     "mission": "Mission",
+    "pricing": "Preise",
     "blog": "Blog",
     "contact": "App laden",
     "webLogin": "Login",
@@ -146,6 +147,47 @@
   "seo": {
     "title": "YOUB - AI Endurance Coach für Laufen, Radsport und Triathlon",
     "description": "YOUB ist ein chat-first AI Endurance Coach für Läufer:innen, Radfahrer:innen und Triathlet:innen. Wearable-Daten, Google Calendar und Sportwissenschaft passen dein Training an den Alltag an."
+  },
+  "pricing": {
+    "seoTitle": "Preise - YOUB",
+    "seoDescription": "Starte YOUB mit zwei Wochen kostenloser Testphase. Danach monatlich für 35€ pro Monat oder jährlich für 29€ pro Monat.",
+    "badge": "Einfache Preise",
+    "title": "Das Gefühl, wenn sich Fortschritt plötzlich leicht anfühlt.",
+    "subtitle": "Teste YOUB zwei Wochen mit vollem Zugriff. Danach wählst du den Plan, der zu deinem Training passt.",
+    "cta": "Kostenlos testen",
+    "trialNote": "Zwei Wochen kostenlos.",
+    "perMonth": "pro Monat",
+    "planCta": "Zwei Wochen testen",
+    "includedEyebrow": "Enthalten",
+    "includedTitle": "Ein Abo. Das volle YOUB Coaching-Erlebnis.",
+    "fairTitle": "Klar nach der Testphase",
+    "fairText": "Deine ersten zwei Wochen sind kostenlos. Danach läuft YOUB mit dem monatlichen oder jährlichen Plan weiter, den du wählst.",
+    "plans": {
+      "yearly": {
+        "label": "Bester Wert",
+        "title": "Jährlich",
+        "description": "Für Athlet:innen, die YOUB fest in ihr Trainingsjahr integrieren möchten.",
+        "price": "29€",
+        "billing": "Jährlich abgerechnet nach der kostenlosen Testphase."
+      },
+      "monthly": {
+        "title": "Monatlich",
+        "description": "Für flexible Trainingsblöcke, Wettkampfvorbereitung oder einen monatlichen Einstieg.",
+        "price": "35€",
+        "billing": "Monatlich abgerechnet nach der kostenlosen Testphase."
+      }
+    },
+    "proofPoints": [
+      "14 Tage kostenlos testen",
+      "Danach monatlich kündbar oder jährlich sparen",
+      "Unlimitiert Nachrichten mit Ben"
+    ],
+    "includedItems": [
+      "Unlimitiert Nachrichten mit Ben",
+      "Adaptive Trainingsplanung",
+      "Wearable- und Trainingsdaten im Kontext",
+      "Erklärbare Empfehlungen statt Blackbox"
+    ]
   },
   "howItWorks": {
     "hero": {
