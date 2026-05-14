@@ -625,5 +625,62 @@
       "successMessage": "Thank you for your message. We'll get back to you as soon as possible.",
       "reset": "Send another message"
     }
+  },
+  "tools": {
+    "seoTitle": "Free Athlete Tools & Calculators - YOUB",
+    "seoDescription": "Free calculators for pacing, chain length, gear ratio, and more. Optimize your training with science-backed tools.",
+    "title": "Free Tools for Your Training.",
+    "subtitle": "No sign-up. No cost. Just precise tools for your performance.",
+    "openToolPage": "Open tool page",
+    "geoEyebrow": "Training & setup",
+    "geoTitle": "Free calculators for pace, bike setup and gearing",
+    "geoSections": {
+      "training": {
+        "title": "For quick training decisions",
+        "text": "The YOUB tools help you interpret pace, speed and target values quickly. The actual calculators live on dedicated detail pages so each question is answered clearly and in a search-friendly format."
+      },
+      "setup": {
+        "title": "For bike setup and equipment choices",
+        "text": "Chain length and gearing affect shifting quality, cadence and speed. The tool pages combine each calculator with short explanations, limits and practical answers."
+      }
+    },
+    "pace": {
+      "title": "Pace & Speed Converter",
+      "description": "Convert between pace (min/km, min/mi) and speed (km/h, mph).",
+      "valueLabel": "Value",
+      "unitLabel": "Unit",
+      "timeError": "Enter pace as mm:ss or hh:mm:ss.",
+      "numberError": "Enter speed as a number.",
+      "resultPaceKm": "Pace (min/km)",
+      "resultPaceMi": "Pace (min/mi)",
+      "resultSpeedKmh": "Speed (km/h)",
+      "resultSpeedMph": "Speed (mph)"
+    },
+    "chainLength": {
+      "title": "Chain Length Calculator",
+      "description": "Calculate the optimal number of chain links for your bike.",
+      "chainstay": "ATH / chainstay length",
+      "front": "Front Teeth (large)",
+      "rear": "Rear Teeth (large)",
+      "pulleyTeeth": "Derailleur pulleys (teeth each)",
+      "pulleyHint": "For two equal derailleur pulleys, enter the tooth count of one pulley.",
+      "unit": "Unit",
+      "resultLinks": "Number of Links",
+      "resultLength": "Total Length"
+    },
+    "gearRatio": {
+      "title": "Gear Ratio & Speed",
+      "description": "Analyze your gearing and calculate speed at specific cadence.",
+      "front": "Chainring (teeth)",
+      "rear": "Cog (teeth)",
+      "cadence": "Cadence (RPM)",
+      "circumference": "Wheel Circumference (mm)",
+      "resultRatio": "Gear Ratio",
+      "resultSpeed": "Speed",
+      "resultGearInches": "Gear Inches"
+    },
+    "moreComing": "More tools coming soon...",
+    "cta": "Want this automated?",
+    "ctaSub": "Connect your apps and let YOUB handle the analysis."
   }
 }

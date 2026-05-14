@@ -64,6 +64,7 @@ const footerSectionsByLocale: Record<string, FooterSection[]> = {
         { label: "Mission", href: "/mission" },
         { label: "Hilfe-Center", href: "/support" },
         { label: "Aktivität analysieren", href: "/analysis" },
+        { label: "Free Tools", href: "/tools" },
       ],
     },
     {
@@ -135,6 +136,7 @@ const footerSectionsByLocale: Record<string, FooterSection[]> = {
         { label: "Mission", href: "/mission" },
         { label: "Support", href: "/support" },
         { label: "Analyze Activity", href: "/analysis" },
+        { label: "Free Tools", href: "/tools" },
       ],
     },
     {

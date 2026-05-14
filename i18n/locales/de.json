@@ -703,5 +703,62 @@
       "successMessage": "Vielen Dank für deine Nachricht. Wir melden uns so schnell wie möglich bei dir.",
       "reset": "Weitere Nachricht senden"
     }
+  },
+  "tools": {
+    "seoTitle": "Kostenlose Tools & Rechner für Athleten - YOUB",
+    "seoDescription": "Kostenlose Rechner für Pacing, Kettenlänge, Übersetzung und mehr. Optimiere dein Training mit wissenschaftlich fundierten Tools.",
+    "title": "Kostenlose Tools für dein Training.",
+    "subtitle": "Keine Anmeldung. Keine Kosten. Nur präzise Werkzeuge für deine Performance.",
+    "openToolPage": "Tool-Seite öffnen",
+    "geoEyebrow": "Training & Setup",
+    "geoTitle": "Kostenlose Rechner für Pace, Fahrrad-Setup und Übersetzung",
+    "geoSections": {
+      "training": {
+        "title": "Für schnelle Trainingsentscheidungen",
+        "text": "Die YOUB Tools helfen dir, Pace, Geschwindigkeit und Zielwerte schnell einzuordnen. Die eigentlichen Rechner liegen auf eigenen Detailseiten, damit jede Frage klar beantwortet und suchmaschinenfreundlich erklärt wird."
+      },
+      "setup": {
+        "title": "Für Radtechnik und Materialwahl",
+        "text": "Kettenlänge und Übersetzung beeinflussen Schaltqualität, Trittfrequenz und Geschwindigkeit. Die Tool-Seiten verbinden den Rechner mit kurzen Erklärungen, Grenzen und praktischen Antworten."
+      }
+    },
+    "pace": {
+      "title": "Pace & Speed Rechner",
+      "description": "Konvertiere zwischen Pace (min/km, min/mi) und Geschwindigkeit (km/h, mph).",
+      "valueLabel": "Wert",
+      "unitLabel": "Einheit",
+      "timeError": "Bitte gib eine Pace als mm:ss oder hh:mm:ss ein.",
+      "numberError": "Bitte gib eine Geschwindigkeit als Zahl ein.",
+      "resultPaceKm": "Pace (min/km)",
+      "resultPaceMi": "Pace (min/mi)",
+      "resultSpeedKmh": "Speed (km/h)",
+      "resultSpeedMph": "Speed (mph)"
+    },
+    "chainLength": {
+      "title": "Kettenlänge Rechner",
+      "description": "Berechne die optimale Anzahl an Kettengliedern für dein Rad.",
+      "chainstay": "ATH / Kettenstrebenlänge",
+      "front": "Zähne vorne (groß)",
+      "rear": "Zähne hinten (groß)",
+      "pulleyTeeth": "Schaltrollen (Zähne je Rolle)",
+      "pulleyHint": "Bei zwei gleich großen Schaltrollen reicht die Zahnzahl einer Rolle.",
+      "unit": "Einheit",
+      "resultLinks": "Anzahl Kettenglieder",
+      "resultLength": "Gesamtlänge"
+    },
+    "gearRatio": {
+      "title": "Übersetzung & Speed",
+      "description": "Analysiere deine Übersetzung und berechne die Geschwindigkeit bei bestimmter Trittfrequenz.",
+      "front": "Kettenblatt (Zähne)",
+      "rear": "Ritzel (Zähne)",
+      "cadence": "Trittfrequenz (RPM)",
+      "circumference": "Radumfang (mm)",
+      "resultRatio": "Übersetzung",
+      "resultSpeed": "Geschwindigkeit",
+      "resultGearInches": "Entfaltung (Gear Inches)"
+    },
+    "moreComing": "Weitere Tools folgen bald...",
+    "cta": "Willst du das alles automatisiert?",
+    "ctaSub": "Verbinde deine Apps und lass YOUB die Analyse übernehmen."
   }
 }
