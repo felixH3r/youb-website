@@ -732,7 +732,8 @@
       "resultPaceKm": "Pace (min/km)",
       "resultPaceMi": "Pace (min/mi)",
       "resultSpeedKmh": "Speed (km/h)",
-      "resultSpeedMph": "Speed (mph)"
+      "resultSpeedMph": "Speed (mph)",
+      "resultSpeedMs": "Speed (m/s)"
     },
     "chainLength": {
       "title": "Kettenlänge Rechner",

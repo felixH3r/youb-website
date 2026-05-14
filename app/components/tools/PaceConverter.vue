@@ -8,6 +8,7 @@ interface PaceResults {
   paceMi: number;
   speedKmh: number;
   speedMph: number;
+  speedMs: number;
 }
 
 const value = ref("5:00");
@@ -21,6 +22,7 @@ const units = [
   { value: 'min/mi', label: 'min/mi' },
   { value: 'km/h', label: 'km/h' },
   { value: 'mph', label: 'mph' },
+  { value: 'm/s', label: 'm/s' },
 ];
 
 const calculate = async () => {
@@ -60,8 +62,20 @@ watch(unit, (nextUnit) => {
       ? formatPaceTime(currentValue)
       : "5:00";
   } else {
+    // Handling numeric units (km/h, mph, m/s)
     const currentPace = parsePaceTime(value.value);
-    value.value = currentPace ? String(Number((60 / currentPace).toFixed(2))) : "12";
+    if (currentPace) {
+      const speedKmh = 60 / currentPace;
+      if (nextUnit === 'm/s') {
+        value.value = String(Number((speedKmh / 3.6).toFixed(2)));
+      } else if (nextUnit === 'mph') {
+        value.value = String(Number((speedKmh / 1.60934).toFixed(2)));
+      } else {
+        value.value = String(Number(speedKmh.toFixed(2)));
+      }
+    } else {
+      value.value = nextUnit === 'm/s' ? "3.33" : "12";
+    }
   }
   calculate();
 });
@@ -115,6 +129,10 @@ watch(value, () => calculate());
       <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
         <p class="text-[10px] font-bold uppercase tracking-wider text-white/20 mb-1">{{ t('tools.pace.resultSpeedMph') }}</p>
         <p class="text-xl font-bold text-white">{{ results.speedMph }}</p>
+      </div>
+      <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-white/20 mb-1">{{ t('tools.pace.resultSpeedMs') }}</p>
+        <p class="text-xl font-bold text-white">{{ results.speedMs }}</p>
       </div>
     </div>
     
